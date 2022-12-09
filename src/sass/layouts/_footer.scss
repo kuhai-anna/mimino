@@ -49,7 +49,7 @@
 }
 
 .logo-container {
-    min-width: 271px;
+    min-width: 264px;
 
     @media screen and (min-width: $tablet) {
         min-width: 511px;
@@ -82,14 +82,16 @@
 }
 
 .footer-mobile-menu-container {
-    min-width: 143px;
+    min-width: 142px;
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-left: 8px;
+    border-left: 1px solid rgba(122, 122, 122, 0.4);
 
     @media screen and (min-width: $tablet) {
         display: flex;
-        padding-top: 0;
-        padding-bottom: 0;
+        padding: 0;
+        border: none;
     }
 }
 
