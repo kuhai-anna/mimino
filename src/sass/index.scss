@@ -8,14 +8,11 @@
 @import './components/module';
 
 // layouts
-@import './layouts/header';
-@import './layouts/hero-pages';
-@import './layouts/about-restaurant';
-@import './layouts/footer';
+@import './layouts/module';
 
 // pages
 @import './layouts/main-page/module';
-@import './layouts/restaurant-page/menu';
+@import './layouts/restaurant-page/module';
 @import './layouts/hotel-page/module';
 @import './layouts/room-pages/module';
 
