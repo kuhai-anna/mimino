@@ -1,4 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 // Загальні стилі для body
+body {
+  font-family: $montserrat-font;
+}
 
 // Загальні стилі для section
