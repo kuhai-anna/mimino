@@ -1,2 +1,74 @@
-// Вносить один з членів команди
 // Загальні стилі для кнопок (крім кнопок в модалках)
+//Перший тип small-btn s-light-btn
+.small-btn {
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: $montserrat-font;
+    font-style: normal;
+    @include font(16px, calc(20/16), 700, 0.02em);
+    color: $accent-color;
+    max-width: 236px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover,
+    &:focus {
+        background: #FFFFFF;
+    }
+}
+
+.s-light-btn {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+//Другий тип small-btn s-dark-btn 
+
+.s-dark-btn {
+    background: #000000;
+    &:hover,
+    &:focus {
+        border: 2px solid $accent-color;
+    }
+}
+
+//Третій тип big-dark-btn 
+
+.big-dark-btn {
+    background: #000000;
+    border: 1px solid $accent-color;
+    border-radius: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $montserrat-font;
+    font-style: normal;
+    @include font(18px, calc(22/18), 500, null);
+    color: #FFFFFF;
+    max-width: 384px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mobile{
+        @include font(20px, calc(24/20), 500, null);
+    }
+
+    @include tablet{
+        max-width: 434px;
+        @include font(24px, calc(29/24), 500, null);
+    }
+
+    &:hover,
+    &:focus {
+        color: #000;
+        background: $accent-color;
+        border: 1px solid $accent-color;
+        padding: 12px 22px;
+    }
+
+    &:hover,
+    &:focus {
+        background: #FFFFFF;
+    }
+}
