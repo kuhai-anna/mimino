@@ -1,2 +1,21 @@
 // Вносить один з членів команди
 // Загальні стилі для кнопок (крім кнопок в модалках)
+.light-btn {
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid #FFFFFF;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20/16);
+    letter-spacing: 0.02em;
+    color: #F3C653;
+    padding: 12px 22px;
+
+    &:hover,
+    &:focus {
+        background: #FFFFFF;
+    }
+}
