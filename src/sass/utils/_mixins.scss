@@ -1,18 +1,55 @@
-@mixin font($weight, $size, $height, $spacing) {
-  font-weight: $weight;
+// Для шрифта
+@mixin font($size, $height, $weight, $spacing) {
   font-size: $size;
   line-height: $height;
+  font-weight: $weight;
   letter-spacing: $spacing;
 }
 
-@mixin calc($gap, $count) {
-  flex-basis: calc((100% - $gap * ($count - 1)) / $count);
+// Медіа запити
+@mixin mobile {
+  @media screen and (min-width: 414px) {
+    @content;
+  }
 }
 
-@mixin retina {
+@mixin tablet {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+// Для ретіна зображень
+@mixin retina2x {
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     @content;
   }
+}
+
+@mixin retina3x {
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    @content;
+  }
+}
+
+// Для калькуляції сітки
+@mixin calc($count, $gap) {
+  width: calc((100% - $gap * ($count - 1)) / $count);
+}
+
+// Для флекс контейнера
+@mixin centered($display: flex, $content: center, $items: center) {
+  display: $display;
+  justify-content: $content;
+  align-items: $items;
 }
