@@ -1,2 +1,22 @@
 // Вносить один з членів команди
-// Загальні стилі для logo в header, footer та section
+// Загальні стилі для logo
+.logo {
+  font-family: $film-font;
+  @include font(700, 64px, 1.08, 0.3em);
+}
+
+// Стилі для logo у header-і
+.header__logo {
+  @include font(700, 40px, 1.08, 0.3em);
+  color: $header-logo-color;
+}
+
+// Стилі для logo у footer-і
+.footer__logo {
+  color: $accent-color;
+}
+
+// Стилі для logo у section (колір замінити на змінну, коли вони будуть готові)
+.section-logo {
+  color: #494848;
+}
