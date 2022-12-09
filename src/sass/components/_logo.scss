@@ -5,10 +5,11 @@
   @include font(700, 64px, 1.08, 0.3em);
 }
 
+// тимчасово закоментований колір, поки змінні в роботі
 // Стилі для logo у header-і
 .header__logo {
   @include font(700, 40px, 1.08, 0.3em);
-  color: $header-logo-color;
+  //   color: $header-logo-color;
 }
 
 // Стилі для logo у footer-і
