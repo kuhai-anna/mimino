@@ -1,0 +1,95 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+body {
+  font-family: "Montserrat", "sans-serif";
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  display: block;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 414px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 85px;
+  }
+}
+
+.logo {
+  font-family: "FilmP3", "sans-serif";
+  font-size: 700;
+  line-height: 64px;
+  font-weight: 1.08;
+  letter-spacing: 0.3em;
+}
+
+.header__logo {
+  font-size: 700;
+  line-height: 40px;
+  font-weight: 1.08;
+  letter-spacing: 0.3em;
+}
+
+.footer__logo {
+  color: #f3c653;
+}
+
+.section-logo {
+  color: #494848;
+}/*# sourceMappingURL=index.css.map */
