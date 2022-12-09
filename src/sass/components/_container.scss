@@ -1,18 +1,35 @@
 // Вносить один з членів команди
 // Загальні стилі для контейнера
+
 .container {
-  max-width: 414px;
-  margin: 0 auto;
+  min-width: 320px;
   padding: 0 15px;
-  @media screen and (min-width: $tablet) {
-    max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 
-    padding: 0 47px;
+  @media screen and (min-width: $phone) {
+    max-width: $phone;
   }
-
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+  }
   @media screen and (min-width: $desktop) {
-    max-width: 1280px;
-
-    padding: 0 85px;
+    max-width: $desktop;
   }
 }
+// .container {
+//   max-width: 414px;
+//   margin: 0 auto;
+//   padding: 0 15px;
+//   @media screen and (min-width: $tablet) {
+//     max-width: 1024px;
+
+//     padding: 0 47px;
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     max-width: 1280px;
+
+//     padding: 0 85px;
+//   }
+// }
