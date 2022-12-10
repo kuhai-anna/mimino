@@ -1,0 +1,145 @@
+.amenities {
+  padding: 32px 15px;
+  background: #fffdee;
+  max-width: 384px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .amenities {
+    max-width: 930px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .amenities {
+    max-width: 1110px;
+  }
+}
+
+.amenities__title {
+  text-transform: uppercase;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: calc(37 / 32);
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .amenities__text-box {
+    display: flex;
+    gap: 80px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .amenities__text-box {
+    display: flex;
+    gap: 160px;
+  }
+}
+
+.amenities__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: #7a7a7a;
+  margin: 0;
+}
+@media screen and (min-width: 1024px) {
+  .amenities__text {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .amenities__text-title {
+    width: 757px;
+  }
+}
+
+.amenities__2text {
+  margin-top: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .amenities__2text {
+    margin-top: 0;
+  }
+}
+
+.amenities__subtitle {
+  text-transform: uppercase;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  color: #000000;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.amenities__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.amenities__nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .amenities__nav {
+    width: 434px;
+    margin-left: auto;
+  }
+}
+.amenities__btn {
+  background: #000000;
+  border: 1px solid #f3c653;
+  border-radius: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  transition-duration: 250ms;
+  &:hover {
+    background: #f3c653;
+  }
+}
+.amenities__btn-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  transition-duration: 250ms;
+  &:hover {
+    color: #000000;
+  }
+}
+
+.amenities__link {
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: #c79002;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.amenities__icon {
+  width: 23px;
+  height: 13px;
+  margin-left: 13px;
+}
