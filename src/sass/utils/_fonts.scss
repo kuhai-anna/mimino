@@ -10,9 +10,9 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-Regular.eot');
+    // src: url('Montserrat-Regular.eot');
     src: local('Montserrat Regular'), local('Montserrat-Regular'),
-        url('/src/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Montserrat-Regular.eot') format('embedded-opentype'),
         url('/src/fonts/Montserrat-Regular.woff2') format('woff2'),
         url('/src/fonts/Montserrat-Regular.woff') format('woff'),
         url('/src/fonts/Montserrat-Regular.ttf') format('truetype');
@@ -22,9 +22,9 @@
 
 @font-face {
     font-family: 'Times New Roman';
-    src: url('TimesNewRomanMTStd.eot');
+    // src: url('TimesNewRomanMTStd.eot');
     src: local('Times New Roman MT Std Regular'), local('TimesNewRomanMTStd'),
-        url('/src/fonts/TimesNewRomanMTStd.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/TimesNewRomanMTStd.eot') format('embedded-opentype'),
         url('/src/fonts/TimesNewRomanMTStd.woff2') format('woff2'),
         url('/src/fonts/TimesNewRomanMTStd.woff') format('woff'),
         url('/src/fonts/TimesNewRomanMTStd.ttf') format('truetype');
