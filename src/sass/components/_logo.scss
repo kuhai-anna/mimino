@@ -1,5 +1,5 @@
 // Вносить один з членів команди
-// Загальні стилі для logo
+// Загальні стилі для logo в секціях і футері
 .logo {
   font-family: $film-font;
   @include font(40px, 1.08, 700, 0.3em);
@@ -7,30 +7,4 @@
     @include font(64px, null, null, null);
   }
 }
-.subtitle {
-  font-family: $times-font;
-  font-weight: 400;
-  line-height: 1.15;
-  color: $color-subtitle;
-  font-size: 20px;
 
-  @media screen and (min-width: $tablet) {
-    font-size: 32px;
-  }
-}
-// тимчасово закоментований колір, поки змінні в роботі
-// Стилі для logo у header-і
-// .header__logo {
-//   @include font(40px, 1.08, 700, 0.3em);
-//     color: $header-logo-color;
-// }
-
-// Стилі для logo у footer-і
-// .footer__logo {
-//   color: $accent-color;
-// }
-
-// Стилі для logo у section (колір замінити на змінну, коли вони будуть готові)
-// .section-logo {
-//   color: #494848;
-// }
