@@ -1,2 +1,15 @@
 // Вносить один з членів команди
 // Загальні стилі для всіх заголовків
+
+// Стилі для напису "Amet minim mollit non"
+.subtitle {
+    font-family: $times-font;
+    font-weight: 400;
+    line-height: 1.15;
+    color: $color-subtitle;
+    font-size: 20px;
+  
+    @media screen and (min-width: $tablet) {
+      font-size: 32px;
+    }
+  }
