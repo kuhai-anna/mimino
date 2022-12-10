@@ -1,6 +1,5 @@
 // Вносить один з членів команди
 // Загальні стилі для контейнера
-
 .container {
   min-width: 320px;
   padding: 0 15px;
@@ -8,15 +7,32 @@
   margin-right: auto;
 
   @media screen and (min-width: $phone) {
-    max-width: $phone;
+    max-width: 414px;
   }
   @media screen and (min-width: $tablet) {
-    max-width: $tablet;
+    max-width: 960px;
   }
   @media screen and (min-width: $desktop) {
-    max-width: $desktop;
+    max-width: 1140px;
   }
-}
+} 
+
+// .container {
+//   min-width: 320px;
+//   padding: 0 15px;
+//   margin-left: auto;
+//   margin-right: auto;
+
+//   @media screen and (min-width: $phone) {
+//     max-width: $phone;
+//   }
+//   @media screen and (min-width: $tablet) {
+//     max-width: $tablet;
+//   }
+//   @media screen and (min-width: $desktop) {
+//     max-width: $desktop;
+//   }
+// }
 // .container {
 //   max-width: 414px;
 //   margin: 0 auto;
