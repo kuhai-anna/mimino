@@ -78,12 +78,12 @@
     transition-property: color, background-color;
 	@extend %transition;
 
-    @media screen and (min-width: $phone) {
+    @include mobile {
         min-width: 384px;
         @include font(20px, 1.2, null, null);
     }
 
-    @media screen and (min-width: $tablet) {
+    @include tablet {
         width: 434px;
         @include font(24px, 1.2, null, null);
     }
@@ -99,7 +99,7 @@
 .submit {
 border-radius: 2px;
 
-@media screen and (min-width: $tablet) {
+@include tablet {
     width: 592px;
 }
 }
