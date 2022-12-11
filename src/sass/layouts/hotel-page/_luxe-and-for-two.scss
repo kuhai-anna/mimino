@@ -161,4 +161,58 @@
 	  margin-left: 45px;
 	}
   }
+
+//   Картинки кімнат
+  .rooms__img {
+	margin-left: auto;
+
+	// background-color: #dadada;
+	box-shadow: 2px 2px 60px 2px $color-shadow;
+	border-radius: 2px;
+
+	// картинка виступає вверх за межі блоку
+	@include tablet {
+		position: relative;
+	    top: -94px;
+		}
+
+	@include desktop {
+		top: -104px;
+		  }	
+
+
+  
+	// @media screen and (min-width: $tablet) {
+	//   position: relative;
+	//   top: -94px;
+	// }
+	// @media screen and (min-width: $desktop) {
+	//   top: -104px;
+	// }
+  
+	// у кожної другої кімнати секції картинка зліва
+	.rooms__item:nth-child(2n) & {
+	  @media screen and (max-width: 1023px) {
+		margin-left: 0;
+	  }
+	}
+  }
+
+//   flexbox для текстового контенту і картинки 
+  .rooms__wrap-top {
+	margin-bottom: 32px;
+
+	@include tablet {
+		display: flex;
+		}
+
+	// @media screen and (min-width: $tablet) {
+	//   display: flex;
+	// }
+  
+	// у другої кімнати реверсне розташування картинки і текстового контенту
+	.rooms__item:nth-child(2n) & {
+	  flex-direction: row-reverse;
+	}
+  }
   
