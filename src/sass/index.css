@@ -123,20 +123,26 @@ button {
 
 .footer-section {
   background-color: #0E0C07;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .footer-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 .footer {
   display: flex;
+  margin: 0;
 }
 @media screen and (max-width: 1023px) {
   .footer {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 }
 
-.logo-container {
-  padding-top: 98px;
-}
 @media screen and (min-width: 414px) {
   .logo-container {
     min-width: 271px;
@@ -145,13 +151,11 @@ button {
 @media screen and (min-width: 1024px) {
   .logo-container {
     min-width: 519px;
-    padding-top: 117px;
   }
 }
 @media screen and (min-width: 1280px) {
   .logo-container {
     min-width: 649px;
-    padding-top: 120px;
   }
 }
 
@@ -159,11 +163,11 @@ button {
   display: block;
   text-align: center;
   color: #f3c653;
-  font-family: "Film P3";
-  font-weight: 700;
   font-size: 40px;
   line-height: 1.075;
-  letter-spacing: 0.03em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  font-family: "Film P3";
 }
 @media screen and (min-width: 1024px) {
   .footer__logo {
@@ -171,10 +175,6 @@ button {
   }
 }
 
-.nav-social-container {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
 @media screen and (min-width: 414px) {
   .nav-social-container {
     min-width: 142px;
@@ -183,19 +183,17 @@ button {
 @media screen and (min-width: 1024px) {
   .nav-social-container {
     display: flex;
-    padding: 0;
-    border: none;
   }
 }
 
-.footer-nav {
-  margin-bottom: 33px;
+@media screen and (max-width: 1023px) {
+  .footer-nav {
+    margin-bottom: 33px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .footer-nav {
     min-width: 239px;
-    padding-top: 80px;
-    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -204,31 +202,22 @@ button {
   }
 }
 
-.footer-nav__item {
+.footer-nav__item:not(:last-child) {
   margin-bottom: 16px;
-}
-.footer-nav__item:last-child {
-  margin-bottom: 0;
 }
 
 .footer-nav__link {
   color: #f3c653;
   font-family: "Montserrat", "sans-serif";
   font-size: 20px;
-  font-weight: 500;
   line-height: 1.2;
+  font-weight: 500;
   letter-spacing: 0.02em;
-}
-
-@media screen and (min-width: 1024px) {
-  .social-icons {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
 }
 
 .social-icons__list {
   display: flex;
+  gap: 23px;
 }
 @media screen and (min-width: 1024px) {
   .social-icons__list {
@@ -236,21 +225,9 @@ button {
   }
 }
 
-.social-icons__item {
-  margin-right: 23px;
-}
 @media screen and (min-width: 1024px) {
-  .social-icons__item {
+  .social-icons__item:not(:last-child) {
     margin-bottom: 12px;
-    margin-right: 0;
-  }
-}
-.social-icons__item:last-child {
-  margin-right: 0;
-}
-@media screen and (min-width: 1024px) {
-  .social-icons__item:last-child {
-    margin-bottom: 0;
   }
 }
 
@@ -273,8 +250,8 @@ button {
   color: #f3c653;
   font-family: "Montserrat";
   font-size: 16px;
+  line-height: 1.2;
   font-weight: 400;
-  line-height: 1.25;
   letter-spacing: 0.02em;
 }
 @media screen and (min-width: 1024px) {
