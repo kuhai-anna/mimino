@@ -215,4 +215,31 @@
 	  flex-direction: row-reverse;
 	}
   }
+
+//   обгортка для нижньої частини кімнати (слайдер + кнопки "Детальніше", "Переглянути ціни")
+  .rooms__wrap-bottom {
+	min-width: 0;
+	@include tablet {
+		// min-width: 0;
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+		}
+
+	// @media screen and (min-width: $tablet) {
+	//   min-width: 0;
+	//   display: flex;
+	//   align-items: center;
+	//   justify-content: space-between;
+	// }
+  
+	// Трьохмісний номер: реверсний порядок розташування слайдеру і кнопок "Детальніше"+ "Переглянути ціни"
+	.rooms__item:nth-child(2n) & {
+	  flex-direction: row-reverse;
+	}
+  }
+
+  .rooms__item-btn:not(:last-child) {
+	margin-bottom: 16px;
+  }
   
