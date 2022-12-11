@@ -100,7 +100,6 @@ button {
   max-width: 384px;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 1024px) {
   .amenities {
     max-width: 930px;
@@ -111,6 +110,7 @@ button {
     max-width: 1110px;
   }
 }
+
 .amenities__title {
   text-transform: uppercase;
   font-family: "Times New Roman";
@@ -145,12 +145,12 @@ button {
   color: #7a7a7a;
   margin: 0;
 }
-
 @media screen and (min-width: 1024px) {
   .amenities__text {
     width: 400px;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .amenities__text-title {
     width: 757px;
@@ -159,12 +159,12 @@ button {
 .amenities__2text {
   margin-top: 16px;
 }
-
 @media screen and (min-width: 1024px) {
   .amenities__2text {
     margin-top: 0;
   }
 }
+
 .amenities__subtitle {
   text-transform: uppercase;
   font-family: "Times New Roman";
@@ -189,13 +189,13 @@ button {
   flex-direction: column;
   margin-top: 32px;
 }
-
 @media screen and (min-width: 1024px) {
   .amenities__nav {
     width: 434px;
     margin-left: auto;
   }
 }
+
 .amenities__btn {
   background: #000000;
   border: 1px solid #f3c653;
