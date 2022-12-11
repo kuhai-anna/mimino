@@ -96,6 +96,7 @@
 	//   margin-bottom: 24px;
 	//  }
 
+	// кожній другій кімнаті секції заголовок - справа
 	.rooms__item:nth-child(2n) & {
 	  text-align: end;
 	}
@@ -104,3 +105,60 @@
   .rooms__title-low {
 	text-transform: lowercase;
   }
+
+  .rooms__desc {
+	display: block;
+	max-width: 242px;
+	margin-bottom: 32px;
+
+	font-family: $montserrat-font;
+	@include font(12px, 1.25, 600, 0.02em);
+
+	color: $color-text-about;
+	
+	@include tablet {
+		font-size: 16px;
+		max-width: 439px;
+		}
+  
+	// @media screen and (min-width: $tablet) {
+	//   font-size: 16px;
+	//   max-width: 439px;
+	// }
+  
+	.rooms__item:nth-child(2n) & {
+	  margin: 0 auto;
+	  margin-left: 5px;
+	}
+  }
+
+//   обгортка для тестового контенту блоку кімнати, для позиціонування
+  .rooms__desc-wrap {
+	@media screen and (max-width: 1023px) {
+	  margin-bottom: 32px;
+	}
+
+	@include tablet {
+		margin-right: 26px;
+		}
+
+	@include desktop {
+		margin-right: 48px;
+		  }	
+
+	// @media screen and (min-width: $tablet) {
+	//   margin-right: 26px;
+	// }
+    
+	// @media screen and (min-width: $desktop) {
+	//   margin-right: 48px;
+	// }
+   
+
+	// в кожній другій кімнаті секціі текстовий контент - праворуч
+	.rooms__item:nth-child(2n) & {
+	  margin-right: 0;
+	  margin-left: 45px;
+	}
+  }
+  
