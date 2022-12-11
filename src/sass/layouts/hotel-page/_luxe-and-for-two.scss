@@ -1,0 +1,106 @@
+.rooms__item {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	background-color: $background-main-light;
+
+	@include tablet {
+			padding-top: 62px;
+			padding-bottom: 40px;	
+	}
+
+	@include desktop {
+			padding-top: 72px;
+	}
+    
+	// Кожному другому блоку секції (кімнаті) змінюємо фон
+	&:nth-child(2n) {
+		background-color: $background-main-gray;
+	  }
+  
+	// @media screen and (min-width: $tablet) {
+	//   padding-top: 62px;
+	//   padding-bottom: 40px;
+	// }
+	// @media screen and (min-width: $desktop) {
+	//   padding-top: 72px;
+	// }
+  
+  }
+
+  .rooms__hotel-logo {
+
+	color: $color-logo-dark;
+	margin-bottom: 32px;
+
+	@include tablet {
+			margin-bottom: 62px;
+	  }
+	  
+	  @include desktop {
+			margin-bottom: 72px;
+	  }
+  
+	// @media screen and (min-width: $tablet) {
+	//   margin-bottom: 62px;
+	// }
+	// @media screen and (min-width: $desktop) {
+	//   margin-bottom: 72px;
+	// }
+  }
+
+   .rooms__subtitle {
+    
+	@include tablet {
+		margin-bottom: 4px;
+	  }
+
+	// @media screen and (min-width: $tablet) {
+	//   margin-bottom: 4px;
+	// }
+	.rooms__item:nth-child(2n) & {
+	  text-align: end;
+	}
+  }
+
+  .rooms__title {
+	font-family: $times-font;
+	@include font(24px, 1.17, 700, 0.05em);
+
+	// font-weight: 700;
+	// font-size: 24px;
+	// line-height: 1.17;
+	// letter-spacing: 0.05em;
+
+    text-transform: uppercase;
+	color: $color-title-dark;
+	margin-bottom: 12px;
+
+	@include tablet {
+	  font-size: 30px;
+	  line-height: 1.13;
+	  margin-bottom: 16px;
+	  }
+	  
+	  @include desktop {
+		font-size: 36px;
+		margin-bottom: 24px;
+	  }
+  
+	// @media screen and (min-width: $tablet) {
+	//   font-size: 30px;
+	//   line-height: 1.13;
+	//   margin-bottom: 16px;
+	// }
+	// @media screen and (min-width: $desktop) {
+	//   font-size: 36px;
+	//   margin-bottom: 24px;
+	//  }
+
+	.rooms__item:nth-child(2n) & {
+	  text-align: end;
+	}
+  }
+  
+  .rooms__title-low {
+	text-transform: lowercase;
+  }
