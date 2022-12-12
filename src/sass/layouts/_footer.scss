@@ -21,17 +21,17 @@ justify-content: flex-start;
   @include mobile {
         // min-width: 256px;
         margin-left: 44px;
-        margin-right: 85px;
+        margin-right: 70px;
     }
     @include tablet {
         // min-width: 504px;
         margin-left: 139px;
-        margin-right: 163px;
+        margin-right: 150px;
            }
     @include desktop {
         // min-width: 634px;
         margin-left: 200px;
-        margin-right: 231px;
+        margin-right: 218px;
            }
 }
 
@@ -39,7 +39,7 @@ justify-content: flex-start;
     display: block;
     text-align: center;
     color:$accent-color ;
-    @include font(40px, 1.075, 500, 0.3em);
+    @include font(40px, 1.075, 700, 0.3em);
     font-family: 'Film P3';
         @include tablet {
         font-size: 64px;
