@@ -17,16 +17,10 @@
 		background-color: $background-main-gray;
 	  }
   
-	// @media screen and (min-width: $tablet) {
-	//   padding-top: 62px;
-	//   padding-bottom: 40px;
-	// }
-	// @media screen and (min-width: $desktop) {
-	//   padding-top: 72px;
-	// }
   
   }
 
+//   MIMIHO
   .rooms__hotel-logo {
 
 	color: $color-logo-dark;
@@ -39,40 +33,42 @@
 	  @include desktop {
 			margin-bottom: 72px;
 	  }
-  
-	// @media screen and (min-width: $tablet) {
-	//   margin-bottom: 62px;
-	// }
-	// @media screen and (min-width: $desktop) {
-	//   margin-bottom: 72px;
-	// }
+
+	//   Трьохмісна кімната - дзеркальне розташування Лого праворуч
+	  .rooms__item:nth-child(2n) & {
+
+		// Лого не стає як на макеті
+		text-align: end;
+	  } 
   }
 
+// Amet minim mollit non  
    .rooms__subtitle {
+	margin-bottom: 8px;
     
 	@include tablet {
 		margin-bottom: 4px;
 	  }
 
-	// @media screen and (min-width: $tablet) {
-	//   margin-bottom: 4px;
-	// }
-	.rooms__item:nth-child(2n) & {
+
+	.rooms__item:nth-child(2n) & {	
 	  text-align: end;
+
+	  @include tablet {
+		text-align: center;
+	  }
+
 	}
   }
 
+//   Назва номеру кімнати 
   .rooms__title {
 	font-family: $times-font;
 	@include font(24px, 1.17, 700, 0.05em);
-
-	// font-weight: 700;
-	// font-size: 24px;
-	// line-height: 1.17;
-	// letter-spacing: 0.05em;
-
     text-transform: uppercase;
+
 	color: $color-title-dark;
+
 	margin-bottom: 12px;
 
 	@include tablet {
@@ -85,20 +81,14 @@
 		font-size: 36px;
 		margin-bottom: 24px;
 	  }
-  
-	// @media screen and (min-width: $tablet) {
-	//   font-size: 30px;
-	//   line-height: 1.13;
-	//   margin-bottom: 16px;
-	// }
-	// @media screen and (min-width: $desktop) {
-	//   font-size: 36px;
-	//   margin-bottom: 24px;
-	//  }
 
 	// кожній другій кімнаті секції заголовок - справа
 	.rooms__item:nth-child(2n) & {
-	  text-align: end;
+
+		@media  screen and (max-width: 1023px) {
+			text-align: end;		
+		}
+	
 	}
   }
   
@@ -121,14 +111,15 @@
 		max-width: 439px;
 		}
   
-	// @media screen and (min-width: $tablet) {
-	//   font-size: 16px;
-	//   max-width: 439px;
-	// }
-  
+
 	.rooms__item:nth-child(2n) & {
+	  	// опис кімнати центрується, але як на макеті не стає
 	  margin: 0 auto;
-	  margin-left: 5px;
+
+	  @include tablet {
+      margin-right: auto;
+	  }
+	  
 	}
   }
 
@@ -146,19 +137,14 @@
 		margin-right: 48px;
 		  }	
 
-	// @media screen and (min-width: $tablet) {
-	//   margin-right: 26px;
-	// }
-    
-	// @media screen and (min-width: $desktop) {
-	//   margin-right: 48px;
-	// }
-   
 
 	// в кожній другій кімнаті секціі текстовий контент - праворуч
 	.rooms__item:nth-child(2n) & {
-	  margin-right: 0;
-	  margin-left: 45px;
+	 @include tablet {
+	margin-right: 0;
+	margin-left: 45px;
+	 }	
+	  
 	}
   }
 
@@ -170,26 +156,18 @@
 	box-shadow: 2px 2px 60px 2px $color-shadow;
 	border-radius: 2px;
 
-	// картинка виступає вверх за межі блоку
+	// картинка виступає вверх за межі блоку кімнати
 	@include tablet {
 		position: relative;
+		// padding-top: 62px - блоку секції + 32px картинка вверх 
 	    top: -94px;
 		}
+		@include desktop {
+			// padding-top: 72px - блоку секції + 32px картинка вверх 
+			top: -104px;
+			}	
 
-	@include desktop {
-		top: -104px;
-		  }	
 
-
-  
-	// @media screen and (min-width: $tablet) {
-	//   position: relative;
-	//   top: -94px;
-	// }
-	// @media screen and (min-width: $desktop) {
-	//   top: -104px;
-	// }
-  
 	// у кожної другої кімнати секції картинка зліва
 	.rooms__item:nth-child(2n) & {
 	  @media screen and (max-width: 1023px) {
@@ -206,10 +184,6 @@
 		display: flex;
 		}
 
-	// @media screen and (min-width: $tablet) {
-	//   display: flex;
-	// }
-  
 	// у другої кімнати реверсне розташування картинки і текстового контенту
 	.rooms__item:nth-child(2n) & {
 	  flex-direction: row-reverse;
@@ -226,13 +200,7 @@
 	  justify-content: space-between;
 		}
 
-	// @media screen and (min-width: $tablet) {
-	//   min-width: 0;
-	//   display: flex;
-	//   align-items: center;
-	//   justify-content: space-between;
-	// }
-  
+
 	// Трьохмісний номер: реверсний порядок розташування слайдеру і кнопок "Детальніше"+ "Переглянути ціни"
 	.rooms__item:nth-child(2n) & {
 	  flex-direction: row-reverse;
