@@ -204,6 +204,7 @@ button {
   padding-bottom: 20px;
   text-transform: uppercase;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .amenities__btn:hover {
   background: #f3c653;
@@ -217,6 +218,7 @@ button {
   line-height: 24px;
   color: #ffffff;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .amenities__btn-text:hover {
   color: #000000;
