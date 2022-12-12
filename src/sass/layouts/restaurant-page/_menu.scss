@@ -1,0 +1,192 @@
+// закоментоване нижще правило це сітка таблиці, для більш легкої перевірки усіх відступів
+
+// td, 
+// tr {
+//     border: 1px solid #2a2a2a;
+// }
+
+.dishes,
+.dishes__type,
+.dishes__desc,
+.dishes__name,
+.dishes__ingredients,
+.dishes__weight,
+.dishes__price {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+
+.restaraunt-menu {
+    padding: 32px 0;
+    background-color: $background-main-light;
+
+    @media screen and (min-width: $tablet) {
+        padding: 58px 0 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 58px 0 60px;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .restaraunt-menu__container {
+        display: flex;
+    }
+
+    .restaraunt-menu__container--left {
+        margin-right: 88px;
+    }
+}
+
+
+.restaraunt-menu__header {
+    margin-bottom: 32px;
+
+    // Стилі тексту
+    text-transform: uppercase;
+    font-family: $times-font;
+    @include font (32px, 1.16, 700, null);
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 40px;
+    }
+}
+
+
+.dishes {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+.dishes:not(:last-child) {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 20px;
+    }
+}
+
+
+.appetizers {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 0;
+    }
+}
+
+
+.dishes__desc {
+    padding-bottom: 8px;
+
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 12px;
+    }
+}
+
+
+.dishes__desc--noPadding {
+    padding-bottom: 0;
+}
+
+
+.dishes__type {
+    margin-bottom: 16px;
+
+    // Стилі тексту
+    font-family: $times-font;
+    @include font (20px, 1.15, 700, null);
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        @include font (24px, 1.17, 700, null);
+    }
+}
+
+
+.dishes__name {
+    margin-bottom: 4px;
+
+    // Стилі тексту
+    font-family: $montserrat-font;
+    @include font (14px, 1.21, 500, 0.02em);
+
+    @media screen and (min-width: $desktop) {
+        @include font (16px, 1.25, 500, 0.02em);
+    }
+}
+
+
+.desserts__name,
+.drinks__name {
+    margin-bottom: 0;
+}
+
+
+.dishes__ingredients {
+    // Стилі тексту
+    font-family: $montserrat-font;
+    @include font (10px, 1.2, 400, 0.02em);
+}
+
+
+.dishes__weight {
+    margin-right: 32px;
+    margin-left: 32px;
+
+    // Стилі тексту
+    white-space: nowrap;
+    font-family: $montserrat-font;
+    @include font (14px, 1.21, 300, 0.02em);
+
+    @media screen and (min-width: $tablet) {
+        margin-left: 39px;
+        margin-right: 47px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 26px;
+        margin-right: 49px;
+    }
+}
+
+
+.dishes__price {
+
+    // Стилі тексту
+    white-space: nowrap;
+    font-family: $montserrat-font;
+    @include font (14px, 1.21, 700, 0.02em);
+
+    @media screen and (min-width: $desktop) {
+        @include font (16px, 1.25, 700, 0.02em);
+    }
+}
+
+
+.desserts__desc,
+.drinks__desc {
+    width: 225px;
+
+    @media screen and (min-width: $desktop) {
+        width: 315px;
+    }
+}
+
+
+.book-table {
+    margin: 32px auto 0;
+
+    @media screen and (min-width: $tablet) {
+        margin: 40px 0 0 auto;
+    }
+}
