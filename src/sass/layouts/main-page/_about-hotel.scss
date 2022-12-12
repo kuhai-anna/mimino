@@ -1,0 +1,244 @@
+// секція
+// .container {
+//   outline: 1px solid green;
+// }
+.about-section {
+  height: 1191px;
+  padding-top: 16px;
+  background-color: $background-main-light;
+  &--reverce {
+    padding-top: 18px;
+  }
+  @include tablet {
+    height: 1238px;
+    padding-top: 120px;
+  }
+  @include desktop {
+    height: 1275px;
+  }
+}
+// логоти та підзаголовок до логотипу розміщення логотипу
+.about {
+  position: relative;
+  &__logo {
+    color: $color-logo-dark;
+    margin-bottom: 12px;
+
+    @include tablet {
+      margin-bottom: 24px;
+    }
+
+    &--reverse {
+      margin-bottom: 16px;
+
+      @media screen and (max-width: 413px) {
+        text-align: start;
+      }
+      @include mobile {
+        margin-left: 257px;
+      }
+
+      @include tablet {
+        margin-bottom: 24px;
+        margin-left: 726px;
+      }
+      @include desktop {
+        margin-left: 908px;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 12px;
+    @include tablet {
+      margin-bottom: 4px;
+    }
+    &--reverse {
+      margin-bottom: 6px;
+      @media screen and (max-width: 413px) {
+        text-align: start;
+      }
+      @include mobile {
+        text-align: right;
+      }
+
+      @include tablet {
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+
+// зміна коляру лише для першої сторінки
+.about-home {
+  @include desktop {
+    color: $color-logo-gray;
+  }
+}
+
+// розміщення - тексту (порядок)
+// спочатку весь блок
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1023px) {
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+  @include tablet {
+    gap: 338px;
+    margin-bottom: 154px;
+  }
+  @include desktop {
+    gap: 348px;
+    margin-bottom: 119px;
+
+    &.reverse {
+      gap: 331px;
+      margin-bottom: 116px;
+    }
+  }
+}
+// окремо кожний підблок
+.about-item {
+  display: flex;
+  &:first-child {
+    gap: 28px;
+    flex-wrap: wrap;
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+  }
+  &:nth-child(even) {
+    @media screen and (max-width: 413px) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    // justify-content: start;
+    flex-direction: row-reverse;
+    gap: 20px;
+    &.reverse {
+      flex-direction: row;
+      gap: 21px;
+    }
+  }
+}
+
+// текст біля картинок
+.about-text {
+  @include font(12px, 1.25, 600, 0.02em);
+
+  color: $color-text-about;
+
+  max-width: 258px;
+  &.reverse {
+    max-width: 242px;
+  }
+
+  @include tablet {
+    font-size: 16px;
+    max-width: 439px;
+    &.reverse {
+      max-width: 419px;
+      margin-left: 511px;
+    }
+  }
+  @include desktop {
+    max-width: 518px;
+    &.reverse {
+      max-width: 488px;
+      margin-left: 595px;
+    }
+  }
+}
+
+.about-text--gold {
+  color: $color-text-about_2;
+  max-width: 185px;
+  margin-right: auto;
+  .reverse & {
+    margin-left: auto;
+    margin-right: 0px;
+  }
+
+  @include mobile {
+    max-width: 163px;
+    padding-top: 70px;
+  }
+  @include tablet {
+    max-width: 312px;
+    margin-left: 398px;
+    padding-top: 0;
+    .reverse & {
+      margin-left: 220px;
+    }
+  }
+  @include desktop {
+    margin-left: 500px;
+    .reverse & {
+      margin-left: 294px;
+      max-width: 311px;
+    }
+  }
+}
+
+// картинки
+.about-img {
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  @include tablet {
+    z-index: 999;
+    position: absolute;
+  }
+}
+.first {
+  @media screen and (max-width: 1023px) {
+    margin-left: auto;
+    .reverse & {
+      @media screen and (max-width: 1023px) {
+        margin-right: auto;
+        margin-left: 0;
+      }
+    }
+  }
+  @include tablet {
+    left: 512px;
+    top: -152px;
+    .reverse & {
+      left: 112px;
+      top: -144px;
+    }
+  }
+  @include desktop {
+    left: 640px;
+    top: -153px;
+    .reverse & {
+      left: 180px;
+    }
+  }
+}
+.last {
+  @media screen and (max-width: 413px) {
+    margin-left: auto;
+    .reverse & {
+      margin-left: 0px;
+      margin-right: auto;
+    }
+  }
+  @include tablet {
+    left: 47px;
+    top: 326px;
+    .reverse & {
+      left: 627px;
+    }
+  }
+  @include desktop {
+    left: 85px;
+    // top: 326px;
+    .reverse & {
+      left: 735px;
+    }
+  }
+}
+
+// сліп
