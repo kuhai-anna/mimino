@@ -1,4 +1,4 @@
-.logo {
+.contacts__logo {
   color: $color-logo-dark;
 
   @include tablet {
@@ -14,8 +14,7 @@
   padding: 36px 0 32px 0;
   background-color: $background-main-light;
 
-  @media screen and (max-width: 1023px) {
-    display: flex;
+  @include tablet {
     padding: 56px 0 40px 0;
   }
 
@@ -27,12 +26,13 @@
 .contacts__content {
   @include tablet {
     display: flex;
-    align-items: flex-start;
   }
 }
 
 .mimino-container {
-  margin-bottom: 32px;
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 32px;
+  }
 
   @include tablet {
     margin-right: 100px;
@@ -44,31 +44,64 @@
 }
 
 .contacts__title {
-  margin-top: 16px;
-  margin-bottom: 40px;
+  margin-top: 12px;
+  margin-bottom: 16px;
 
-  font-size: 16px;
-  font-weight: 600;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.02em;
+  @include font(15px, 1.2, 600, 0.02em);
 
   color: $color-text-about;
 
+  @include mobile {
+    @include font(16px, 1.25, 600, 0.02em);
+  }
+
+  @include tablet {
+    margin-top: 8px;
+    margin-bottom: 52px;
+  }
+
   @include desktop {
-    font-size: 20px;
-    line-height: calc(24 / 20);
+    margin-top: 16px;
+    margin-bottom: 40px;
+
+    @include font(20px, 1.2, null, null);
+  }
+}
+
+.mimino-address__item {
+  @media screen and (min-width: 414px) and (max-width: 1023px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.mimino-address__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.mimino-address__item:nth-child(1) {
+  @include tablet {
+    margin-bottom: 24px;
+  }
+}
+
+.mimino-address__item:nth-child(2) {
+  @include tablet {
+    margin-bottom: 48px;
   }
 }
 
 .mimino-address__title {
-  margin-right: auto;
+  margin-bottom: 6px;
+  @include font(18px, 1.2, 500, 0.02em);
 
-  font-size: 20px;
-  font-weight: 500;
-  font-style: normal;
-  line-height: calc(24 / 20);
-  letter-spacing: 0.02em;
   color: $color-text-tips;
+
+  @include mobile {
+    margin-right: auto;
+    margin-bottom: 0;
+    @include font(20px, 1.2, 500, 0.02em);
+  }
 
   @include tablet {
     margin: 0;
@@ -79,14 +112,10 @@
 .mimino-address__link {
   display: inline-flex;
   align-items: center;
-  padding: 7px 8px 7px 8px;
-  text-decoration: none;
+  padding: 8px;
 
-  font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: calc(17 / 14);
-  letter-spacing: 0.02em;
+  @include font(14px, 1.2, 400, 0.02em);
+
   color: $color-text-contacts;
 
   border: 0.5px solid $accent-color;
@@ -94,46 +123,9 @@
   background-color: $backrground-hover-light;
 }
 
-.mimino-address__item {
-  @media screen and (max-width: 1023px) {
-    display: flex;
-    align-items: center;
-
-    &:not(:last-child) {
-      margin-bottom: 16px;
-    }
-  }
-}
-
-.mimino-address__item--restaraunt {
-  @include tablet {
-    margin-bottom: 24px;
-  }
-}
-
-.mimino-address__item--hotel {
-  @include tablet {
-    margin-bottom: 48px;
-  }
-}
-
-.mimino-address__link--address {
-  margin-left: auto;
-
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.01em;
-
-  @media screen and (max-width: 1023px) {
-    width: 200px;
-    padding: 7px 50px 7px 10px;
-  }
-
-  @include tablet {
-    margin: 0;
-  }
+.mimino-address__icon {
+  margin-right: 8px;
+  fill: $color-text-tips;
 }
 
 .tel-container {
@@ -144,17 +136,32 @@
   border-radius: 2px;
   background-color: $backrground-hover-light;
 
-  @media screen and (max-width: 1023px) {
+  @media screen and (min-width: 414px) and (max-width: 1023px) {
     width: 244px;
   }
 }
 
-.mimino-address__link--br {
+.mimino-address__link--address {
+  margin-left: auto;
+
+  @include font(16px, 1.25, 400, 0.01em);
+
+  @media screen and (max-width: 1023px) {
+    width: 217px;
+    padding: 8px 33px 8px 10px;
+  }
+
+  @include tablet {
+    margin: 0;
+  }
+}
+
+.tel-container .mimino-address__link {
   border: none;
   padding: 0;
 }
 
-.mimino-address__link--br:not(:last-child) {
+.tel-container .mimino-address__link:not(:last-child) {
   margin-right: 16px;
 
   @media screen and (max-width: 1023px) {
@@ -162,24 +169,18 @@
   }
 }
 
-.mimino-address__icon {
-  margin-right: 8px;
-  fill: $color-text-tips;
-}
-
-.contacts__map {
-  width: 100%;
-  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-}
-
 .map-responsive {
-  margin: 0 auto;
-  overflow: hidden;
   width: 100%;
   height: 100%;
+  align-self: flex-end;
 
-  @media screen and (max-width: 1023px) {
+  margin: 0 auto;
+  overflow: hidden;
+
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+  @include mobile {
     width: 384px;
     height: 220px;
   }
@@ -192,4 +193,8 @@
   @include desktop {
     width: 634px;
   }
+}
+
+.contacts__map {
+  width: 100%;
 }
