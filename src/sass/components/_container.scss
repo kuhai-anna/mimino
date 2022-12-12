@@ -1,5 +1,7 @@
 // Вносить один з членів команди
 // Загальні стилі для контейнера
+
+// Замінений на цей
 .container {
   min-width: 320px;
   padding: 0 15px;
@@ -7,15 +9,19 @@
   margin-right: auto;
 
   @include mobile {
-    max-width: 414px;
+    max-width: $mobile;
   }
   @include tablet {
-    max-width: 960px;
+    max-width: $tablet;
+    padding: 0 47px;
   }
   @include desktop {
-    max-width: 1140px;
+    max-width: $desktop;
+    padding: 0 85px;
   }
-} 
+}
+
+// Старий варіант
 
 // .container {
 //   min-width: 320px;
@@ -23,16 +29,17 @@
 //   margin-left: auto;
 //   margin-right: auto;
 
-//   @media screen and (min-width: $phone) {
-//     max-width: $phone;
+//   @include mobile {
+//     max-width: 414px;
 //   }
-//   @media screen and (min-width: $tablet) {
-//     max-width: $tablet;
+//   @include tablet {
+//     max-width: 960px;
 //   }
-//   @media screen and (min-width: $desktop) {
-//     max-width: $desktop;
+//   @include desktop {
+//     max-width: 1140px;
 //   }
-// }
+// } 
+
 // .container {
 //   max-width: 414px;
 //   margin: 0 auto;
