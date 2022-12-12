@@ -1,0 +1,213 @@
+.rooms__item {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	background-color: $background-main-light;
+
+	@include tablet {
+			padding-top: 62px;
+			padding-bottom: 40px;	
+	}
+
+	@include desktop {
+			padding-top: 72px;
+	}
+    
+	// Кожному другому блоку секції (кімнаті) змінюємо фон
+	&:nth-child(2n) {
+		background-color: $background-main-gray;
+	  }
+  
+  
+  }
+
+//   MIMIHO
+  .rooms__hotel-logo {
+
+	color: $color-logo-dark;
+	margin-bottom: 32px;
+
+	@include tablet {
+			margin-bottom: 62px;
+	  }
+	  
+	  @include desktop {
+			margin-bottom: 72px;
+	  }
+
+	//   Трьохмісна кімната - дзеркальне розташування Лого праворуч
+	  .rooms__item:nth-child(2n) & {
+
+		// Лого не стає як на макеті
+		text-align: end;
+	  } 
+  }
+
+// Amet minim mollit non  
+   .rooms__subtitle {
+	margin-bottom: 8px;
+    
+	@include tablet {
+		margin-bottom: 4px;
+	  }
+
+
+	.rooms__item:nth-child(2n) & {	
+	  text-align: end;
+
+	  @include tablet {
+		text-align: center;
+	  }
+
+	}
+  }
+
+//   Назва номеру кімнати 
+  .rooms__title {
+	font-family: $times-font;
+	@include font(24px, 1.17, 700, 0.05em);
+    text-transform: uppercase;
+
+	color: $color-title-dark;
+
+	margin-bottom: 12px;
+
+	@include tablet {
+	  font-size: 30px;
+	  line-height: 1.13;
+	  margin-bottom: 16px;
+	  }
+	  
+	  @include desktop {
+		font-size: 36px;
+		margin-bottom: 24px;
+	  }
+
+	// кожній другій кімнаті секції заголовок - справа
+	.rooms__item:nth-child(2n) & {
+
+		@media  screen and (max-width: 1023px) {
+			text-align: end;		
+		}
+	
+	}
+  }
+  
+  .rooms__title-low {
+	text-transform: lowercase;
+  }
+
+  .rooms__desc {
+	display: block;
+	max-width: 242px;
+	margin-bottom: 32px;
+
+	font-family: $montserrat-font;
+	@include font(12px, 1.25, 600, 0.02em);
+
+	color: $color-text-about;
+	
+	@include tablet {
+		font-size: 16px;
+		max-width: 439px;
+		}
+  
+
+	.rooms__item:nth-child(2n) & {
+	  	// опис кімнати центрується, але як на макеті не стає
+	  margin: 0 auto;
+
+	  @include tablet {
+      margin-right: auto;
+	  }
+	  
+	}
+  }
+
+//   обгортка для тестового контенту блоку кімнати, для позиціонування
+  .rooms__desc-wrap {
+	@media screen and (max-width: 1023px) {
+	  margin-bottom: 32px;
+	}
+
+	@include tablet {
+		margin-right: 26px;
+		}
+
+	@include desktop {
+		margin-right: 48px;
+		  }	
+
+
+	// в кожній другій кімнаті секціі текстовий контент - праворуч
+	.rooms__item:nth-child(2n) & {
+	 @include tablet {
+	margin-right: 0;
+	margin-left: 45px;
+	 }	
+	  
+	}
+  }
+
+//   Картинки кімнат
+  .rooms__img {
+	margin-left: auto;
+
+	// background-color: #dadada;
+	box-shadow: 2px 2px 60px 2px $color-shadow;
+	border-radius: 2px;
+
+	// картинка виступає вверх за межі блоку кімнати
+	@include tablet {
+		position: relative;
+		// padding-top: 62px - блоку секції + 32px картинка вверх 
+	    top: -94px;
+		}
+		@include desktop {
+			// padding-top: 72px - блоку секції + 32px картинка вверх 
+			top: -104px;
+			}	
+
+
+	// у кожної другої кімнати секції картинка зліва
+	.rooms__item:nth-child(2n) & {
+	  @media screen and (max-width: 1023px) {
+		margin-left: 0;
+	  }
+	}
+  }
+
+//   flexbox для текстового контенту і картинки 
+  .rooms__wrap-top {
+	margin-bottom: 32px;
+
+	@include tablet {
+		display: flex;
+		}
+
+	// у другої кімнати реверсне розташування картинки і текстового контенту
+	.rooms__item:nth-child(2n) & {
+	  flex-direction: row-reverse;
+	}
+  }
+
+//   обгортка для нижньої частини кімнати (слайдер + кнопки "Детальніше", "Переглянути ціни")
+  .rooms__wrap-bottom {
+	min-width: 0;
+	@include tablet {
+		// min-width: 0;
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+		}
+
+
+	// Трьохмісний номер: реверсний порядок розташування слайдеру і кнопок "Детальніше"+ "Переглянути ціни"
+	.rooms__item:nth-child(2n) & {
+	  flex-direction: row-reverse;
+	}
+  }
+
+  .rooms__item-btn:not(:last-child) {
+	margin-bottom: 16px;
+  }
+  
