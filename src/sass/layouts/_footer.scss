@@ -11,7 +11,6 @@
 .footer {
 display: flex;
 align-items: center;
-justify-content: flex-start;
 @media screen and (max-width: 414px) {
       justify-content: space-around;
     }
@@ -21,17 +20,17 @@ justify-content: flex-start;
   @include mobile {
         // min-width: 256px;
         margin-left: 44px;
-        margin-right: 70px;
+        margin-right: 85px;
     }
     @include tablet {
         // min-width: 504px;
-        margin-left: 139px;
-        margin-right: 150px;
+        margin-left: 107px;
+        margin-right: 163px;
            }
     @include desktop {
         // min-width: 634px;
-        margin-left: 200px;
-        margin-right: 218px;
+        margin-left: 131px;
+        margin-right: 231px;
            }
 }
 
