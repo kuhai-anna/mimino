@@ -1,0 +1,222 @@
+.hero {
+  position: relative;
+
+  padding: 101px 0 102px 0;
+  text-align: center;
+
+  @include tablet {
+    padding: 88px 0 64px 0;
+  }
+  @include desktop {
+    padding: 64px 0 65px 0;
+  }
+}
+
+.overlay {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(to right, $color-gradient, $color-gradient),
+    url('../images/main-page/bg/bg-main-1-mob.jpg');
+  @include retina2x {
+    background-image: linear-gradient(
+        to right,
+        $color-gradient,
+        $color-gradient
+      ),
+      url('../images/main-page/bg/bg-main-1-mob_2x.jpg');
+  }
+
+  @include tablet {
+    max-width: 1024px;
+    background-image: linear-gradient(
+        to right,
+        $color-gradient,
+        $color-gradient
+      ),
+      url('../images/main-page/bg/bg-main-1-tab.jpg');
+    @include retina2x {
+      background-image: linear-gradient(
+          to right,
+          $color-gradient,
+          $color-gradient
+        ),
+        url('../images/main-page/bg/bg-main-1-tab_2x.jpg');
+    }
+  }
+  @include desktop {
+    max-width: 1280px;
+    background-image: linear-gradient(
+        to right,
+        $color-gradient,
+        $color-gradient
+      ),
+      url('../images/main-page/bg/bg-main-1-dt.jpg');
+    @include retina2x {
+      background-image: linear-gradient(
+          to right,
+          $color-gradient,
+          $color-gradient
+        ),
+        url('../images/main-page/bg/bg-main-1-dt_2x.jpg');
+    }
+  }
+}
+
+.hero__title {
+  width: 303px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+
+  font-family: $film-font;
+  @include font(96px, 1.07, 700, 0.3em);
+  color: $color-logo-light;
+  text-transform: uppercase;
+
+  @include tablet {
+    width: 404px;
+    margin-bottom: 16px;
+    font-size: 128px;
+    line-height: 1.08;
+  }
+  @include desktop {
+    margin-bottom: 32px;
+  }
+}
+
+.hero__subtitle {
+  width: 294px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  font-family: $montserrat-font;
+  @include font(16px, 1.25, 600, 0.02em);
+  color: $color-title-light;
+
+  @include tablet {
+    width: 368px;
+    margin-bottom: 56px;
+    @include font(20px, 1.2, null, null);
+  }
+  @include desktop {
+    margin-bottom: 64px;
+  }
+}
+
+.hero__text {
+  margin: 0 auto;
+  margin-bottom: 113px;
+
+  font-family: $times-font;
+  @include font(32px, 1.16, 700, 0.05em);
+  color: $color-title-light;
+  text-transform: uppercase;
+
+  @include tablet {
+    margin-bottom: 145px;
+    @include font(36px, 1.14, null, null);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .hero__button {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .hero__button-mobile-margin {
+    margin-bottom: 24px;
+  }
+}
+
+@include tablet {
+  .hero__button-wrap {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+  }
+}
+
+.hero__address {
+  position: absolute;
+  bottom: 629px;
+  right: 15px;
+
+  display: flex;
+  align-items: center;
+
+  width: 210px;
+  height: 47px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  padding-left: 6px;
+
+  @include tablet {
+    top: 500px;
+    left: 47px;
+
+    width: 285px;
+    height: 56px;
+    padding-left: 10px;
+  }
+  @include desktop {
+    left: 85px;
+  }
+}
+
+.hero__address-icon-mobile {
+  margin-right: 10px;
+  fill: $color-text-links;
+  @include tablet {
+    display: none;
+  }
+}
+
+.hero__address-icon-tablet {
+  margin-right: 10px;
+  fill: $color-text-links;
+  @media screen and (min-width: 414px) and (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.hero__address-link {
+  font-family: $montserrat-font;
+  @include font(12px, 1.25, null, 0.01em);
+  color: $color-text-address;
+  text-align: start;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+.hero__soc-wrap {
+  position: absolute;
+  bottom: 20px;
+
+  @include tablet {
+    top: 581px;
+    left: 47px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.hero__soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 112px;
+  height: 24px;
+}
+
+.hero__soc-icon {
+  fill: $color-text-links;
+}
