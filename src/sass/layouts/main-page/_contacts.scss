@@ -170,11 +170,10 @@
 }
 
 .map-responsive {
-  width: 100%;
+  width: 290px;
   height: 100%;
   align-self: flex-end;
 
-  margin: 0 auto;
   overflow: hidden;
 
   box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
@@ -183,6 +182,7 @@
   @include mobile {
     width: 384px;
     height: 220px;
+    margin: 0 auto;
   }
 
   @include tablet {
@@ -196,5 +196,20 @@
 }
 
 .contacts__map {
-  width: 100%;
+  width: 290px;
+
+  @include mobile {
+    width: 384px;
+    height: 220px;
+    margin: 0 auto;
+  }
+
+  @include tablet {
+    width: 535px;
+    height: 412px;
+  }
+
+  @include desktop {
+    width: 634px;
+  }
 }
