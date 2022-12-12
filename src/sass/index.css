@@ -1,0 +1,441 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.big-btn, .link-btn, .dark-btn, .btn {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.woff), url(../fonts/Montserrat-Regular.ttf);
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Light.woff), url(../fonts/Montserrat-Light.ttf);
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Medium.woff), url(../fonts/Montserrat-Medium.ttf);
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-SemiBold.woff), url(../fonts/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Bold.woff), url(../fonts/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FilmP3";
+  src: url(../fonts/FilmP3Bold.woff), url(../fonts/FilmP3Bold.ttf);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TimesNewRoman";
+  src: url(../fonts/TimesNewRomanPSMT.woff), url(../fonts/TimesNewRomanPSMT.ttf);
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TimesNewRoman";
+  src: url(../fonts/TimesNewRomanPS-BoldMT.woff), url(../fonts/TimesNewRomanPS-BoldMT.ttf);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+body {
+  font-family: "Montserrat", "sans-serif";
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  display: block;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  min-width: 320px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 414px) {
+  .container {
+    max-width: 414px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.logo {
+  font-family: "FilmP3", "sans-serif";
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+}
+@media screen and (min-width: 1024px) {
+  .logo {
+    font-size: 64px;
+  }
+}
+
+.btn {
+  min-width: 236px;
+  height: 48px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  transition-property: background-color;
+}
+.btn:hover, .btn:focus {
+  background-color: #ffffff;
+}
+
+.dark-btn {
+  background-color: #000000;
+  border: 2px solid #fffdee;
+  transition-property: background-color, border-color;
+}
+.dark-btn:hover, .dark-btn:focus {
+  background-color: #ffffff;
+  border-color: #f3c653;
+}
+
+.link-btn {
+  display: block;
+  max-width: 236px;
+  height: 48px;
+  padding: 14px 65px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  background-color: #000000;
+  border: 2px solid #fffdee;
+  border-radius: 25px;
+  transition-property: background-color, border-color;
+}
+.link-btn:hover, .link-btn:focus {
+  background-color: #ffffff;
+  border-color: #f3c653;
+}
+
+.big-btn {
+  width: 100%;
+  height: 64px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.22;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #f3c653;
+  border-radius: 25px;
+  transition-property: color, background-color;
+}
+@media screen and (min-width: 414px) {
+  .big-btn {
+    min-width: 384px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .big-btn {
+    width: 434px;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+.big-btn:hover, .big-btn:focus {
+  color: #000000;
+  background-color: #f3c653;
+}
+
+.submit {
+  border-radius: 2px;
+}
+@media screen and (min-width: 1024px) {
+  .submit {
+    width: 592px;
+  }
+}
+
+.subtitle {
+  font-family: "TimesNewRoman", "sans-serif";
+  font-weight: 400;
+  line-height: 1.15;
+  color: #b4b4b4;
+  font-size: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .subtitle {
+    font-size: 32px;
+  }
+}
+
+.details-restaurant,
+.details-hotel {
+  max-width: 414px;
+  max-height: 735px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+.details-restaurant {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main-page/bg/bg-main-2-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 414px 735px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .details-restaurant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main-page/bg/bg-main-2-mob_2x.jpg);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant {
+    max-width: 1024px;
+    max-height: 620px;
+    padding-top: 48px;
+    padding-bottom: 47px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main-page/bg/bg-main-2-tab.jpg);
+    background-size: contain;
+    background-size: 1024px 620px;
+  }
+}
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+  .details-restaurant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main-page/bg/bg-main-2-tab_2x.jpg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant {
+    max-width: 1280px;
+    max-height: 620px;
+    padding-top: 48px;
+    padding-bottom: 47px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main-page/bg/bg-main-2-dt.jpg);
+    background-size: contain;
+    background-size: 1280px 620px;
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .details-restaurant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main-page/bg/bg-main-2-dt_2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .details-restaurant .container {
+    padding-left: 47px;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant .container {
+    padding-left: 85px;
+    padding-right: 50px;
+  }
+}
+
+.details-restaurant__desc {
+  width: 259px;
+  margin-left: auto;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__desc {
+    width: 610px;
+    margin-left: 231px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant__desc {
+    margin-left: 253px;
+  }
+}
+
+.desc__logo {
+  margin-bottom: 12px;
+  font-family: FilmP3, "sans-serif";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.075;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .desc__logo {
+    margin-bottom: 16px;
+    font-size: 64px;
+    line-height: 1.078125;
+    letter-spacing: 0.3em;
+  }
+}
+
+.desc__title {
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .desc__title {
+    margin-top: 85px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 1.2083333333;
+  }
+}
+
+.desc__lead {
+  margin-bottom: 48px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #bababa;
+}
+@media screen and (min-width: 1024px) {
+  .desc__lead {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.interactiv-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1024px) {
+  .interactiv-wrap {
+    align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .details-restaurant .interactiv-wrap {
+    flex-direction: row-reverse;
+  }
+  .details-restaurant .interactiv-wrap .btn-wrap {
+    margin-left: unset;
+  }
+}
+
+.btn-wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  min-width: 236px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+}
+
+.reserv-table {
+  margin-bottom: 16px;
+}
+
+.view-menu {
+  display: block;
+  padding: 14px 32px 14px 31px;
+  line-height: 1;
+}/*# sourceMappingURL=index.css.map */

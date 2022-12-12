@@ -1,0 +1,291 @@
+.details-restaurant,
+.details-hotel {
+  max-width: 414px;
+  max-height: 735px;
+
+  //   background-color: $dark-bg-section;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+//==================================================== Фонове зображення
+
+.details-restaurant {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/main-page/bg/bg-main-2-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 414px 735px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/main-page/bg/bg-main-2-mob_2x.jpg);
+  }
+
+  @media screen and( min-width:1024px) {
+    max-width: 1024px;
+    max-height: 620px;
+    padding-top: 48px;
+    padding-bottom: 47px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/main-page/bg/bg-main-2-tab.jpg);
+    background-size: contain;
+    background-size: 1024px 620px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/main-page/bg/bg-main-2-tab_2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    max-height: 620px;
+    padding-top: 48px;
+    padding-bottom: 47px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/main-page/bg/bg-main-2-dt.jpg);
+    background-size: contain;
+    background-size: 1280px 620px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/main-page/bg/bg-main-2-dt_2x.jpg);
+    }
+  }
+}
+
+.details-restaurant .container {
+  @media screen and (min-width: 1024px) {
+    padding-left: 47px;
+    padding-right: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 85px;
+    padding-right: 50px;
+  }
+}
+
+// ============================================== Описовий блок
+
+.details-restaurant__desc {
+  width: 259px;
+  margin-left: auto;
+
+  @media screen and (min-width: 1024px) {
+    width: 610px;
+    margin-left: 231px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 253px;
+  }
+}
+
+.desc__logo {
+  margin-bottom: 12px;
+
+  font-family: FilmP3, 'sans-serif';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+
+  color: $color-logo-light;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 16px;
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    letter-spacing: 0.3em;
+  }
+}
+.desc__title {
+  margin-bottom: 20px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+
+  color: $color-logo-light;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: calc(29 / 24);
+  }
+}
+.desc__lead {
+  margin-bottom: 48px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+
+  color: $color-text-details;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+}
+.interactiv-wrap {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 1024px) {
+    // flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+}
+
+.details-restaurant .interactiv-wrap {
+  @media screen and (min-width: 1024px) {
+    flex-direction: row-reverse;
+    & .btn-wrap {
+      margin-left: unset;
+    }
+  }
+}
+
+.btn-wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  min-width: 236px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: $accent-color;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+
+  // &:hover,
+  // &:focus {
+  //   background-color: $hover-bgcolor-small-btn;
+  // }
+}
+
+.reserv-table {
+  margin-bottom: 16px;
+}
+
+.view-menu {
+  display: block;
+  padding: 14px 32px 14px 31px;
+  line-height: 1;
+}
+
+// *================================СЛАЙДЕР==========================
+
+.slider {
+  margin-bottom: 24px;
+  position: relative;
+  left: 25px;
+
+  width: 374px;
+  height: 270px;
+  min-width: 0;
+
+  @media screen and (min-width: 1024px) {
+    left: 0;
+    width: 662px;
+    height: 270px;
+    margin-bottom: 32;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 875px;
+  }
+}
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+  gap: 20px;
+
+  @media screen and (min-width: 1024px) {
+    gap: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 87px;
+  }
+}
+
+//* ================================СТРІЛКИ=====================
+.interactiv-wrap .slider__arrows {
+  //   position: absolute;
+  //   width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 33px;
+  //   bottom: 0;
+
+  margin-bottom: 40px;
+  margin-left: 25px;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.slider + .slider__arrows .slick-prev {
+  position: unset;
+  transform: translate(0, 0);
+
+  height: 17px;
+  width: 30px;
+  left: 0;
+  font-size: 0;
+
+  // background: url('../image/icons/arrow-left.svg') 0 0 no-repeat;
+  border: none;
+}
+.slider + .slider__arrows .slick-next {
+  position: unset;
+  transform: translate(0, 0);
+
+  height: 17px;
+  width: 30px;
+  right: 0;
+  font-size: 0;
+
+  // background: url('../image/icons/arrow-right.svg') 0 0 no-repeat;
+  border: none;
+}
+
+// .slider + .slider__arrows .slick-prev::before {
+//   content: unset;
+//   top: 100%;
+// }
+// .slider + .slider__arrows .slick-next::before {
+//   content: unset;
+// }
