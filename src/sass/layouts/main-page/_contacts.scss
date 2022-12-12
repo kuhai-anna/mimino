@@ -30,12 +30,15 @@
 }
 
 .mimino-container {
-  @media screen and (max-width: 1023px) {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 414px) and (max-width: 1023px) {
+    width: 384px;
   }
 
   @include tablet {
     margin-right: 100px;
+    margin-bottom: 0;
   }
 
   @include desktop {
@@ -98,7 +101,6 @@
   color: $color-text-tips;
 
   @include mobile {
-    margin-right: auto;
     margin-bottom: 0;
     @include font(20px, 1.2, 500, 0.02em);
   }
@@ -106,6 +108,18 @@
   @include tablet {
     margin: 0;
     margin-bottom: 8px;
+  }
+}
+
+.rest-title {
+  @media screen and (min-width: 414px) and (max-width: 1023px) {
+    margin-right: 22px;
+  }
+}
+
+.hotel-title {
+  @media screen and (min-width: 414px) and (max-width: 1023px) {
+    margin-right: 53px;
   }
 }
 
@@ -196,4 +210,5 @@
 
 .contacts__map {
   width: 100%;
+  height: 100%;
 }
