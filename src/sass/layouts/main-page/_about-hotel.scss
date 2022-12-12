@@ -1,4 +1,7 @@
 // секція
+// .container {
+//   outline: 1px solid green;
+// }
 .about-section {
   height: 1191px;
   padding-top: 16px;
@@ -26,11 +29,21 @@
     }
 
     &--reverse {
-      text-align: right;
       margin-bottom: 16px;
+
+      @media screen and (max-width: 413px) {
+        text-align: start;
+      }
+      @include mobile {
+        margin-left: 257px;
+      }
 
       @include tablet {
         margin-bottom: 24px;
+        margin-left: 726px;
+      }
+      @include desktop {
+        margin-left: 908px;
       }
     }
   }
@@ -41,8 +54,13 @@
       margin-bottom: 4px;
     }
     &--reverse {
-      text-align: right;
       margin-bottom: 6px;
+      @media screen and (max-width: 413px) {
+        text-align: start;
+      }
+      @include mobile {
+        text-align: right;
+      }
 
       @include tablet {
         margin-bottom: 4px;
@@ -92,6 +110,10 @@
     }
   }
   &:nth-child(even) {
+    @media screen and (max-width: 413px) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
     // justify-content: start;
     flex-direction: row-reverse;
     gap: 20px;
@@ -104,10 +126,7 @@
 
 // текст біля картинок
 .about-text {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
+  @include font(12px, 1.25, 600, 0.02em);
 
   color: $color-text-about;
 
@@ -121,7 +140,7 @@
     max-width: 439px;
     &.reverse {
       max-width: 419px;
-      margin-left: 541px;
+      margin-left: 511px;
     }
   }
   @include desktop {
@@ -135,14 +154,21 @@
 
 .about-text--gold {
   color: $color-text-about_2;
-  @media screen and (max-width: 1023px) {
+  max-width: 185px;
+  margin-right: auto;
+  .reverse & {
+    margin-left: auto;
+    margin-right: 0px;
+  }
+
+  @include mobile {
     max-width: 163px;
     padding-top: 70px;
   }
-
   @include tablet {
     max-width: 312px;
     margin-left: 398px;
+    padding-top: 0;
     .reverse & {
       margin-left: 220px;
     }
@@ -176,24 +202,41 @@
     }
   }
   @include tablet {
-    left: 480px;
+    left: 512px;
     top: -152px;
     .reverse & {
-      left: 65px;
+      left: 112px;
       top: -144px;
     }
   }
   @include desktop {
-    left: 570px;
+    left: 640px;
     top: -153px;
+    .reverse & {
+      left: 180px;
+    }
   }
 }
 .last {
+  @media screen and (max-width: 413px) {
+    margin-left: auto;
+    .reverse & {
+      margin-left: 0px;
+      margin-right: auto;
+    }
+  }
   @include tablet {
-    left: 15px;
+    left: 47px;
     top: 326px;
     .reverse & {
-      left: 625px;
+      left: 627px;
+    }
+  }
+  @include desktop {
+    left: 85px;
+    // top: 326px;
+    .reverse & {
+      left: 735px;
     }
   }
 }
