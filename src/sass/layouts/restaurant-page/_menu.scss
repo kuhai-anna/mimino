@@ -48,6 +48,7 @@
     margin-bottom: 32px;
 
     // Стилі тексту
+    text-transform: uppercase;
     font-family: $times-font;
     @include font (32px, 1.16, 700, null);
 
