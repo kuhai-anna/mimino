@@ -1,125 +1,110 @@
 .header {
+    // Позиціюнування
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
     padding-top: 24px;
-    @include mobile {
-        width: 384px;
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-    @include tablet {
-        width: 930px;
-        padding-top: 30px;
-    }
-    @include desktop {
-        width: 1110px;
-    }
 }
 
 .header__container {
+    // Позиціюнування
     width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
-
     @include tablet {}
 }
 
 .header__logo {
+    // Типографіка
     text-decoration: none;
     color: $color-title-light;
     @include font(30px, 1.08, 700, 0.3em);
-
     @include mobile {
         @include font(36px, 1.08, 700, 0.3em);
     }
-
     @include tablet {
         @include font(40px, calc(43/40), 700, 0.3em);
     }
-
     @include desktop {
+        // Позиціюнування
         margin-right: 96px;
     }
 }
 
 .header__contacts {
+    // Позиціюнування
     display: flex;
     align-items: center;
     gap: 13px;
     margin-left: auto;
-
     @include mobile {
+        // Позиціюнування
         gap: 26px;
     }
-
     @include desktop {
+        // Позиціюнування
         gap: 72px;
         margin-left: 0px;
     }
 }
 
-.contacts-list {}
-
 .contacts-list__item {
+    // Позиціюнування
     display: flex;
     align-items: center;
     gap: 6px;
-
     @include mobile {
         gap: 12px;
     }
-
     @include tablet {
         gap: 32px;
     }
 }
 
 .contacts-list__title {
+    // Типографіка
     font-family: $montserrat-font;
     font-style: normal;
+    color: $accent-color;
     @include font(14px, calc(18/14), 500, 0.02em);
-
     @include mobile {
         @include font(16px, calc(20/16), 500, 0.02em);
     }
-
     @include tablet {
         @include font(20px, calc(24/20), 500, 0.02em);
     }
-
-    color: $accent-color;
 }
 
 .contacts-list__tel {
-    @include tablet {
-        border: 1px solid rgba(243, 198, 83, 0.7);
-        border-radius: 2px;
-        width: 145px;
-        gap: 14px;
-        padding: 9px 7px 9px 13px;
-    }
-
+    // Позиціюнування
     padding: 9px 0px 9px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    @include tablet {
+        // Оформлення
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+        // Позиціюнування
+        width: 145px;
+        gap: 14px;
+        padding: 9px 7px 9px 13px;
+    }
 }
 
 .contacts-list__tel-long {
+    // Позиціюнування
     width: 12px;
-
     @include tablet {
         width: 264px;
     }
 }
 
 .tel-long__link {
+    // Позиціюнування
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,23 +112,24 @@
 }
 
 .contacts-list__icon {
+    // Позиціюнування
     width: 10px;
     height: 16px;
-
+    // Оформлення
+    fill: $accent-color;
     @include mobile {
         width: 12px;
         height: 20px;
     }
-
-    fill: $accent-color;
 }
 
 .contacts-list__phone-number {
+    // Позиціюнування
     @include tablet {
         display: inline;
     }
-
     display: none;
+    // Типографіка
     font-family: $montserrat-font;
     font-style: normal;
     @include font(14px, calc(17/14), 400, 0.02em);
@@ -151,27 +137,25 @@
 }
 
 .header-soc-list {
+    // Позиціюнування
     display: none;
     align-items: center;
     gap: 20px;
     margin-left: auto;
-
     @include desktop {
         display: flex;
     }
 }
 
-.header-soc-list__item {}
-
-.header-soc-list__link {}
-
 .header-soc-list__icon {
+    // Позиціюнування
     width: 22px;
     height: 22px;
+    // Оформлення
     fill: rgba(243, 198, 83, 0.7);
     transform: fill;
     @extend %transition;
-
+    // Анімація
     &:hover,
     &:focus {
         fill: $accent-color;
