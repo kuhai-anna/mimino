@@ -164,35 +164,12 @@
   margin-right: auto;
 }
 
-.btn {
-  min-width: 236px;
-  height: 48px;
-  margin-left: auto;
-  margin-right: auto;
-
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.02em;
-  color: $accent-color;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-
-  // &:hover,
-  // &:focus {
-  //   background-color: $hover-bgcolor-small-btn;
-  // }
-}
-
 .reserv-table {
   margin-bottom: 16px;
 }
 
 .view-menu {
-  display: block;
-  padding: 14px 32px 14px 31px;
+  padding: 14px 29px 14px 30px;
   line-height: 1;
 }
 
