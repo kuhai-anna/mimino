@@ -43,8 +43,7 @@
     text-align: center;
     color: $accent-color ;
     @include font(40px, 1.075, 700, 0.3em);
-    font-family: 'Film P3';
-
+    
     @include tablet {
         font-size: 64px;
     }

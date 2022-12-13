@@ -723,7 +723,6 @@ button {
   line-height: 1.075;
   font-weight: 700;
   letter-spacing: 0.3em;
-  font-family: "Film P3";
 }
 @media screen and (min-width: 1024px) {
   .footer__logo {
