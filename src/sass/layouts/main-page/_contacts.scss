@@ -149,10 +149,6 @@
   border: 0.5px solid $accent-color;
   border-radius: 2px;
   background-color: $backrground-hover-light;
-
-  @media screen and (min-width: 414px) and (max-width: 1023px) {
-    width: 244px;
-  }
 }
 
 .mimino-address__link--address {
@@ -161,7 +157,7 @@
   @include font(16px, 1.25, 400, 0.01em);
 
   @media screen and (max-width: 1023px) {
-    width: 217px;
+    max-width: 260px;
     padding: 8px 33px 8px 10px;
   }
 
