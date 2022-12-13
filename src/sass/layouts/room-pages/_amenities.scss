@@ -75,11 +75,9 @@
 .amenities__btn {
   max-width: 384px;
   margin-bottom: 20px;
-  font-style: 20px;
   @include tablet {
     width: 434px;
     margin-bottom: 32px;
-    font-style: 24px;
   }
 }
 
