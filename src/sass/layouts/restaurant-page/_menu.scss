@@ -91,6 +91,17 @@
 }
 
 
+.desserts__desc,
+.drinks__desc {
+    width: 225px;
+
+    @media screen and (min-width: $desktop) {
+        width: 315px;
+        padding-bottom: 9px;
+    }
+}
+
+
 .dishes__desc--noPadding {
     padding-bottom: 0;
 }
@@ -169,16 +180,6 @@
 
     @media screen and (min-width: $desktop) {
         @include font (16px, 1.25, 700, 0.02em);
-    }
-}
-
-
-.desserts__desc,
-.drinks__desc {
-    width: 225px;
-
-    @media screen and (min-width: $desktop) {
-        width: 315px;
     }
 }
 
