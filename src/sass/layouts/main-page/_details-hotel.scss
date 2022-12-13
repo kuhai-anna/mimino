@@ -1,0 +1,167 @@
+.details-hotel {
+  max-height: 735px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/main-page/bg/bg-main-3-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 414px 735px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/main-page/bg/bg-main-3-mob_2x.jpg);
+  }
+
+  @media screen and( min-width:1024px) {
+    // max-width: 1024px;
+    max-height: 620px;
+    padding-top: 48px;
+    padding-bottom: 47px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/main-page/bg/bg-main-3-tab.jpg);
+    background-size: 1024px 620px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/main-page/bg/bg-main-3-tab_2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    // max-width: 1280px;
+    max-height: 620px;
+    padding-top: 48px;
+    padding-bottom: 47px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/main-page/bg/bg-main-3-dt.jpg);
+    background-size: 1280px 620px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/main-page/bg/bg-main-3-dt_2x.jpg);
+    }
+  }
+}
+
+.details-hotel__desc {
+  width: 243px;
+  text-align: right;
+  margin-right: auto;
+  margin-left: 17px;
+
+  @media screen and (min-width: 1024px) {
+    width: 549px;
+
+    margin-left: 150px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 595px;
+    margin-left: 295px;
+  }
+}
+
+.desc__lead.text-align {
+  text-align: left;
+}
+
+.reserv-room {
+  margin-bottom: 16px;
+}
+.view-price {
+  display: block;
+  padding: 14px 37px;
+  line-height: 1;
+}
+
+// *================================   СЛАЙДЕР   ==========================
+.slider-left {
+  margin-bottom: 24px;
+  position: relative;
+  left: -15px;
+
+  width: 374px;
+  height: 270px;
+  min-width: 0;
+
+  @media screen and (min-width: 1024px) {
+    left: 0;
+    width: 662px;
+    height: 270px;
+    margin-bottom: 32;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 875px;
+  }
+}
+
+// *====================================   СТРІЛКИ   ======================
+.interactiv-wrap .slider-left__arrows {
+  //   position: absolute;
+  //   width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 33px;
+  justify-content: end;
+  //   bottom: 0;
+
+  margin-bottom: 40px;
+  margin-right: 25px;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.slider-left + .slider-left__arrows .slick-prev {
+  position: unset;
+  transform: translate(0, 0);
+
+  height: 17px;
+  width: 30px;
+  left: 0;
+  font-size: 0;
+
+  //   background: url('../image/icons/arrow-left.svg') 0 0 no-repeat;
+  border: none;
+}
+.slider-left + .slider-left__arrows .slick-next {
+  position: unset;
+  transform: translate(0, 0);
+
+  height: 17px;
+  width: 30px;
+  right: 0;
+  font-size: 0;
+
+  //   background: url('../image/icons/arrow-right.svg') 0 0 no-repeat;
+  border: none;
+}
+.details-hotel .interactiv-wrap {
+  @media screen and (min-width: 1024px) {
+    & .btn-wrap {
+      margin-right: unset;
+    }
+  }
+}
+
+// .slider-left + .slider-left__arrows .slick-prev::before {
+//   content: unset;
+// }
+// .slider-left + .slider-left__arrows .slick-next::before {
+//   content: unset;
+// }
