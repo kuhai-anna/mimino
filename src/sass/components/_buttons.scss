@@ -1,3 +1,4 @@
+// Маленькі кнопки і посилання
 // Загальні стилі для маленьких кнопок 
 .btn {
     min-width: 236px;
@@ -20,7 +21,7 @@
     }
 }
 
-// Додаткові стилі для чорних кнпок (для чорних кнопок використовувати класи btn i dark-btn разом)
+// Додаткові стилі для чорних кнопок (для чорних кнопок використовувати класи btn i dark-btn разом)
 .dark-btn {
     background-color: $backrground-btn-dark;
     border: 2px solid $border-dark-color;
@@ -35,7 +36,8 @@
     }
 }
 
-// Посилання у вигляді кнопки з написом "Детальніше" (використовувати клас link-btn разом з класом link)
+// Посилання у вигляді кнопок
+// Посилання у вигляді чорної кнопки з написом "Детальніше" (використовувати клас link-btn разом з класом link)
 .link-btn {
     display: block;
     max-width: 236px;
@@ -60,6 +62,31 @@
     }
 }
 
+// Посилання у вигляді прозорої кнопки з написом "Переглянути меню" (використовувати клас link-btn разом з класом link)
+.link-light-btn {
+    display: block;
+    max-width: 236px;
+    height: 48px;
+    padding: 14px 65px;
+
+    font-style: normal;
+    @include font(16px, 1.25, 700, 0.02em);
+
+    color: $accent-color;  
+    background-color: $backrground-btn-light;
+    border: 2px solid $border-light-color;
+    border-radius: 25px;
+
+    transition-property: background-color;
+	@extend %transition;
+
+    &:hover,
+    &:focus {
+        background-color: $backrground-hover-light;
+    }
+}
+
+// Великі кнопки
 // Загальні стилі для великих кнопок
 .big-btn {
     width: 100%;

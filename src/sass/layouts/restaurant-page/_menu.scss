@@ -67,7 +67,7 @@
 .dishes:not(:last-child) {
     margin-bottom: 16px;
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $tablet) {
         margin-bottom: 20px;
     }
 }
@@ -87,6 +87,17 @@
 
     @media screen and (min-width: $desktop) {
         padding-bottom: 12px;
+    }
+}
+
+
+.desserts__desc,
+.drinks__desc {
+    width: 225px;
+
+    @media screen and (min-width: $desktop) {
+        width: 315px;
+        padding-bottom: 9px;
     }
 }
 
@@ -169,16 +180,6 @@
 
     @media screen and (min-width: $desktop) {
         @include font (16px, 1.25, 700, 0.02em);
-    }
-}
-
-
-.desserts__desc,
-.drinks__desc {
-    width: 225px;
-
-    @media screen and (min-width: $desktop) {
-        width: 315px;
     }
 }
 

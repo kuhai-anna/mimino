@@ -9,29 +9,74 @@
 
   <!-- Підключення фавіконки -->
 
-  <link rel="stylesheet" href="./sass/index.scss" />
-  <script type="module" src="./index.js"></script>
-</head>
+    <!-- Підключення стилів слайдера 2 посилання-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <include src="./partials/header.html"></include>
+    <main>
+      <!-- Hero -->
+      <include src="./partials/main-page/hero.html"></include>
+      <!-- About our restaurant -->
+      <include src="./partials/main-page/about-restaurant.html"></include>
+      <!-- Details of our restaurant -->
+      <include src="./partials/main-page/details-restaurant.html"></include>
+      <!-- About our hotel -->
+      <include src="./partials/main-page/about-hotel.html"></include>
+      <!-- Details of our hotel -->
+      <include src="./partials/main-page/details-hotel.html"></include>
+      <!-- Contacts -->
+      <include src="./partials/main-page/contacts.html"></include>
+    </main>
+    <!-- Footer -->
+    <include src="./partials/footer.html"></include>
 
-<body>
-  <!-- Header -->
-  <include src="./partials/header.html"></include>
-  <main>
-    <!-- Hero -->
-    <include src="./partials/main-page/hero.html"></include>
-    <!-- About our restaurant -->
-    <include src="./partials/main-page/about-restaurant.html"></include>
-    <!-- Details of our restaurant -->
-    <include src="./partials/main-page/details-restaurant.html"></include>
-    <!-- About our hotel -->
-    <include src="./partials/main-page/about-hotel.html"></include>
-    <!-- Details of our hotel -->
-    <include src="./partials/main-page/details-hotel.html"></include>
-    <!-- Contacts -->
-    <include src="./partials/main-page/contacts.html"></include>
-  </main>
-  <!-- Footer -->
-  <include src="./partials/footer.html"></include>
-</body>
+    <!-- Modal windows -->
+    <!-- Бронювання столика -->
+    <include src="./partials/modal-windows/book-table.html"></include>
+    <!-- Бронювання номера -->
+    <include src="./partials/modal-windows/book-room.html"></include>
 
+    <!-- Підключення бібліотек -->
+    <!-- Підключаю JQuery (бібліотека слайду) -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- Підключаємо СЛАЙДЕР SLICK -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- Підключаємо НАШ JS з НАЛАШТУВАННЯМ СЛАЙДЕРА -->
+    <script src="./js/script.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+  </body>
 </html>
+

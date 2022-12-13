@@ -1,1 +1,49 @@
-<div></div>
+<div class="backdrop is-hidden" data-modal>
+
+    <div class="modal">
+        <button type="button" class="close" data-modal-close>
+        </button>
+        <h2 class="modal-title">Забронювати столик</h2>
+        <form class="modal-form">
+            <ul class="list form-list">
+                <li class="form-list-item">
+                    <div class="input-wrap">
+                        <input class="input-form" type="text" name="name" id="name" placeholder="Ваше ім’я">
+                    </div>
+                    <label for="name" class="form-label">На кого забронювати столик?</label>
+                </li>
+                <li class="form-list-item">
+
+                    <div class="input-wrap">
+                        <input class="input-form" type="tel" name="tel" id="tel" placeholder="+38 (___) ___-__-__"
+                            pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" title="+38 (___) ___-__-__">
+                    </div>
+                    <label for="tel" class="form-label">Телефон</label>
+                </li>
+            </ul>
+            <ul class="list form-list">
+                <li class="form-list-item">
+                    <div class="select">
+                        <select id="amount" name="amount">
+                            <option value="2" selected>2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <label for="amount" class="form-label">Столик на яку кількість осіб?</label>
+                </li>
+                <li class="form-list-item">
+                    <div class="select">
+                        <select id="when" name="when">
+                            <option value="сьогодні" selected>Сьогодні</option>
+                            <option value="завтра">Завтра</option>
+                        </select>
+                    </div>
+                    <label for="when" class="form-label">На яку дату бронювати?</label>
+                </li>
+            </ul>
+            <button type="submit" class="big-btn submit">Оформити бронювання</button>
+
+        </form>
+    </div>
+</div>
