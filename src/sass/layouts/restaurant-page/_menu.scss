@@ -67,7 +67,7 @@
 .dishes:not(:last-child) {
     margin-bottom: 16px;
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $tablet) {
         margin-bottom: 20px;
     }
 }
