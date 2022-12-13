@@ -1,0 +1,135 @@
+.footer-section {
+    background-color: #0E0C07;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include tablet {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 414px) {
+        justify-content: space-around;
+    }
+}
+
+.logo-container {
+    @include mobile {
+        // min-width: 256px;
+        margin-left: 44px;
+        margin-right: 85px;
+    }
+
+    @include tablet {
+        // min-width: 504px;
+        margin-left: 107px;
+        margin-right: 163px;
+    }
+
+    @include desktop {
+        // min-width: 634px;
+        margin-left: 131px;
+        margin-right: 231px;
+    }
+}
+
+.footer__logo {
+    display: block;
+    text-align: center;
+    color: $accent-color ;
+    @include font(40px, 1.075, 700, 0.3em);
+    font-family: 'Film P3';
+
+    @include tablet {
+        font-size: 64px;
+    }
+}
+
+.nav-social-container {
+    @include mobile {
+        // min-width: 128px;
+    }
+
+    @include tablet {
+        display: flex;
+    }
+}
+
+.footer-nav {
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 33px;
+    }
+
+    @include tablet {
+        margin-right: 138px;
+        // min-width: 239px;
+    }
+
+    @include desktop {
+        // min-width: 300px;
+        margin-right: 200px;
+    }
+}
+
+.footer-nav__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.footer-nav__link {
+    color: $accent-color;
+    font-family: $montserrat-font;
+    @include font(20px, 1.2, 500, 0.02em);
+}
+
+.social-icons__list {
+    @media screen and (max-width: 1024px) {
+        display: flex;
+        gap: 23px;
+    }
+
+    @include tablet {
+        display: block;
+
+    }
+}
+
+.social-icons__item:not(:last-child) {
+    @include tablet {
+        margin-bottom: 12px;
+    }
+}
+
+.social-icons__link {
+    @include tablet {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 144px;
+        height: 40px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border: 0.5px solid $accent-color;
+        border-radius: 2px;
+    }
+}
+
+.social-icons__text {
+    display: none;
+    color: $accent-color;
+    font-family: 'Montserrat';
+    @include font(16px, 1.2, 400, 0.02em);
+
+    @include tablet {
+        display: inline;
+    }
+}
+
+.social-icons__icon {
+    display: flex;
+    fill: $accent-color;
+}
