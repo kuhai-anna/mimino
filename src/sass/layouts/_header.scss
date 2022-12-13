@@ -19,6 +19,13 @@
     @include tablet {}
 }
 
+.header__nav {
+    // Позиціюнування
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .header__logo {
     // Типографіка
     text-decoration: none;
@@ -46,9 +53,10 @@
         // Позиціюнування
         gap: 26px;
     }
-    @include desktop {
-        // Позиціюнування
+    @include tablet {
         gap: 72px;
+    }
+    @include desktop {
         margin-left: 0px;
     }
 }
