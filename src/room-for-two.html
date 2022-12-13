@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Двомісний номер</title>
-    <!-- Підключення шрифтів -->
 
-    <!-- Підключення фавіконки -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Двомісний номер</title>
+  <!-- Підключення шрифтів -->
 
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- Header -->
-    <include src="./partials/header.html"></include>
-    <main>
-      <!-- Hero -->
-      <include src="./partials/room-pages/hero-for-two.html"></include>
-      <!-- Amenities -->
-      <include src="./partials/room-pages/amenities.html"></include>
-    </main>
-    <!-- Footer -->
-    <include src="./partials/footer.html"></include>
-  </body>
+  <!-- Підключення фавіконки -->
+  <!-- css js -->
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
+
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <include src="./partials/header.html"></include>
+  <main>
+    <!-- Hero -->
+    <include src="./partials/room-pages/hero-for-two.html"></include>
+    <!-- Amenities -->
+    <include src="./partials/room-pages/amenities.html"></include>
+  </main>
+  <!-- Footer -->
+  <include src="./partials/footer.html"></include>
+  <!-- slick jquery -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!-- slick js -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- base js -->
+  <script type="modul" src="./js/slick.js"></script>
+
+</body>
+
 </html>
