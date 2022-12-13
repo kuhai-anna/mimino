@@ -119,7 +119,7 @@
 
 .hotel-title {
   @media screen and (min-width: 414px) and (max-width: 1023px) {
-    margin-right: 53px;
+    margin-right: 54px;
   }
 }
 
@@ -171,11 +171,19 @@
   padding: 0;
 }
 
-.tel-container .mimino-address__link:not(:last-child) {
-  margin-right: 16px;
+// .tel-container .mimino-address__link:not(:last-child) {
+//   margin-right: 16px;
 
-  @media screen and (max-width: 1023px) {
-    margin-right: 12px;
+//   @media screen and (max-width: 1023px) {
+//     margin-right: 12px;
+//   }
+// }
+
+.tel-container .mimino-address__link:not(:last-child) {
+  margin-right: 11px;
+
+  @include tablet {
+    margin-right: 16px;
   }
 }
 
