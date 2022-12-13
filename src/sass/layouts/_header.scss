@@ -7,6 +7,7 @@
     transform: translateX(-50%);
     width: 100%;
     padding-top: 24px;
+    padding-bottom: 12px;
 }
 
 .header__container {
@@ -16,6 +17,13 @@
     display: flex;
     align-items: center;
     @include tablet {}
+}
+
+.header__nav {
+    // Позиціюнування
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .header__logo {
@@ -45,9 +53,10 @@
         // Позиціюнування
         gap: 26px;
     }
-    @include desktop {
-        // Позиціюнування
+    @include tablet {
         gap: 72px;
+    }
+    @include desktop {
         margin-left: 0px;
     }
 }
