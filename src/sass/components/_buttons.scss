@@ -8,6 +8,8 @@
     @include font(16px, 1.25, 700, 0.02em);
 
     color: $accent-color;
+    background-color: $backrground-btn-light;
+    border: 2px solid $border-light-color;
     border-radius: 25px;
 
     transition-property: background-color;
@@ -17,12 +19,6 @@
     &:focus {
         background-color: $backrground-hover-light;
     }
-}
-
-// Додаткові стилі для світлих кнопок (використовувати класи btn i light-btn разом)
-.light-btn {
-    background-color: $backrground-btn-light;
-    border: 2px solid $border-light-color;
 }
 
 // Додаткові стилі для чорних кнопок (для чорних кнопок використовувати класи btn i dark-btn разом)
