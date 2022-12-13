@@ -1,0 +1,228 @@
+.container-room {
+  margin: 0 auto;
+  position: relative;
+  @media screen and (min-width: 414px) {
+    max-width: 414px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
+}
+
+.slick-slide img {
+  max-width: 100%;
+}
+
+.slick-prev:before {
+  background-image: url(/src/images/arrow-left.svg);
+  background-position: center;
+
+  @media screen and (min-width: 414px) {
+    left: 41px;
+  }
+  @media screen and (min-width: 1024px) {
+    left: 72px;
+    top: -10px;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 113px;
+    top: 50px;
+  }
+}
+
+.slick-prev {
+  z-index: 999;
+}
+
+.slick-next:before {
+  background-image: url(/src/images/arrow-right.svg);
+  background-position: center;
+  @media screen and (min-width: 414px) {
+    right: 41px;
+  }
+  @media screen and (min-width: 1024px) {
+    right: 72px;
+    top: -10px;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 113px;
+    top: 50px;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.65);
+  background-repeat: no-repeat;
+}
+
+.room__info {
+  position: absolute;
+  left: 0;
+  @media screen and (min-width: 414px) {
+    top: 483px;
+    margin-left: 15px;
+  }
+  @media screen and (min-width: 1024px) {
+    top: 468px;
+    margin-left: 47px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 524px;
+  }
+}
+
+.room__title {
+  color: #ffffff;
+  text-align: left;
+  @media screen and (min-width: 414px) {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    // width: 325px;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.05em;
+    width: 100%;
+  }
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    left: 85px;
+  }
+}
+
+.room__subtitle {
+  text-transform: uppercase;
+}
+
+.room__text {
+  color: #ffffff;
+  text-align: left;
+  @media screen and (min-width: 414px) {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    width: 325px;
+    margin-top: 14px;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    width: 400px;
+    margin-top: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    left: 85px;
+  }
+}
+
+.room__soc-list {
+  // border: 2px solid #971414;
+  @media screen and (min-width: 414px) {
+    margin-right: 42px;
+    display: block;
+  }
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    margin-left: 44px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.room__soc-item {
+  @media screen and (min-width: 414px) {
+    margin-bottom: 11px;
+    display: block;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-right: 23px;
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.room__address-link {
+  display: flex;
+  align-items: center;
+}
+.room__soc-icon {
+  fill: #f3c653;
+}
+
+.room__address {
+  @media screen and (min-width: 414px) {
+    display: none;
+  }
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    width: 210px;
+    height: 47px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    padding-left: 6px;
+    width: 285px;
+    height: 56px;
+    padding-left: 10px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.room__address-icon {
+  margin-right: 10px;
+  fill: #f3c653;
+}
+
+.room__address-link {
+  font-family: 'Montserrat';
+  color: #e5e5e5;
+  font-size: 16px;
+}
+
+.room__contact {
+  display: flex;
+  // align-content: center;
+
+  @media screen and (min-width: 414px) {
+    bottom: 18px;
+    margin-top: 17px;
+  }
+  @media screen and (min-width: 1024px) {
+    // margin-bottom: 44;
+    margin-left: 0px;
+    margin-top: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.room__btn {
+  @media screen and (min-width: 414px) {
+    position: absolute;
+    right: 73px;
+    top: 652px;
+  }
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    right: 47px;
+    top: 510px;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 85px;
+    top: 606px;
+  }
+}
