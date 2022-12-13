@@ -2151,7 +2151,7 @@ button {
 }
 
 .amenities__text {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
@@ -2219,7 +2219,7 @@ button {
 }
 
 .amenities__btn-text {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-size: 20px;
   line-height: 1.2;
   font-weight: 500;
@@ -2231,7 +2231,7 @@ button {
   line-height: 1.25;
   font-weight: 500;
   letter-spacing: 0.02em;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   color: var(--color-text-tips);
   margin-top: 20px;

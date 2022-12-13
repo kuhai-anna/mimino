@@ -34,7 +34,7 @@
 }
 
 .amenities__text {
-  font-family: 'Montserrat';
+  font-family: $montserrat-font;
   @include font(16px, 1.25, 700, 0.02em);
   font-style: normal;
   color: var(--color-text-room_hotel);
@@ -87,14 +87,14 @@
   }
 }
 .amenities__btn-text {
-  font-family: 'Montserrat';
+  font-family: $montserrat-font;
   @include font(20px, 1.2, 500, null);
   color: var(--big-btn-text-color);
 }
 
 .amenities__link {
   @include font(16px, 1.25, 500, 0.02em);
-  font-family: 'Montserrat';
+  font-family: $montserrat-font;
   font-style: normal;
   color: var(--color-text-tips);
   margin-top: 20px;
