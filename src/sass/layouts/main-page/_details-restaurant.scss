@@ -1,16 +1,10 @@
-.details-restaurant,
-.details-hotel {
-  max-width: 414px;
-  max-height: 735px;
-
-  //   background-color: $dark-bg-section;
-  padding-top: 24px;
-  padding-bottom: 40px;
-}
-
 //==================================================== Фонове зображення
 
 .details-restaurant {
+  max-height: 735px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(../images/main-page/bg/bg-main-2-mob.jpg);
   background-repeat: no-repeat;
@@ -25,7 +19,7 @@
   }
 
   @media screen and( min-width:1024px) {
-    max-width: 1024px;
+    // max-width: 1024px;
     max-height: 620px;
     padding-top: 48px;
     padding-bottom: 47px;
@@ -45,7 +39,7 @@
     }
   }
   @media screen and (min-width: 1280px) {
-    max-width: 1280px;
+    // max-width: 1280px;
     max-height: 620px;
     padding-top: 48px;
     padding-bottom: 47px;
@@ -227,6 +221,7 @@
 .slick-list {
   overflow: hidden;
 }
+//!=========================================== ПІДВИЩИТИ СПЕЦИФІЧНІСТЬ
 .slick-track {
   display: flex;
   gap: 20px;
