@@ -6,7 +6,7 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.2);
     transition-property: opacity;
-        @extend %transition;
+    @extend %transition;
 }
 
 .is-hidden {
@@ -31,18 +31,19 @@
         overflow: scroll;
     }
 
-        @include mobile {
+    @include mobile {
         width: 414px;
         height: 668px;
     }
 
-        @include tablet {
+    @include tablet {
         width: 712px;
         height: 522px;
 
 
     }
 }
+
 .close {
     position: absolute;
     top: 0;
@@ -52,20 +53,21 @@
     border: none;
     margin-top: 16px;
     margin-right: 16px;
-    background-image: url(../img/icon-x.svg);
+    background-image: url(./images/icon-x.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
-    
+
     cursor: pointer;
 }
+
 .modal-title {
     font-family: $times-font;
     font-style: normal;
     @include font(24px, 1.16, 700, 0.05em);
     color: $color-modal-title;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     margin-top: 60px;
     text-transform: uppercase;
 
@@ -73,9 +75,8 @@
         @include font(40px, 1.15, 700, 0.05em);
     }
 }
-.form-list {
-    padding: 15px;
 
+.modal-form {
     @include tablet {
         display: flex;
         margin: 0;
@@ -85,11 +86,13 @@
         margin-left: -16px;
         margin-bottom: 40px;
         justify-content: center;
-
-
     }
-
 }
+
+.form-list {
+    padding: 20px 15px 0 15px;
+}
+
 .form-list-item {
     @include tablet {
         margin-top: 28px;
@@ -105,6 +108,7 @@
         margin-top: 28px;
     }
 }
+
 .input-wrap {
     @include tablet {
         margin-bottom: 8px;
@@ -118,7 +122,7 @@
     outline: none;
     cursor: pointer;
     background-color: transparent;
-    
+
     border: 1px solid #C79002;
     border-radius: 2px;
     font-family: $times-font;
@@ -133,18 +137,19 @@
         max-height: 54px;
     }
 
-        @include mobile {
+    @include mobile {
         width: 384px;
         height: 54px;
     }
 
-        @include tablet {
+    @include tablet {
         width: 288px;
         height: 64px;
         @include font(24px, 1.16, null, null);
-        
+
     }
 }
+
 .form-list-item label {
     padding-top: 8px;
     padding-left: 27px;
@@ -152,13 +157,14 @@
     font-style: normal;
     @include font(14px, 1.21, 500, 0.02em);
     color: $color-modal-tips;
-    
+
 
     @include tablet {
         @include font(16px, 1.25, null, null);
-        
+
     }
 }
+
 .select {
     position: relative;
 
@@ -166,19 +172,23 @@
         margin-bottom: 8px;
     }
 }
+
 .select::after {
     content: "";
     display: block;
-    background-image: url(../img/arrow.svg);
+    background-image: url(../images/arrow.svg);
     position: absolute;
     top: 50%;
     left: 345px;
-
     margin-top: -5px;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     z-index: 5;
+
+    @media screen and (max-width:413px) {
+        left: 80%;
+    }
 
     @include tablet {
         left: 244px;
@@ -206,22 +216,26 @@
         max-width: 384px;
         height: 95%;
         max-height: 54px;
+        padding: 0 12px;
 
     }
 
-        @include mobile {
+    @include mobile {
         width: 384px;
         height: 54px;
     }
 
-        @include tablet {
+    @include tablet {
         width: 288px;
         height: 64px;
         font-size: 24px;
         line-height: 1.16;
     }
 }
+.modal-form button{
+    margin-top: 40px;
 
+}
 
 
 
