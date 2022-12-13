@@ -1,16 +1,16 @@
 .amenities {
   padding-top: 32px;
   padding-bottom: 32px;
-  background: var(--background-main-light);
+  background: $background-main-light;
   @include tablet {
     max-width: 930px;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   @include desktop {
     max-width: 1110px;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -37,7 +37,7 @@
   font-family: $montserrat-font;
   @include font(16px, 1.25, 700, 0.02em);
   font-style: normal;
-  color: var(--color-text-room_hotel);
+  color: $color-text-room_hotel;
   margin: 0;
   @include tablet {
     width: 400px;
@@ -60,7 +60,7 @@
   text-transform: uppercase;
   font-family: $times-font;
   @include font(24px, 1.17, 700, null);
-  color: var(--color-modal-title);
+  color: $color-modal-title;
   margin-top: 32px;
   margin-bottom: 16px;
 }
@@ -74,29 +74,20 @@
 }
 .amenities__btn {
   max-width: 384px;
-  background: var(--backrground-btn-dark);
-  border: 1px solid #f3c653;
-  border-radius: 25px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-transform: uppercase;
   margin-bottom: 20px;
+  font-style: 20px;
   @include tablet {
     width: 434px;
     margin-bottom: 32px;
+    font-style: 24px;
   }
-}
-.amenities__btn-text {
-  font-family: $montserrat-font;
-  @include font(20px, 1.2, 500, null);
-  color: var(--big-btn-text-color);
 }
 
 .amenities__link {
   @include font(16px, 1.25, 500, 0.02em);
   font-family: $montserrat-font;
   font-style: normal;
-  color: var(--color-text-tips);
+  color: $color-text-tips;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
