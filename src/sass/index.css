@@ -172,7 +172,7 @@ button {
 
 .dark-btn {
   background-color: #000000;
-  border: 2px solid #FFFDEE;
+  border: 2px solid #fffdee;
   transition-property: background-color, border-color;
 }
 .dark-btn:hover, .dark-btn:focus {
@@ -192,7 +192,7 @@ button {
   letter-spacing: 0.02em;
   color: #f3c653;
   background-color: #000000;
-  border: 2px solid #FFFDEE;
+  border: 2px solid #fffdee;
   border-radius: 25px;
   transition-property: background-color, border-color;
 }
@@ -817,6 +817,259 @@ button {
   fill: #f3c653;
 }
 
+.details-restaurant {
+  max-height: 735px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main-page/bg/bg-main-2-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 414px 735px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .details-restaurant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main-page/bg/bg-main-2-mob_2x.jpg);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant {
+    max-height: 620px;
+    padding-top: 48px;
+    padding-bottom: 47px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main-page/bg/bg-main-2-tab.jpg);
+    background-size: contain;
+    background-size: 1024px 620px;
+  }
+}
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+  .details-restaurant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main-page/bg/bg-main-2-tab_2x.jpg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant {
+    max-height: 620px;
+    padding-top: 48px;
+    padding-bottom: 47px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main-page/bg/bg-main-2-dt.jpg);
+    background-size: contain;
+    background-size: 1280px 620px;
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .details-restaurant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main-page/bg/bg-main-2-dt_2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .details-restaurant .container {
+    padding-left: 47px;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant .container {
+    padding-left: 85px;
+    padding-right: 50px;
+  }
+}
+
+.details-restaurant__desc {
+  width: 259px;
+  margin-left: auto;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__desc {
+    width: 610px;
+    margin-left: 231px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant__desc {
+    margin-left: 253px;
+  }
+}
+
+.desc__logo {
+  margin-bottom: 12px;
+  font-family: FilmP3, "sans-serif";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.075;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .desc__logo {
+    margin-bottom: 16px;
+    font-size: 64px;
+    line-height: 1.078125;
+    letter-spacing: 0.3em;
+  }
+}
+
+.desc__title {
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .desc__title {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 1.2083333333;
+  }
+}
+
+.desc__lead {
+  margin-bottom: 48px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #bababa;
+}
+@media screen and (min-width: 1024px) {
+  .desc__lead {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.interactiv-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1024px) {
+  .interactiv-wrap {
+    align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .details-restaurant .interactiv-wrap {
+    flex-direction: row-reverse;
+  }
+  .details-restaurant .interactiv-wrap .btn-wrap {
+    margin-left: unset;
+  }
+}
+
+.btn-wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  min-width: 236px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+}
+
+.reserv-table {
+  margin-bottom: 16px;
+}
+
+.view-menu {
+  display: block;
+  padding: 14px 32px 14px 31px;
+  line-height: 1;
+}
+
+.slider {
+  margin-bottom: 24px;
+  position: relative;
+  left: 25px;
+  width: 374px;
+  height: 270px;
+  min-width: 0;
+}
+@media screen and (min-width: 1024px) {
+  .slider {
+    left: 0;
+    width: 662px;
+    height: 270px;
+    margin-bottom: 32;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .slider {
+    width: 875px;
+  }
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  gap: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .slick-track {
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .slick-track {
+    gap: 87px;
+  }
+}
+
+.interactiv-wrap .slider__arrows {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 33px;
+  margin-bottom: 40px;
+  margin-left: 25px;
+}
+@media screen and (min-width: 1024px) {
+  .interactiv-wrap .slider__arrows {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.slider + .slider__arrows .slick-prev {
+  position: unset;
+  transform: translate(0, 0);
+  height: 17px;
+  width: 30px;
+  left: 0;
+  font-size: 0;
+  border: none;
+}
+
+.slider + .slider__arrows .slick-next {
+  position: unset;
+  transform: translate(0, 0);
+  height: 17px;
+  width: 30px;
+  right: 0;
+  font-size: 0;
+  border: none;
+}
+
 .about-section {
   height: 1191px;
   padding-top: 16px;
@@ -1093,6 +1346,145 @@ button {
   }
 }
 
+.details-hotel {
+  max-height: 735px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main-page/bg/bg-main-3-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 414px 735px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .details-hotel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main-page/bg/bg-main-3-mob_2x.jpg);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .details-hotel {
+    max-height: 620px;
+    padding-top: 48px;
+    padding-bottom: 47px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main-page/bg/bg-main-3-tab.jpg);
+    background-size: 1024px 620px;
+  }
+}
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+  .details-hotel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main-page/bg/bg-main-3-tab_2x.jpg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-hotel {
+    max-height: 620px;
+    padding-top: 48px;
+    padding-bottom: 47px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main-page/bg/bg-main-3-dt.jpg);
+    background-size: 1280px 620px;
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .details-hotel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main-page/bg/bg-main-3-dt_2x.jpg);
+  }
+}
+
+.details-hotel__desc {
+  width: 243px;
+  text-align: right;
+  margin-right: auto;
+  margin-left: 17px;
+}
+@media screen and (min-width: 1024px) {
+  .details-hotel__desc {
+    width: 549px;
+    margin-left: 150px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-hotel__desc {
+    width: 595px;
+    margin-left: 295px;
+  }
+}
+
+.desc__lead.text-align {
+  text-align: left;
+}
+
+.reserv-room {
+  margin-bottom: 16px;
+}
+
+.view-price {
+  display: block;
+  padding: 14px 37px;
+  line-height: 1;
+}
+
+.slider-left {
+  margin-bottom: 24px;
+  position: relative;
+  left: -15px;
+  width: 374px;
+  height: 270px;
+  min-width: 0;
+}
+@media screen and (min-width: 1024px) {
+  .slider-left {
+    left: 0;
+    width: 662px;
+    height: 270px;
+    margin-bottom: 32;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .slider-left {
+    width: 875px;
+  }
+}
+
+.interactiv-wrap .slider-left__arrows {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 33px;
+  justify-content: end;
+  margin-bottom: 40px;
+  margin-right: 25px;
+}
+@media screen and (min-width: 1024px) {
+  .interactiv-wrap .slider-left__arrows {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.slider-left + .slider-left__arrows .slick-prev {
+  position: unset;
+  transform: translate(0, 0);
+  height: 17px;
+  width: 30px;
+  left: 0;
+  font-size: 0;
+  border: none;
+}
+
+.slider-left + .slider-left__arrows .slick-next {
+  position: unset;
+  transform: translate(0, 0);
+  height: 17px;
+  width: 30px;
+  right: 0;
+  font-size: 0;
+  border: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .details-hotel .interactiv-wrap .btn-wrap {
+    margin-right: unset;
+  }
+}
+
 .contacts__logo {
   color: #494848;
 }
@@ -1235,7 +1627,7 @@ button {
 
 @media screen and (min-width: 414px) and (max-width: 1023px) {
   .hotel-title {
-    margin-right: 53px;
+    margin-right: 54px;
   }
 }
 
@@ -1265,11 +1657,6 @@ button {
   border-radius: 2px;
   background-color: #ffffff;
 }
-@media screen and (min-width: 414px) and (max-width: 1023px) {
-  .tel-container {
-    width: 244px;
-  }
-}
 
 .mimino-address__link--address {
   margin-left: auto;
@@ -1280,7 +1667,7 @@ button {
 }
 @media screen and (max-width: 1023px) {
   .mimino-address__link--address {
-    width: 217px;
+    max-width: 260px;
     padding: 8px 33px 8px 10px;
   }
 }
@@ -1296,11 +1683,11 @@ button {
 }
 
 .tel-container .mimino-address__link:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 11px;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 1024px) {
   .tel-container .mimino-address__link:not(:last-child) {
-    margin-right: 12px;
+    margin-right: 16px;
   }
 }
 
@@ -1393,7 +1780,7 @@ button {
 .dishes:not(:last-child) {
   margin-bottom: 16px;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .dishes:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -1414,6 +1801,18 @@ button {
 @media screen and (min-width: 1280px) {
   .dishes__desc {
     padding-bottom: 12px;
+  }
+}
+
+.desserts__desc,
+.drinks__desc {
+  width: 225px;
+}
+@media screen and (min-width: 1280px) {
+  .desserts__desc,
+.drinks__desc {
+    width: 315px;
+    padding-bottom: 9px;
   }
 }
 
@@ -1508,17 +1907,6 @@ button {
     line-height: 1.25;
     font-weight: 700;
     letter-spacing: 0.02em;
-  }
-}
-
-.desserts__desc,
-.drinks__desc {
-  width: 225px;
-}
-@media screen and (min-width: 1280px) {
-  .desserts__desc,
-.drinks__desc {
-    width: 315px;
   }
 }
 
@@ -1717,4 +2105,140 @@ button {
 
 .rooms__item-btn:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.amenities {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: var(--background-main-light);
+}
+@media screen and (min-width: 1024px) {
+  .amenities {
+    max-width: 930px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .amenities {
+    max-width: 1110px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+.amenities__title {
+  text-transform: uppercase;
+  font-family: "TimesNewRoman", "sans-serif";
+  font-size: 32px;
+  line-height: 1.16;
+  font-weight: 400;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .amenities__text-box {
+    display: flex;
+    gap: 80px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .amenities__text-box {
+    gap: 160px;
+  }
+}
+
+.amenities__text {
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  color: var(--color-text-room_hotel);
+  margin: 0;
+}
+@media screen and (min-width: 1024px) {
+  .amenities__text {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .amenities__text-title {
+    width: 757px;
+  }
+}
+.amenities__secondtext {
+  margin-top: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .amenities__secondtext {
+    margin-top: 0;
+  }
+}
+
+.amenities__subtitle {
+  text-transform: uppercase;
+  font-family: "TimesNewRoman", "sans-serif";
+  font-size: 24px;
+  line-height: 1.17;
+  font-weight: 700;
+  color: var(--color-modal-title);
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.amenities__nav {
+  margin-top: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .amenities__nav {
+    width: 434px;
+    margin-left: auto;
+  }
+}
+
+.amenities__btn {
+  max-width: 384px;
+  background: var(--backrground-btn-dark);
+  border: 1px solid #f3c653;
+  border-radius: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .amenities__btn {
+    width: 434px;
+    margin-bottom: 32px;
+  }
+}
+
+.amenities__btn-text {
+  font-family: "Montserrat";
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--big-btn-text-color);
+}
+
+.amenities__link {
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-family: "Montserrat";
+  font-style: normal;
+  color: var(--color-text-tips);
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.amenities__icon {
+  margin-left: 13px;
 }/*# sourceMappingURL=index.css.map */

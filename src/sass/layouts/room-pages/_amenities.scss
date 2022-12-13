@@ -1,48 +1,43 @@
 .amenities {
-  padding: 32px 15px;
-  background: #fffdee;
-  max-width: 384px;
-  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: var(--background-main-light);
   @include tablet {
     max-width: 930px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
   @include desktop {
     max-width: 1110px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }
 
 .amenities__title {
   text-transform: uppercase;
-  font-family: 'Times New Roman';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: calc(37 / 32);
+  font-family: $times-font;
+  @include font(32px, 1.16, 400, null);
   color: #000000;
   margin-top: 0;
   margin-bottom: 16px;
 }
-@include tablet {
-  .amenities__text-box {
+
+.amenities__text-box {
+  @include tablet {
     display: flex;
     gap: 80px;
   }
-}
-@include desktop {
-  .amenities__text-box {
-    display: flex;
+  @include desktop {
     gap: 160px;
   }
 }
 
 .amenities__text {
   font-family: 'Montserrat';
+  @include font(16px, 1.25, 700, 0.02em);
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.02em;
-  color: #7a7a7a;
+  color: var(--color-text-room_hotel);
   margin: 0;
   @include tablet {
     width: 400px;
@@ -54,7 +49,7 @@
   }
 }
 
-.amenities__2text {
+.amenities__secondtext {
   margin-top: 16px;
   @include tablet {
     margin-top: 0;
@@ -63,26 +58,14 @@
 
 .amenities__subtitle {
   text-transform: uppercase;
-  font-family: 'Times New Roman';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: calc(28 / 24);
-  color: #000000;
+  font-family: $times-font;
+  @include font(24px, 1.17, 700, null);
+  color: var(--color-modal-title);
   margin-top: 32px;
   margin-bottom: 16px;
 }
 
-.amenities__list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
 .amenities__nav {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   margin-top: 32px;
   @include tablet {
     width: 434px;
@@ -90,38 +73,35 @@
   }
 }
 .amenities__btn {
-  background: #000000;
+  max-width: 384px;
+  background: var(--backrground-btn-dark);
   border: 1px solid #f3c653;
   border-radius: 25px;
   padding-top: 20px;
   padding-bottom: 20px;
   text-transform: uppercase;
+  margin-bottom: 20px;
+  @include tablet {
+    width: 434px;
+    margin-bottom: 32px;
+  }
 }
 .amenities__btn-text {
   font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: #ffffff;
+  @include font(20px, 1.2, 500, null);
+  color: var(--big-btn-text-color);
 }
 
 .amenities__link {
-  text-decoration: none;
+  @include font(16px, 1.25, 500, 0.02em);
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.02em;
-  color: #c79002;
+  color: var(--color-text-tips);
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .amenities__icon {
-  width: 23px;
-  height: 13px;
   margin-left: 13px;
 }
