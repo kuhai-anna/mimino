@@ -56,6 +56,17 @@
   }
 }
 
+.details-hotel .container {
+  @media screen and (min-width: 1024px) {
+    padding-left: 47px;
+    padding-right: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 50px;
+    padding-right: 85px;
+  }
+}
+
 .details-hotel__desc {
   width: 243px;
   text-align: right;
