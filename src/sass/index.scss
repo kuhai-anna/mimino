@@ -1,0 +1,20 @@
+// utils
+@import './utils/module';
+
+// base
+@import './base/module';
+
+// components
+@import './components/module';
+
+// layouts
+@import './layouts/module';
+
+// pages
+@import './layouts/main-page/module';
+@import './layouts/restaurant-page/module';
+@import './layouts/hotel-page/module';
+@import './layouts/room-pages/module';
+
+// modal windows
+@import './layouts/modal-windows/module';
