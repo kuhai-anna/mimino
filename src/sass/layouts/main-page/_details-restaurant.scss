@@ -164,35 +164,12 @@
   margin-right: auto;
 }
 
-.btn {
-  min-width: 236px;
-  height: 48px;
-  margin-left: auto;
-  margin-right: auto;
-
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.02em;
-  color: $accent-color;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-
-  // &:hover,
-  // &:focus {
-  //   background-color: $hover-bgcolor-small-btn;
-  // }
-}
-
 .reserv-table {
   margin-bottom: 16px;
 }
 
 .view-menu {
-  display: block;
-  padding: 14px 32px 14px 31px;
+  padding: 14px 29px 14px 30px;
   line-height: 1;
 }
 
@@ -203,9 +180,19 @@
   position: relative;
   left: 25px;
 
-  width: 374px;
+  width: 270px;
   height: 270px;
   min-width: 0;
+
+  @media screen and (min-width: 414px) {
+    margin-bottom: 24px;
+    position: relative;
+    left: 25px;
+
+    width: 374px;
+    height: 270px;
+    min-width: 0;
+  }
 
   @media screen and (min-width: 1024px) {
     left: 0;
@@ -221,10 +208,14 @@
 .slick-list {
   overflow: hidden;
 }
-//!=========================================== ПІДВИЩИТИ СПЕЦИФІЧНІСТЬ
-.slick-track {
+
+.interactiv-wrap .slick-track {
   display: flex;
-  gap: 20px;
+
+  @media screen and (min-width: 414px) {
+    display: flex;
+    gap: 20px;
+  }
 
   @media screen and (min-width: 1024px) {
     gap: 32px;
@@ -261,8 +252,13 @@
   left: 0;
   font-size: 0;
 
-  // background: url('../image/icons/arrow-left.svg') 0 0 no-repeat;
+  background: url('../images/icons/arrow-left.svg') 0 0 no-repeat;
   border: none;
+
+  // &hover,
+  // &focus {
+  //   background: url('../images/icons/arrow-left.svg') 0 0 no-repeat;
+  // }
 }
 .slider + .slider__arrows .slick-next {
   position: unset;
@@ -273,14 +269,14 @@
   right: 0;
   font-size: 0;
 
-  // background: url('../image/icons/arrow-right.svg') 0 0 no-repeat;
+  background: url('../images/icons/arrow-right.svg') 0 0 no-repeat;
   border: none;
 }
 
-// .slider + .slider__arrows .slick-prev::before {
-//   content: unset;
-//   top: 100%;
-// }
-// .slider + .slider__arrows .slick-next::before {
-//   content: unset;
-// }
+.slider + .slider__arrows .slick-prev::before {
+  content: unset;
+  top: 100%;
+}
+.slider + .slider__arrows .slick-next::before {
+  content: unset;
+}

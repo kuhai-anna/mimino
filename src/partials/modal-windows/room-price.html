@@ -1,1 +1,33 @@
-<div></div>
+<div class="backdrop is-hidden" data-modal>
+<div class="modal-room">
+    <button type="button" class="close-modal-room" data-modal-close >   
+    </button>
+    <h2 class="price-title-room">Ціни на номер</h2>
+    <p class="room">Двомісний люкс</p>
+    <p class="category">Категорія номеру</p>
+
+    <form class="modal-form-room">
+        <ul class="modal-room">
+            <li class="modal-input arrow">
+                <select class="nights-value" id="nights">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label class="label-modal" for="nights">Кількість ночей</label>
+            </li>
+
+            <li class="modal-input">
+                <input placeholder="1000" class="monet-input" id="money" type="text" pattern='[0-9] {, 4}' />
+                <label class="label-modal" for="money">грн</label>
+            </li>
+        </ul>
+
+        <div class="submit-button-box big-btn">
+            <button class="submit" type="submit">Забронювати номер</button>
+        </div>
+    </form>
+</div>
+</div>
