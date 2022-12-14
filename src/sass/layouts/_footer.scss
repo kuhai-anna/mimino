@@ -88,12 +88,14 @@
 .social-icons__list {
     @media screen and (max-width: 1024px) {
         display: flex;
+        flex-direction: row-reverse;
         gap: 23px;
+
     }
 
     @include tablet {
         display: block;
-
+        flex-direction: column;
     }
 }
 
