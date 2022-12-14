@@ -210,4 +210,43 @@
   .rooms__item-btn:not(:last-child) {
 	margin-bottom: 16px;
   }
+
+//   ----------------Слайдер----------------------
+
+.rooms__slider {
+	min-width: 0;
+	margin-bottom: 20px;
+
+	& .slick-list {
+		width: 404px;
+		position: relative;
+		left: -135px;
+	
+	
+		@media screen and (min-width: 1024px)
+		{  
+			position: static;
+			width: 428px;
+		}
+	
+		@media screen and (min-width: 1280px)
+		{
+			width: 548px;
+		}
+	  }
+
+
+  }
+  
+  .rooms__item:nth-child(2n) .rooms__slider .slick-list {
+    outline: 1px solid red;
+	left: 120px;
+	
+  }
+  .rooms__slider-item {
+	margin-right: 16px;
+	@media screen and (min-width: 1024px) {
+		margin-right: 40px;
+	}
+  }
   
