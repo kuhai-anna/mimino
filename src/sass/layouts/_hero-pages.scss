@@ -1,14 +1,12 @@
 .hero {
-  position: relative;
-
-  padding: 101px 0 102px 0;
+  padding: 181px 0 102px 0;
   text-align: center;
 
   @include tablet {
-    padding: 88px 0 64px 0;
+    padding: 188px 0 64px 0;
   }
   @include desktop {
-    padding: 64px 0 65px 0;
+    padding: 164px 0 65px 0;
   }
 }
 
@@ -67,6 +65,106 @@
   }
 }
 
+.overlay__restaurant {
+  background-image: linear-gradient(to right, $color-gradient, $color-gradient),
+    url('../images/restaurant-page/bg/bg-rest-1-mob.jpg');
+  @include retina2x {
+    background-image: linear-gradient(
+        to right,
+        $color-gradient,
+        $color-gradient
+      ),
+      url('../images/restaurant-page/bg/bg-rest-1-mob_2x.jpg');
+  }
+
+  @include tablet {
+    max-width: 1024px;
+    background-image: linear-gradient(
+        to right,
+        $color-gradient,
+        $color-gradient
+      ),
+      url('../images/restaurant-page/bg/bg-rest-1-tab.jpg');
+    @include retina2x {
+      background-image: linear-gradient(
+          to right,
+          $color-gradient,
+          $color-gradient
+        ),
+        url('../images/restaurant-page/bg/bg-rest-1-tab_2x.jpg');
+    }
+  }
+  @include desktop {
+    max-width: 1280px;
+    background-image: linear-gradient(
+        to right,
+        $color-gradient,
+        $color-gradient
+      ),
+      url('../images/restaurant-page/bg/bg-rest-1-dt.jpg');
+    @include retina2x {
+      background-image: linear-gradient(
+          to right,
+          $color-gradient,
+          $color-gradient
+        ),
+        url('../images/restaurant-page/bg/bg-rest-1-dt_2x.jpg');
+    }
+  }
+}
+
+.overlay__hotel {
+  background-image: linear-gradient(to right, $color-gradient, $color-gradient),
+    url('../images/hotel-page/bg/bg-hotel-mob.jpg');
+  @include retina2x {
+    background-image: linear-gradient(
+        to right,
+        $color-gradient,
+        $color-gradient
+      ),
+      url('../images/hotel-page/bg/bg-hotel-mob_2x.jpg');
+  }
+
+  @include tablet {
+    max-width: 1024px;
+    background-image: linear-gradient(
+        to right,
+        $color-gradient,
+        $color-gradient
+      ),
+      url('../images/hotel-page/bg/bg-hotel-tab.jpg');
+    @include retina2x {
+      background-image: linear-gradient(
+          to right,
+          $color-gradient,
+          $color-gradient
+        ),
+        url('../images/hotel-page/bg/bg-hotel-tab_2x.jpg');
+    }
+  }
+  @include desktop {
+    max-width: 1280px;
+    background-image: linear-gradient(
+        to right,
+        $color-gradient,
+        $color-gradient
+      ),
+      url('../images/hotel-page/bg/bg-hotel-dt.jpg');
+    @include retina2x {
+      background-image: linear-gradient(
+          to right,
+          $color-gradient,
+          $color-gradient
+        ),
+        url('../images/hotel-page/bg/bg-hotel-dt_2x.jpg');
+    }
+  }
+}
+
+.hero__container {
+  position: relative;
+}
+
 .hero__title {
   width: 303px;
   margin: 0 auto;
@@ -88,6 +186,20 @@
   }
 }
 
+.hero__title-restaurant {
+  margin-bottom: 20px;
+  @include tablet {
+    margin-bottom: 16px;
+  }
+  @include desktop {
+    margin-bottom: 32px;
+  }
+}
+
+.hero__title-hotel {
+  margin-bottom: 32px;
+}
+
 .hero__subtitle {
   width: 294px;
   margin: 0 auto;
@@ -104,6 +216,27 @@
   }
   @include desktop {
     margin-bottom: 64px;
+  }
+}
+
+.hero__subtitle-restaurant {
+  margin-bottom: 44px;
+  @include tablet {
+    margin-bottom: 56px;
+  }
+  @include desktop {
+    margin-bottom: 64px;
+  }
+}
+
+.hero__subtitle-hotel {
+  margin-bottom: 178px;
+
+  @include tablet {
+    margin-bottom: 226px;
+  }
+  @include desktop {
+    margin-bottom: 249px;
   }
 }
 
@@ -126,9 +259,6 @@
   .hero__button {
     margin: 0 auto;
   }
-}
-
-@media screen and (max-width: 1023px) {
   .hero__button-mobile-margin {
     margin-bottom: 24px;
   }
@@ -144,7 +274,7 @@
 
 .hero__address {
   position: absolute;
-  bottom: 629px;
+  bottom: 527px;
   right: 15px;
 
   display: flex;
@@ -154,22 +284,35 @@
   height: 47px;
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
-  padding-left: 6px;
 
   @include tablet {
-    top: 500px;
+    top: 412px;
     left: 47px;
 
     width: 285px;
     height: 56px;
-    padding-left: 10px;
   }
   @include desktop {
+    top: 436px;
     left: 85px;
   }
 }
 
+.hero__address-link {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  font-family: $montserrat-font;
+  @include font(12px, 1.25, null, 0.01em);
+  color: $color-text-address;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
 .hero__address-icon-mobile {
+  margin-left: 6px;
   margin-right: 10px;
   fill: $color-text-links;
   @include tablet {
@@ -178,30 +321,20 @@
 }
 
 .hero__address-icon-tablet {
+  margin-left: 6px;
   margin-right: 10px;
   fill: $color-text-links;
-  @media screen and (min-width: 414px) and (max-width: 1023px) {
+  @media screen and (min-width: 320px) and (max-width: 1023px) {
     display: none;
-  }
-}
-
-.hero__address-link {
-  font-family: $montserrat-font;
-  @include font(12px, 1.25, null, 0.01em);
-  color: $color-text-address;
-  text-align: start;
-
-  @include tablet {
-    font-size: 16px;
   }
 }
 
 .hero__soc-wrap {
   position: absolute;
-  bottom: 20px;
+  top: 515px;
 
   @include tablet {
-    top: 581px;
+    top: 493px;
     left: 47px;
   }
   @include desktop {
@@ -218,5 +351,12 @@
 }
 
 .hero__soc-icon {
-  fill: $color-text-links;
+  fill: rgba(243, 198, 83, 0.7);
+  transform: fill;
+  @extend %transition;
+
+  &:hover,
+  &:focus {
+    fill: $color-text-links;
+  }
 }
