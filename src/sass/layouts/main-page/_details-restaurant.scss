@@ -175,7 +175,7 @@
 
 // *================================СЛАЙДЕР==========================
 
-.slider {
+.slider-right {
   margin-bottom: 24px;
   position: relative;
   left: 25px;
@@ -226,7 +226,7 @@
 }
 
 //* ================================СТРІЛКИ=====================
-.interactiv-wrap .slider__arrows {
+.interactiv-wrap .slider-right__arrows {
   //   position: absolute;
   //   width: 100%;
   display: flex;
@@ -243,7 +243,7 @@
   }
 }
 
-.slider + .slider__arrows .slick-prev {
+.slider-right + .slider-right__arrows .slick-prev {
   position: unset;
   transform: translate(0, 0);
 
@@ -252,15 +252,18 @@
   left: 0;
   font-size: 0;
 
-  background: url('../images/icons/arrow-left.svg') 0 0 no-repeat;
+  background: url('../images/icons/arrow-left-nohover.svg') 0 0 no-repeat;
   border: none;
 
-  // &hover,
-  // &focus {
-  //   background: url('../images/icons/arrow-left.svg') 0 0 no-repeat;
-  // }
+  transform: background;
+  @extend %transition;
+
+  &:hover,
+  &:focus {
+    background: url('../images/icons/arrow-left.svg') 0 0 no-repeat;
+  }
 }
-.slider + .slider__arrows .slick-next {
+.slider-right + .slider-right__arrows .slick-next {
   position: unset;
   transform: translate(0, 0);
 
@@ -269,14 +272,22 @@
   right: 0;
   font-size: 0;
 
-  background: url('../images/icons/arrow-right.svg') 0 0 no-repeat;
+  background: url('../images/icons/arrow-right-nohover.svg') 0 0 no-repeat;
   border: none;
+
+  transform: background;
+  @extend %transition;
+
+  &:hover,
+  &:focus {
+    background: url('../images/icons/arrow-right.svg') 0 0 no-repeat;
+  }
 }
 
-.slider + .slider__arrows .slick-prev::before {
+.slider-right + .slider-right__arrows .slick-prev::before {
   content: unset;
   top: 100%;
 }
-.slider + .slider__arrows .slick-next::before {
+.slider-right + .slider-right__arrows .slick-next::before {
   content: unset;
 }

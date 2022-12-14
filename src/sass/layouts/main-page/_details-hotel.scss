@@ -156,8 +156,16 @@
   left: 0;
   font-size: 0;
 
-  background: url('../images/icons/arrow-left.svg') 0 0 no-repeat;
+  background: url('../images/icons/arrow-left-nohover.svg') 0 0 no-repeat;
   border: none;
+
+  transform: background;
+  @extend %transition;
+
+  &:hover,
+  &:focus {
+    background: url('../images/icons/arrow-left.svg') 0 0 no-repeat;
+  }
 }
 
 .slider-left + .slider-left__arrows .slick-next {
@@ -169,8 +177,16 @@
   right: 0;
   font-size: 0;
 
-  background: url('../images/icons/arrow-right.svg') 0 0 no-repeat;
+  background: url('../images/icons/arrow-right-nohover.svg') 0 0 no-repeat;
   border: none;
+
+  transform: background;
+  @extend %transition;
+
+  &:hover,
+  &:focus {
+    background: url('../images/icons/arrow-right.svg') 0 0 no-repeat;
+  }
 }
 .details-hotel .interactiv-wrap {
   @media screen and (min-width: 1024px) {
