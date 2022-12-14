@@ -1,0 +1,98 @@
+.amenities {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: $background-main-light;
+  @include tablet {
+    max-width: 930px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin: 0 auto;
+  }
+  @include desktop {
+    max-width: 1110px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin: 0 auto;
+  }
+}
+
+.amenities__title {
+  text-transform: uppercase;
+  font-family: $times-font;
+  @include font(32px, 1.16, 400, null);
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.amenities__text-box {
+  @include tablet {
+    display: flex;
+    gap: 80px;
+  }
+  @include desktop {
+    gap: 160px;
+  }
+}
+
+.amenities__text {
+  font-family: $montserrat-font;
+  @include font(16px, 1.25, 700, 0.02em);
+  font-style: normal;
+  color: $color-text-room_hotel;
+  margin: 0;
+  @include tablet {
+    width: 400px;
+  }
+}
+@include tablet {
+  .amenities__text-title {
+    width: 757px;
+  }
+}
+
+.amenities__secondtext {
+  margin-top: 16px;
+  @include tablet {
+    margin-top: 0;
+  }
+}
+
+.amenities__subtitle {
+  text-transform: uppercase;
+  font-family: $times-font;
+  @include font(24px, 1.17, 700, null);
+  color: $color-modal-title;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.amenities__nav {
+  margin-top: 32px;
+  @include tablet {
+    width: 434px;
+    margin-left: auto;
+  }
+}
+.amenities__btn {
+  max-width: 384px;
+  margin-bottom: 20px;
+  @include tablet {
+    width: 434px;
+    margin-bottom: 32px;
+  }
+}
+
+.amenities__link {
+  @include font(16px, 1.25, 500, 0.02em);
+  font-family: $montserrat-font;
+  font-style: normal;
+  color: $color-text-tips;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.amenities__icon {
+  margin-left: 13px;
+}
