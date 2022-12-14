@@ -180,9 +180,19 @@
   position: relative;
   left: 25px;
 
-  width: 374px;
+  width: 270px;
   height: 270px;
   min-width: 0;
+
+  @media screen and (min-width: 414px) {
+    margin-bottom: 24px;
+    position: relative;
+    left: 25px;
+
+    width: 374px;
+    height: 270px;
+    min-width: 0;
+  }
 
   @media screen and (min-width: 1024px) {
     left: 0;
@@ -201,7 +211,11 @@
 
 .interactiv-wrap .slick-track {
   display: flex;
-  gap: 20px;
+
+  @media screen and (min-width: 414px) {
+    display: flex;
+    gap: 20px;
+  }
 
   @media screen and (min-width: 1024px) {
     gap: 32px;

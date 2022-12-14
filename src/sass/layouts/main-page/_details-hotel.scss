@@ -102,9 +102,19 @@
   position: relative;
   left: -15px;
 
-  width: 374px;
+  width: 270px;
   height: 270px;
   min-width: 0;
+
+  @media screen and (min-width: 414px) {
+    margin-bottom: 24px;
+    position: relative;
+    left: -15px;
+
+    width: 374px;
+    height: 270px;
+    min-width: 0;
+  }
 
   @media screen and (min-width: 1024px) {
     left: 0;
