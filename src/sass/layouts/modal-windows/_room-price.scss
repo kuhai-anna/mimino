@@ -16,11 +16,11 @@ a {
     padding: 0;
 }
 
-.modal {
-    outline: 1px solid #C79002;
+.modal-room {
+    outline: 1px solid $color-modal-tips;
     width: 414px;
     height: 572px;
-    background: #FFFDEE;
+    background: $background-main-light;
     padding: 60px 15px;
     position: relative;
 
@@ -29,9 +29,14 @@ a {
         height: 489px;
         padding: 60px;
     }
+
+    @include tablet {
+        width: 712px;
+        height: 522px;
+    }
 }
 
-.close-modal {
+.close-modal-room {
     display: flex;
     position: absolute;
     cursor: pointer;
@@ -41,7 +46,7 @@ a {
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    /* border: 1.5px solid #000000; */
+    background-image: url(../images/icon-x.svg);
     /* background: #D9D9D9; */
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -50,12 +55,12 @@ a {
 
 }
 
-/* .social-icons__icon {} */
 
-.price-title {
+
+.price-title-room {
     margin-bottom: 40px;
     text-align: center;
-    color: #000000;
+    color: $color-modal-title;
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 700;
@@ -77,7 +82,7 @@ a {
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.05em;
-    color: #808080;
+    color: $color-modal-text;
 }
 
 .category {
@@ -88,7 +93,7 @@ a {
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.02em;
-    color: #C79002;
+    color: $color-modal-tips;
 
 }
 
@@ -139,7 +144,7 @@ select {
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.05em;
-    color: #808080;
+    color: $color-modal-text;
 
 }
 
@@ -151,7 +156,7 @@ select {
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.02em;
-    color: #C79002;
+    color: $color-modal-tips;
     margin-left: 30px;
 }
 
@@ -179,8 +184,8 @@ select {
     height: 54px;
     margin-bottom: 8px;
     padding: 0 15px;
-    background: #FFFDEE;
-    border: 1px solid #F3C653;
+    background: $background-main-light;
+    border: 1px solid $accent-color;
     border-radius: 2px;
 }
 
@@ -193,15 +198,15 @@ select {
     margin-bottom: 8px;
     padding: 0 15px;
     /* border: 1px solid #C79002; */
-    background: #FFFDEE;
-    border: 1px solid #F3C653;
+    background: $background-main-light;
+    border: 1px solid $accent-color;
     border-radius: 2px;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.05em;
-    color: #808080;
+    color: $color-modal-text;
 
     @media screen and (min-width: 1024px) {
         height: 60px;
@@ -211,7 +216,7 @@ select {
 
 .monet-input:hover,
 .monet-input:focus {
-    border: 1px solid #C79002;
+    border: 1px solid $color-modal-tips;
     outline: transparent;
 }
 
@@ -235,3 +240,4 @@ select {
 
 
 }
+
