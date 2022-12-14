@@ -20,7 +20,7 @@
   text-transform: uppercase;
   font-family: $times-font;
   @include font(32px, 1.16, 400, null);
-  color: #000000;
+  color: $color-title-dark;
   margin-top: 0;
   margin-bottom: 16px;
 }
