@@ -4,13 +4,15 @@
   background: $background-main-light;
   @include tablet {
     max-width: 930px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin: 0 auto;
   }
   @include desktop {
     max-width: 1110px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin: 0 auto;
   }
 }
 
