@@ -1,3 +1,9 @@
+
+// Приховую частину слайдера, коли при mobile виходить за межі контейнеру
+.rooms__container {
+	overflow-x: hidden;
+}
+
 .rooms__item {
 	padding-top: 32px;
 	padding-bottom: 32px;
@@ -194,7 +200,7 @@
   .rooms__wrap-bottom {
 	min-width: 0;
 	@include tablet {
-		// min-width: 0;
+		
 	  display: flex;
 	  align-items: center;
 	  justify-content: space-between;
@@ -210,4 +216,126 @@
   .rooms__item-btn:not(:last-child) {
 	margin-bottom: 16px;
   }
+
+//   ----------------Слайдер----------------------
+
+.rooms__slider,
+.rooms__slider-luxe,
+.rooms__slider-two {
+	min-width: 0;
+	margin-bottom: 20px;
+
+	& .slick-list {
+		width: 404px;
+		position: relative;
+		
+		@media screen and (min-width: 1024px)
+		{  
+			position: static;
+			width: 428px;
+		}
+	
+		@media screen and (min-width: 1280px)
+		{
+			width: 548px;
+		}
+	  }
+
+  }
+  
+  .rooms__slider .slick-list {
+	left: 120px;
+  }
+
+  .rooms__slider-luxe .slick-list,
+  .rooms__slider-two .slick-list {
+	left: -135px;
+  }
+
+  .rooms__slider-item {
+	margin-right: 16px;
+	@media screen and (min-width: 1024px) {
+		margin-right: 40px;
+	}
+  }
+
+  //   Обгортка для стрілок слайдера
+  .rooms__slider-arrow,
+  .rooms__slider-luxe-arrow,
+  .rooms__slider-arrow-two {
+	width: 96px;
+	height: 32px;
+	margin-bottom: 20px;
+
+	}
+	.rooms__slider-arrow {
+		margin-left: auto;
+		@include tablet {
+			margin-left: 0;
+			margin-right: auto;
+		}	
+	}
+    .rooms__slider-luxe-arrow,
+	.rooms__slider-arrow-two
+	 {
+		margin-right: auto;
+		@include tablet {
+			margin-right: 0;
+			margin-left: auto;
+		}
+	}
+    
+  //Задаємо розташування стрілок відносно обгортки div .rooms__slider-arrow 
+  .rooms__slider-arrow .slick-prev,
+  .rooms__slider-luxe-arrow .slick-prev,
+  .rooms__slider-arrow-two .slick-prev {
+	left: 0;
+	width: 32px;
+	height: 32px;
+	background: url('../images/hotel-page/rooms-arrow-left.svg') 0 0 no-repeat;
+
+  }
+
+  // Стилізую стілки слайдера
+  .rooms__slider-arrow .slick-next,
+  .rooms__slider-luxe-arrow .slick-next,
+  .rooms__slider-arrow-two .slick-next
+   {
+
+	right: 0;
+	width: 32px;
+	height: 32px;
+	background: url('../images/hotel-page/rooms-arrow-right.svg') 0 0 no-repeat;
+
+  }
+
+  .rooms__slider-arrow,
+  .rooms__slider-luxe-arrow,
+  .rooms__slider-arrow-two {
+	//задається для позиціонування стрілки відносно цієї обгортки
+	position: relative;
+	
+	
+  }
+ 
+// Прибираю стиль кнопок слайдера за замовчуванням
+  .rooms__slider-arrow .slick-prev::before,
+  .rooms__slider-arrow .slick-next::before,
+  .rooms__slider-luxe-arrow .slick-prev::before,
+  .rooms__slider-luxe-arrow .slick-next::before,
+  .rooms__slider-arrow-two .slick-next::before,
+  .rooms__slider-arrow-two .slick-prev::before
+
+   {
+      content: unset;
+  }
+  .rooms__slider-wrap {
+	@media screen and (max-width: 1023px) {
+	  margin-bottom: 20px;
+	}
+	@media screen and (min-width: $desktop) {
+	  margin-bottom: 40px;
+	}
+  }
+  
   

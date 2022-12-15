@@ -1,9 +1,9 @@
-<section class="rooms">
+<section class="hotel__rooms">
 	<ul class="rooms__list list">
 		<!-- Кожна li - це окрема кімната в списку -->
 		<!-- Двомісна кімната люкс -->
 	  <li class="rooms__item ">
-		<div class="container">
+		<div class="container rooms__container">
 		  <div class="rooms__wrap-top">
 			<div class="rooms__desc-wrap">
 			  <p class="rooms__subtitle subtitle">Amet minim mollit non</p>
@@ -80,83 +80,64 @@
 			<!-- обгортка для слайдера -->
 			<div class="rooms__slider-wrap">
 				<!-- СЛАЙДЕР -->
-				<!-- <div class="rooms__slider">
-					 Картинка #23
-				  <!-- <div class="rooms__slider-item">
-					<picture>
-						 Слайд для десктопу 
-					  <source
-						srcset="./images/section-sliders/desktop/img-23-dt.webp 1x, 
-						./images/section-sliders/desktop/img-23-dt_2x.webp 2x "
+				<div class="rooms__slider-luxe">
+					<!-- Картинка #23 -->
+					<div class="rooms__slider-item">
+						<picture>
+							<!-- Десктоп -->
+						<source
+						srcset="./images/section-sliders/desktop/img-23-dt.webp 1x,
+						 ./images/section-sliders/desktop/img-23-dt_2x.webp 2x"
 						sizes="(width: 254px)"
 						media="(min-width: 1280px)"
 						type="image/webp"
 					  />
-	  
-					  <source
-						srcset="
-						./images/section-sliders/desktop/img-23-dt.jpg 1x, 
-						./images/section-sliders/desktop/img-23-dt_2x.jpg 2x
-						"
-						sizes="(width: 254px)"
-						media="(min-width: 1280px)"
-						type="image/jpeg"
-					  />
-	  
-					  Картинка для таблет
-					  <source
-					  srcset="./images/section-sliders/tab/img-23-tab.webp 1x,
-					   ./images/section-sliders/tab/img-23-tab_2x.webp 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 1024px)"
-						type="image/webp"
-					  />
-	  
-					  <source
-					  srcset="./images/section-sliders/tab/img-23-tab.jpg 1x, 
-					  ./images/section-sliders/tab/img-23-tab_2x.jpg 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 1024px)"
-						type="image/jpeg"
-					  />
-	  
-					   Слайд для mobile
-					  <source
-					  srcset="./images/section-sliders/mob/img-23-mob.webp 1x,
-					  ./images/section-sliders/mob/img-23-mob_2x.webp 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 414px)"
-						type="image/webp"
-					  />
-					  <source
-						srcset="./images/section-sliders/mob/img-23-mob.jpg 1x,
-						./images/section-sliders/mob/img-23-mob_2x.jpg 2x,  
-						"
-						sizes="(width: 194px)"
-						media="(min-width: 414px)"
-						type="image/jpeg"
-					  />
-	  
-					  <img
-						src="./images/section-sliders/desktop/img-23-dt.jpg"
-						alt="image"
-					  />
-					</picture> 
-				  </div> -->
 
-				  <!-- Картинка #24-->
-				  <!-- <div class="rooms__slider-item">
-					<picture>
-						 Слайд для десктопу 
 					  <source
-						srcset="./images/section-sliders/desktop/img-24-dt.webp 1x, 
-						./images/section-sliders/desktop/img-24-dt_2x.webp 2x "
-						sizes="(width: 254px)"
-						media="(min-width: 1280px)"
-						type="image/webp"
-					  />
-	  
-					  <source
+						  srcset="./images/section-sliders/desktop/img-23-dt.jpg 1x,
+						  ./images/section-sliders/desktop/img-23-dt_2x.jpg 1x"
+						  sizes="(width: 254px)"
+						  media="(min-width: 1280px)"
+						  type="image/jpeg"
+						/>
+
+						<!-- Картинка для таблет і мобайл -->
+						<source
+						srcset="./images/section-sliders/tab/img-23-tab.webp 1x,
+						 ./images/section-sliders/tab/img-23-tab_2х.webp 2x "
+						  sizes="(width: 194px)"
+						  media="(min-width: 414px)"
+						  type="image/webp"
+						/>
+						<source
+						srcset="./images/section-sliders/tab/img-23-tab.jpg 1x,
+						 ./images/section-sliders/tab/img-23-tab_2х.jpg 2x "
+						  sizes="(width: 194px)"
+						  media="(min-width: 414px)"
+						  type="image/jpeg"
+						/>
+
+                      <!-- Картинка по дефолту -->
+					  <img
+						  src="./images/section-sliders/desktop/img-23-dt.jpg"
+						  alt="image"
+						/>
+						</picture>
+					</div>
+
+					<!-- Картинка #24-->
+					<div class="rooms__slider-item">
+						<picture>
+							<!-- Слайд для десктопу  -->
+						<source
+							srcset="./images/section-sliders/desktop/img-24-dt.webp 1x, 
+							./images/section-sliders/desktop/img-24-dt_2x.webp 2x "
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/webp"
+						  />
+
+						<source
 						srcset="
 						./images/section-sliders/desktop/img-24-dt.jpg 1x, 
 						./images/section-sliders/desktop/img-24-dt_2x.jpg 2x
@@ -165,430 +146,214 @@
 						media="(min-width: 1280px)"
 						type="image/jpeg"
 					  />
-	  
-					   Картинка для таблет 
+
+					    <!-- Картинка для таблет та мобайл -->
 					  <source
 					  srcset="./images/section-sliders/tab/img-24-tab.webp 1x, 
-					  ./images/section-sliders/tab/img-24-tab_2x.webp 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 1024px)"
-						type="image/webp"
-					  />
-	  
-					  <source
-					  srcset="./images/section-sliders/tab/img-24-tab.jpg 1x, 
-					  ./images/section-sliders/tab/img-24-tab_2x.jpg 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 1024px)"
-						type="image/jpeg"
-					  />
-	  
-					   Слайд для mobile 
-					  <source
-					  srcset="./images/section-sliders/mob/img-24-mob.webp 1x,
-					  ./images/section-sliders/mob/img-24-mob_2x.webp 2x "
+					  ./images/section-sliders/tab/img-24-tab_2х.webp 2x"
 						sizes="(width: 194px)"
 						media="(min-width: 414px)"
 						type="image/webp"
 					  />
+					   
 					  <source
-						srcset="./images/section-sliders/mob/img-24-mob.jpg 1x,
-						./images/section-sliders/mob/img-24-mob_2x.jpg 2x,  
-						"
+					  srcset="./images/section-sliders/tab/img-24-tab.jpg 1x,
+					   ./images/section-sliders/tab/img-24-tab_2х.jpg 2x"
 						sizes="(width: 194px)"
 						media="(min-width: 414px)"
 						type="image/jpeg"
 					  />
-	  
-					  <img
+
+						  <!-- Картинка по дефолту -->
+						  <img
 						src="./images/section-sliders/desktop/img-24-dt.jpg"
 						alt="image"
 					  />
-					</picture> 
-				  </div> -->
+						</picture>
+					</div>
 
-				   <!-- Картинка #1-->
-				   <!-- <div class="rooms__slider-item">
-					<picture>
-						Слайд для десктопу 
-					  <source
-						srcset="./images/section-sliders/desktop/img-1-dt.webp 1x, 
-						./images/section-sliders/desktop/img-1-dt_2x.webp 2x "
-						sizes="(width: 254px)"
-						media="(min-width: 1280px)"
-						type="image/webp"
-					  />
-	  
-					  <source
-						srcset="
-						./images/section-sliders/desktop/img-1-dt.jpg 1x, 
-						./images/section-sliders/desktop/img-1-dt_2x.jpg 2x
-						"
-						sizes="(width: 254px)"
-						media="(min-width: 1280px)"
-						type="image/jpeg"
-					  />
-	  
-					  Картинка для таблет
-					  <source
-					  srcset="./images/section-sliders/tab/img-1-tab.webp 1x, 
-					  ./images/section-sliders/tab/img-1-tab_2x.webp 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 1024px)"
-						type="image/webp"
-					  />
-	  
-					  <source
-					  srcset="./images/section-sliders/tab/img-1-tab.jpg 1x, 
-					  ./images/section-sliders/tab/img-1-tab_2x.jpg 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 1024px)"
-						type="image/jpeg"
-					  />
-	  
-					  Слайд для mobile 
-					  <source
-					  srcset="./images/section-sliders/mob/img-1-mob.webp 1x,
-					  ./images/section-sliders/mob/img-1-mob_2x.webp 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 414px)"
-						type="image/webp"
-					  />
-					  <source
-						srcset="./images/section-sliders/mob/img-1-mob.jpg 1x,
-						./images/section-sliders/mob/img-1-mob_2x.jpg 2x,  
-						"
-						sizes="(width: 194px)"
-						media="(min-width: 414px)"
-						type="image/jpeg"
-					  />
-	  
-					  <img
-						src="./images/section-sliders/desktop/img-1-dt.jpg"
-						alt="image"
-					  />
-					</picture> 
-				  </div> -->
+					<!-- Картинка #1-->
+				    <div class="rooms__slider-item">
+						<picture>
+							<!-- Слайд для десктопу  -->
+						  <source
+							srcset="./images/section-sliders/desktop/img-1-dt.webp 1x, 
+							./images/section-sliders/desktop/img-1-dt_2x.webp 2x "
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+							srcset="./images/section-sliders/desktop/img-1-dt.jpg 1x,
+							./images/section-sliders/desktop/img-1-dt_2х.jpg 2x"
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/jpeg"
+						  />
+		  
+						  <!-- Картинка для таблет та мобайл-->
+						  <source
+						  srcset="./images/section-sliders/tab/img-1-tab.webp 1x, 
+						  ./images/section-sliders/tab/img-1-tab_2х.webp 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+						  srcset="./images/section-sliders/tab/img-1-tab.jpeg 1x,
+						   ./images/section-sliders/tab/img-1-tab_2х.jpeg 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/jpeg"
+						  />
+		  
+						  <img
+							src="./images/section-sliders/desktop/img-1-dt.jpg"
+							alt="image"
+						  />
+						</picture> 
+					</div>
 
-				  <!-- Картинка #2 -->
-				  <!-- <div class="rooms__slider-item">
-					<picture>
-						<!-- Слайд для десктопу -->
-					  <!-- <source
-						srcset="./images/section-sliders/desktop/img-2-dt.webp 1x, 
-						./images/section-sliders/desktop/img-2-dt_2x.webp 2x "
-						sizes="(width: 254px)"
-						media="(min-width: 1280px)"
-						type="image/webp"
-					  />
-	  
-					  <source
-						srcset="
-						./images/section-sliders/desktop/img-2-dt.jpg 1x, 
-						./images/section-sliders/desktop/img-2-dt_2x.jpg 2x
-						"
-						sizes="(width: 254px)"
-						media="(min-width: 1280px)"
-						type="image/jpeg"
-					  />
-	   -->
-					  <!-- Картинка для таблет -->
-					  <!-- <source
-					  srcset="./images/section-sliders/tab/img-2-tab.webp 1x, 
-					  ./images/section-sliders/tab/img-2-tab_2x.webp 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 1024px)"
-						type="image/webp"
-					  />
-	  
-					  <source
-					  srcset="./images/section-sliders/tab/img-2-tab.jpg 1x, 
-					  ./images/section-sliders/tab/img-2-tab_2x.jpg 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 1024px)"
-						type="image/jpeg"
-					  />
-	  
-					  <!-- Слайд для mobile -->
-					  <!-- <source
-					  srcset="./images/section-sliders/mob/img-2-mob.webp 1x,
-					  ./images/section-sliders/mob/img-2-mob_2x.webp 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 414px)"
-						type="image/webp"
-					  />
-					  <source
-						srcset="./images/section-sliders/mob/img-2-mob.jpg 1x,
-						./images/section-sliders/mob/img-2-mob_2x.jpg 2x,  
-						"
-						sizes="(width: 194px)"
-						media="(min-width: 414px)"
-						type="image/jpeg"
-					  />
-	  
-					  <img
-						src="./images/section-sliders/desktop/img-2-dt.jpg"
-						alt="image"
-					  />
-					</picture> 
-				  </div> --> --> -->
+					<!-- Картинка #2 -->
+					<div class="rooms__slider-item">
+						<picture>
+							<!-- Слайд для десктопу  -->
+						   <source
+							srcset="./images/section-sliders/desktop/img-2-dt.webp 1x, 
+							./images/section-sliders/desktop/img-2-dt_2x.webp 2x "
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+							srcset="
+							./images/section-sliders/desktop/img-2-dt.jpg 1x, 
+							./images/section-sliders/desktop/img-2-dt_2х.jpg 2x"
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/jpeg"
+						  />
+		   
+						   <!-- Картинка для таблет та мобайл  -->
+						 <source
+						  srcset="./images/section-sliders/tab/img-2-tab.webp 1x, 
+						  ./images/section-sliders/tab/img-2-tab_2х.webp 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+						  srcset="./images/section-sliders/tab/img-2-tab.jpeg 1x,
+						  ./images/section-sliders/tab/img-2-tab_2х.jpeg 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/jpeg"
+						  />
+		  
+						  <img
+							src="./images/section-sliders/desktop/img-2-dt.jpg"
+							alt="image"
+						  />
+						</picture> 
+					</div>
 
-				  <!-- Картинка #3-->
-				  <!-- <div class="rooms__slider-item">
-					<picture>
-						<!-- Слайд для десктопу -->
-					  <!-- <source
-						srcset="./images/section-sliders/desktop/img-3-dt.webp 1x, 
-						./images/section-sliders/desktop/img-3-dt_2x.webp 2x "
-						sizes="(width: 254px)"
-						media="(min-width: 1280px)"
-						type="image/webp"
-					  />
-	  
-					  <source
-						srcset="
-						./images/section-sliders/desktop/img-3-dt.jpg 1x, 
-						./images/section-sliders/desktop/img-3-dt_2x.jpg 2x
-						"
-						sizes="(width: 254px)"
-						media="(min-width: 1280px)"
-						type="image/jpeg"
-					  /> -->
-	  
-					  <!-- Картинка для таблет -->
-					  <!-- <source
-					  srcset="./images/section-sliders/tab/img-3-tab.webp 1x, 
-					  ./images/section-sliders/tab/img-3-tab_2x.webp 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 1024px)"
-						type="image/webp"
-					  />
-	  
-					  <source
-					  srcset="./images/section-sliders/tab/img-3-tab.jpg 1x, 
-					  ./images/section-sliders/tab/img-3-tab_2x.jpg 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 1024px)"
-						type="image/jpeg"
-					  />
-	   -->
-					  <!-- Слайд для mobile -->
-					  <!-- <source
-					  srcset="./images/section-sliders/mob/img-3-mob.webp 1x,
-					  ./images/section-sliders/mob/img-3-mob_2x.webp 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 414px)"
-						type="image/webp"
-					  />
-					  <source
-						srcset="./images/section-sliders/mob/img-3-mob.jpg 1x,
-						./images/section-sliders/mob/img-3-mob_2x.jpg 2x,  
-						"
-						sizes="(width: 194px)"
-						media="(min-width: 414px)"
-						type="image/jpeg"
-					  />
-	   -->
-					  <!-- <img
-						src="./images/section-sliders/desktop/img-3-dt.jpg"
-						alt="image"
-					  />
-					</picture> 
-				  </div> --> -->
+					<!-- Картинка #3 -->
+				    <div class="rooms__slider-item">
+						<picture>
+							 <!-- Слайд для десктопу  -->
+						   <source
+							srcset="./images/section-sliders/desktop/img-3-dt.webp 1x, 
+							./images/section-sliders/desktop/img-3-dt_2x.webp 2x "
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+							srcset="./images/section-sliders/desktop/img-3-dt.jpg 1x,
+							 ./images/section-sliders/desktop/img-3-dt_2х.jpg 2x"
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/jpeg"
+						  />
+		  
+						   <!-- Картинка для таблет та мобайл-->
+						   <source
+						  srcset="./images/section-sliders/tab/img-3-tab.webp 1x, 
+						  ./images/section-sliders/tab/img-3-tab_2х.webp 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+						  srcset="./images/section-sliders/tab/img-3-tab.jpeg 1x,
+						   ./images/section-sliders/tab/img-3-tab_2х.jpeg 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/jpeg"
+						  />
+		
+						   <img
+							src="./images/section-sliders/desktop/img-3-dt.jpg"
+							alt="image"
+						  />
+						</picture> 
+					</div>
 
-				  <!-- Картинка #10-->
-				  <!-- <div class="rooms__slider-item">
-					<picture>
-						 Слайд для десктопу 
-					  <source
-						srcset="./images/section-sliders/desktop/img-10-dt.webp 1x, 
-						./images/section-sliders/desktop/img-10-dt_2x.webp 2x "
-						sizes="(width: 254px)"
-						media="(min-width: 1280px)"
-						type="image/webp"
-					  />
-	  
-					  <source
-						srcset="
-						./images/section-sliders/desktop/img-10-dt.jpg 1x, 
-						./images/section-sliders/desktop/img-10-dt_2x.jpg 2x
-						"
-						sizes="(width: 254px)"
-						media="(min-width: 1280px)"
-						type="image/jpeg"
-					  />
-	  
-					   Картинка для таблет 
-					  <source
-					  srcset="./images/section-sliders/tab/img-10-tab.webp 1x, 
-					  ./images/section-sliders/tab/img-10-tab_2x.webp 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 1024px)"
-						type="image/webp"
-					  />
-	  
-					  <source
-					  srcset="./images/section-sliders/tab/img-10-tab.jpg 1x, 
-					  ./images/section-sliders/tab/img-10-tab_2x.jpg 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 1024px)"
-						type="image/jpeg"
-					  />
-	  
-					  Слайд для mobile 
-					  <source
-					  srcset="./images/section-sliders/mob/img-10-mob.webp 1x,
-					  ./images/section-sliders/mob/img-10-mob_2x.webp 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 414px)"
-						type="image/webp"
-					  />
-					  <source
-						srcset="./images/section-sliders/mob/img-10-mob.jpg 1x,
-						./images/section-sliders/mob/img-10-mob_2x.jpg 2x,  
-						"
-						sizes="(width: 194px)"
-						media="(min-width: 414px)"
-						type="image/jpeg"
-					  />
-	  
-					  <img
-						src="./images/section-sliders/desktop/img-10-dt.jpg"
-						alt="image"
-					  />
-					</picture> 
-				  </div> -->
+					<!-- Картинка #10 -->
+					<div class="rooms__slider-item">
+						<picture>
+							 <!-- Слайд для десктопу  -->
+						  <source
+							srcset="./images/section-sliders/desktop/img-10-dt.webp 1x, 
+							./images/section-sliders/desktop/img-10-dt_2x.webp 2x "
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+							srcset="
+							./images/section-sliders/desktop/img-10-dt.jpg 1x,
+							 ./images/section-sliders/desktop/img-10-dt_2х.jpg 2x"
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/jpeg"
+						  />
+		  
+						   <!-- Картинка для таблет та мобайл  -->
+						  <source
+						  srcset="./images/section-sliders/tab/img-10-tab.webp 1x,
+						   ./images/section-sliders/tab/img-10-tab_2х.webp 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+						  srcset="./images/section-sliders/tab/img-10-tab.jpeg 1x,
+						   ./images/section-sliders/tab/img-10-tab_2х.jpeg 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/jpeg"
+						  />
+		  
+						  <img
+							src="./images/section-sliders/desktop/img-10-dt.jpg"
+							alt="image"
+						  />
+						</picture> 
+					</div>
+				</div>
 
-				  <!-- Картинка #12 -->
-				  <!-- <div class="rooms__slider-item">
-					<picture>
-						 Слайд для десктопу
-					  <source
-						srcset="./images/section-sliders/desktop/img-12-dt.webp 1x, 
-						./images/section-sliders/desktop/img-12-dt_2x.webp 2x "
-						sizes="(width: 254px)"
-						media="(min-width: 1280px)"
-						type="image/webp"
-					  />
-	  
-					  <source
-						srcset="
-						./images/section-sliders/desktop/img-12-dt.jpg 1x, 
-						./images/section-sliders/desktop/img-12-dt_2x.jpg 2x
-						"
-						sizes="(width: 254px)"
-						media="(min-width: 1280px)"
-						type="image/jpeg"
-					  />
-	  
-					  Картинка для таблет 
-					  <source
-					  srcset="./images/section-sliders/tab/img-12-tab.webp 1x, 
-					  ./images/section-sliders/tab/img-12-tab_2x.webp 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 1024px)"
-						type="image/webp"
-					  />
-	  
-					  <source
-					  srcset="./images/section-sliders/tab/img-12-tab.jpg 1x, 
-					  ./images/section-sliders/tab/img-12-tab_2x.jpg 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 1024px)"
-						type="image/jpeg"
-					  />
-	  
-					  Слайд для mobile
-					  <source
-					  srcset="./images/section-sliders/mob/img-12-mob.webp 1x,
-					  ./images/section-sliders/mob/img-12-mob_2x.webp 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 414px)"
-						type="image/webp"
-					  />
-					  <source
-						srcset="./images/section-sliders/mob/img-12-mob.jpg 1x,
-						./images/section-sliders/mob/img-12-mob_2x.jpg 2x,  
-						"
-						sizes="(width: 194px)"
-						media="(min-width: 414px)"
-						type="image/jpeg"
-					  />
-	  
-					  <img
-						src="./images/section-sliders/desktop/img-12-dt.jpg"
-						alt="image"
-					  />
-					</picture> 
-				  </div> -->
-
-				   <!-- Картинка #13 -->
-				   <!-- <div class="rooms__slider-item">
-					<picture>
-						Слайд для десктопу 
-					  <source
-						srcset="./images/section-sliders/desktop/img-12-dt.webp 1x, 
-						./images/section-sliders/desktop/img-12-dt_2x.webp 2x "
-						sizes="(width: 254px)"
-						media="(min-width: 1280px)"
-						type="image/webp"
-					  />
-	  
-					  <source
-						srcset="
-						./images/section-sliders/desktop/img-12-dt.jpg 1x, 
-						./images/section-sliders/desktop/img-12-dt_2x.jpg 2x
-						"
-						sizes="(width: 254px)"
-						media="(min-width: 1280px)"
-						type="image/jpeg"
-					  />
-	  
-					  Картинка для таблет 
-					  <source
-					  srcset="./images/section-sliders/tab/img-12-tab.webp 1x, 
-					  ./images/section-sliders/tab/img-12-tab_2x.webp 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 1024px)"
-						type="image/webp"
-					  />
-	  
-					  <source
-					  srcset="./images/section-sliders/tab/img-12-tab.jpg 1x, 
-					  ./images/section-sliders/tab/img-12-tab_2x.jpg 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 1024px)"
-						type="image/jpeg"
-					  />
-	  
-					  Слайд для mobile 
-					  <source
-					  srcset="./images/section-sliders/mob/img-12-mob.webp 1x,
-					  ./images/section-sliders/mob/img-12-mob_2x.webp 2x "
-						sizes="(width: 194px)"
-						media="(min-width: 414px)"
-						type="image/webp"
-					  />
-					  <source
-						srcset="./images/section-sliders/mob/img-12-mob.jpg 1x,
-						./images/section-sliders/mob/img-12-mob_2x.jpg 2x,  
-						"
-						sizes="(width: 194px)"
-						media="(min-width: 414px)"
-						type="image/jpeg"
-					  />
-	  
-					  <img
-						src="./images/section-sliders/desktop/img-12-dt.jpg"
-						alt="image"
-					  />
-					</picture> 
-				  </div> -->
-				 
-				</div> -->
 				<!-- Класс-обгортка для стрілок слайдеру -->
-			   <!-- <div class="rooms__slider-arrow"></div> -->
-			  </div>
+			    <div class="rooms__slider-luxe-arrow"></div>
+			</div>
 			
 			  <!-- Кнопки Детальніше та Переглянути ціни -->
 			<ul class="rooms__list-btn list">
@@ -605,22 +370,19 @@
 
 	  <!-- Трьохмісна кімната -->	  
 	  <li class="rooms__item ">
-		<div class="container">
+		<div class="container rooms__container">
+			<!-- Обгортка для текстового контенту i картинки -->
 		  <div class="rooms__wrap-top">
 			<div class="rooms__desc-wrap">
 			  <p class="rooms__subtitle subtitle">Amet minim mollit non</p>
-			  <p class="rooms__hotel-logo logo" >Mimiho</p>
-              
+			  <p class="rooms__hotel-logo logo" >Mimiho</p>             
 				<h2 class="rooms__title">Трьохмісний номер</h2>
 			  <p class="rooms__desc">
 				Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
 				sint. Velit officia consequat duis enim velit mollit. Exercitation
 				veniam consequat sunt nostrud amet
-			  </p>
-			
-			  
+			  </p> 
 			</div>
-
 			<!-- Картинка Трьохмісний номер -->
 			<picture class="rooms__img-wrap">
 			<!-- Картинка кімнати для desktop -->
@@ -677,259 +439,302 @@
 			  />
 			</picture> 
 		  </div>
+		  <!-- flex-обгортка для позиціонування слайдеру і кнопок Детальніше, Переглянути ціни -->
 		  <div class="rooms__wrap-bottom">
-				  <div class="rooms__slider-wrap">
-				  <!-- <div class="rooms__slider">
+			<!-- обгортка для слайдера -->
+			<div class="rooms__slider-wrap">
+				<!-- СЛАЙДЕР -->
+				<div class="rooms__slider">
+					<!-- Картинка #23 -->
 					<div class="rooms__slider-item">
-					  <picture>
+						<picture>
+							<!-- Десктоп -->
 						<source
-						  srcset="
-							./images/slider-mini/slider-desktop/img-1-desc.webp    1x,
-							./images/slider-mini/slider-desktop/img-1-desc@2x.webp 2x
-						  "
-						  sizes="(width: 254px)"
-						  media="(min-width: 1280px)"
-						  type="image/webp"
-						/>
-		
-						<source
-						  srcset="
-							./images/slider-mini/slider-desktop/img-1-desc.jpg    1x,
-							./images/slider-mini/slider-desktop/img-1-desc@2х.jpg 2x
-						  "
-						  sizes="(width: 254px)"
-						  media="(min-width: 1280px)"
-						  type="image/jpeg"
-						/>
-		
-						<source
-						srcset="./images/slider-mini/slider-tablet/img-1-tabl.webp 1x,
-						./images/slider-mini/slider-tablet/img-1-tabl.webp 2x"
-						  sizes="(width: 194px)"
-						  media="(min-width: 1024px)"
-						  type="image/webp"
-						/>
-		
-						<source
-						srcset="
-						  ./images/slider-mini/slider-tablet/img-1-tabl.jpeg 1x,
-						  ./images/slider-mini/slider-tablet/img-1-tabl@2х.jpeg 2x
-						  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 1024px)"
-						  type="image/jpeg"
-						/>
-		
-						<source
-						  srcset="
-						  ./images/slider-mini/slider-tablet/img-1-tabl.jpeg     1x,
-						  ./images/slider-mini/slider-tablet/img-1-tabl@2х.jpeg 2x
-						  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 320px)"
-						  type="image/webp"
-						/>
-		
-						<img
-						  src="./images/slider-mini/slider-mob/img-1-mob.jpeg"
-						  alt="image"
-						/>
-					  </picture> 
-					</div>
-					 <div class="rooms__slider-item">
-					  <picture>
-						<source
-						  srcset="
-							./images/slider-mini/slider-desktop/img-2-desc.webp    1x,
-							./images/slider-mini/slider-desktop/img-2-desc@2x.webp 2x
-						  "
-						  sizes="(width: 254px)"
-						  media="(min-width: 1280px)"
-						  type="image/webp"
-						/>
-		
-						<source
-						  srcset="
-							./images/slider-mini/slider-desktop/img-2-desc.jpg    1x,
-							./images/slider-mini/slider-desktop/img-2-desc@2х.jpg 2x
-						  "
-						  sizes="(width: 254px)"
-						  media="(min-width: 1280px)"
-						  type="image/jpeg"
-						/>
-		
-						<source
-						srcset="
-						./images/slider-mini/slider-tablet/img-2-tabl.webp    1x,
-						./images/slider-mini/slider-tablet/img-2-tabl@2х.webp 2x
-					  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 1024px)"
-						  type="image/webp"
-						/>
-		
-						<source
-						srcset="./images/slider-mini/slider-tablet/img-1-tabl.jpeg 1x,
-						./images/slider-mini/slider-tablet/img-2-tabl@2х.jpg 2x
-					  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 1024px)"
-						  type="image/jpeg"
-						/>
-		
-						<source
-						srcset="
-						./images/slider-mini/slider-tablet/img-2-tabl.webp    1x,
-						./images/slider-mini/slider-tablet/img-2-tabl@2х.webp 2x
-					  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 320px)"
-						  type="image/webp"
-						/>
-		
-						<img
-						  src="./images/slider-mini/slider-mob/img-2-mob.jpeg"
-						  alt="image"
-						/>
-					  </picture>
-					 </div>  
-					<div class="rooms__slider-item">
-					  <picture>
-						<source
-						  srcset="
-							./images/slider-mini/slider-desktop/img-3-desc.webp    1x,
-							./images/slider-mini/slider-desktop/img-3-desc@2x.webp 2x
-						  "
-						  sizes="(width: 254px)"
-						  media="(min-width: 1280px)"
-						  type="image/webp"
-						/>
-		
-						<source
-						  srcset="
-							./images/slider-mini/slider-desktop/img-3-desc.jpg    1x,
-							./images/slider-mini/slider-desktop/img-3-desc@2х.jpg 2x
-						  "
-						  sizes="(width: 254px)"
-						  media="(min-width: 1280px)"
-						  type="image/jpeg"
-						/>
-		
-						<source
-						  srcset="
-							./images/slider-mini/slider-tablet/img-3-tabl.webp    1x,
-							./images/slider-mini/slider-tablet/img-3-tabl@2х.webp 2x
-						  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 1024px)"
-						  type="image/webp"
-						/>
-		
-						<source
-						srcset="./images/slider-mini/slider-tablet/img-3-tabl.webp    1x,
-						./images/slider-mini/slider-tablet/img-3-tabl@2х.webp 2x
-					  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 1024px)"
-						  type="image/jpeg"
-						/>
-		
-						<source
-						srcset="
-						./images/slider-mini/slider-tablet/img-3-tabl.webp    1x,
-						./images/slider-mini/slider-tablet/img-3-tabl@2х.webp 2x
-					  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 320px)"
-						  type="image/webp"
-						/>
-		
-						<img
-						  src="./images/slider-mini/slider-desktop/img-1-desc.jpg"
-						  alt="image"
-						/>
-					  </picture>
-					</div>
-					
-					<div class="rooms__slider-item">
-					  <picture>
-						<source
-						  srcset="
-							./images/slider-mini/slider-desktop/img-4-desc.webp    1x,
-							./images/slider-mini/slider-desktop/img-4-desc@2x.webp 2x
-						  "
-						  sizes="(width: 254px)"
-						  media="(min-width: 1280px)"
-						  type="image/webp"
-						/>
-		
-						<source
-						  srcset="
-							./images/slider-mini/slider-desktop/img-4-desc.jpg    1x,
-							./images/slider-mini/slider-desktop/img-4-desc@2х.jpg 2x
-						  "
-						  sizes="(width: 254px)"
-						  media="(min-width: 1280px)"
-						  type="image/jpeg"
-						/>
-		
-						<source
-						srcset="
-						./images/slider-mini/slider-tablet/img-4-tabl.webp    1x,
-						./images/slider-mini/slider-tablet/img-4-tabl@2х.webp 2x
-					  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 1024px)"
-						  type="image/webp"
-						/>
-		
-						<source
-						srcset="./images/slider-mini/slider-tablet/img-4-tabl.jpeg  1x,
-						./images/slider-mini/slider-tablet/img-4-tabl.jpeg 2x
-					  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 1024px)"
-						  type="image/jpeg"
-						/>
-		
-						<source
-						srcset="
-						./images/slider-mini/slider-tablet/img-4-tabl.webp    1x,
-						./images/slider-mini/slider-tablet/img-4-tabl@2х.webp 2x
-					  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 320px)"
-						  type="image/webp"
-						/>
-		
-						<img
-						  src="./images/slider-mini/slider-mob/img-4-mob.jpeg"
-						  alt="image"
-						/>
-					  </picture> 
-					</div> 
-				  </div>
-				 
+						srcset="./images/section-sliders/desktop/img-23-dt.webp 1x,
+						 ./images/section-sliders/desktop/img-23-dt_2x.webp 2x"
+						sizes="(width: 254px)"
+						media="(min-width: 1280px)"
+						type="image/webp"
+					  />
 
-				 <div class="rooms__slider-arrow"></div>
-				</div> -->
+					  <source
+						  srcset="./images/section-sliders/desktop/img-23-dt.jpg 1x,
+						  ./images/section-sliders/desktop/img-23-dt_2x.jpg 1x"
+						  sizes="(width: 254px)"
+						  media="(min-width: 1280px)"
+						  type="image/jpeg"
+						/>
 
-			
+						<!-- Картинка для таблет і мобайл -->
+						<source
+						srcset="./images/section-sliders/tab/img-23-tab.webp 1x,
+						 ./images/section-sliders/tab/img-23-tab_2х.webp 2x "
+						  sizes="(width: 194px)"
+						  media="(min-width: 414px)"
+						  type="image/webp"
+						/>
+						<source
+						srcset="./images/section-sliders/tab/img-23-tab.jpg 1x,
+						 ./images/section-sliders/tab/img-23-tab_2х.jpg 2x "
+						  sizes="(width: 194px)"
+						  media="(min-width: 414px)"
+						  type="image/jpeg"
+						/>
+
+                      <!-- Картинка по дефолту -->
+					  <img
+						  src="./images/section-sliders/desktop/img-23-dt.jpg"
+						  alt="image"
+						/>
+						</picture>
+					</div>
+
+					<!-- Картинка #24-->
+					<div class="rooms__slider-item">
+						<picture>
+							<!-- Слайд для десктопу  -->
+						<source
+							srcset="./images/section-sliders/desktop/img-24-dt.webp 1x, 
+							./images/section-sliders/desktop/img-24-dt_2x.webp 2x "
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/webp"
+						  />
+
+						<source
+						srcset="
+						./images/section-sliders/desktop/img-24-dt.jpg 1x, 
+						./images/section-sliders/desktop/img-24-dt_2x.jpg 2x
+						"
+						sizes="(width: 254px)"
+						media="(min-width: 1280px)"
+						type="image/jpeg"
+					  />
+
+					    <!-- Картинка для таблет та мобайл -->
+					  <source
+					  srcset="./images/section-sliders/tab/img-24-tab.webp 1x, 
+					  ./images/section-sliders/tab/img-24-tab_2х.webp 2x"
+						sizes="(width: 194px)"
+						media="(min-width: 414px)"
+						type="image/webp"
+					  />
+					   
+					  <source
+					  srcset="./images/section-sliders/tab/img-24-tab.jpg 1x,
+					   ./images/section-sliders/tab/img-24-tab_2х.jpg 2x"
+						sizes="(width: 194px)"
+						media="(min-width: 414px)"
+						type="image/jpeg"
+					  />
+
+						  <!-- Картинка по дефолту -->
+						  <img
+						src="./images/section-sliders/desktop/img-24-dt.jpg"
+						alt="image"
+					  />
+						</picture>
+					</div>
+
+					<!-- Картинка #1-->
+				    <div class="rooms__slider-item">
+						<picture>
+							<!-- Слайд для десктопу  -->
+						  <source
+							srcset="./images/section-sliders/desktop/img-1-dt.webp 1x, 
+							./images/section-sliders/desktop/img-1-dt_2x.webp 2x "
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+							srcset="./images/section-sliders/desktop/img-1-dt.jpg 1x,
+							./images/section-sliders/desktop/img-1-dt_2х.jpg 2x"
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/jpeg"
+						  />
+		  
+						  <!-- Картинка для таблет та мобайл-->
+						  <source
+						  srcset="./images/section-sliders/tab/img-1-tab.webp 1x, 
+						  ./images/section-sliders/tab/img-1-tab_2х.webp 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+						  srcset="./images/section-sliders/tab/img-1-tab.jpeg 1x,
+						   ./images/section-sliders/tab/img-1-tab_2х.jpeg 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/jpeg"
+						  />
+		  
+						  <img
+							src="./images/section-sliders/desktop/img-1-dt.jpg"
+							alt="image"
+						  />
+						</picture> 
+					</div>
+
+					<!-- Картинка #2 -->
+					<div class="rooms__slider-item">
+						<picture>
+							<!-- Слайд для десктопу  -->
+						   <source
+							srcset="./images/section-sliders/desktop/img-2-dt.webp 1x, 
+							./images/section-sliders/desktop/img-2-dt_2x.webp 2x "
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+							srcset="
+							./images/section-sliders/desktop/img-2-dt.jpg 1x, 
+							./images/section-sliders/desktop/img-2-dt_2х.jpg 2x"
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/jpeg"
+						  />
+		   
+						   <!-- Картинка для таблет та мобайл  -->
+						 <source
+						  srcset="./images/section-sliders/tab/img-2-tab.webp 1x, 
+						  ./images/section-sliders/tab/img-2-tab_2х.webp 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+						  srcset="./images/section-sliders/tab/img-2-tab.jpeg 1x,
+						  ./images/section-sliders/tab/img-2-tab_2х.jpeg 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/jpeg"
+						  />
+		  
+						  <img
+							src="./images/section-sliders/desktop/img-2-dt.jpg"
+							alt="image"
+						  />
+						</picture> 
+					</div>
+
+					<!-- Картинка #3 -->
+				    <div class="rooms__slider-item">
+						<picture>
+							 <!-- Слайд для десктопу  -->
+						   <source
+							srcset="./images/section-sliders/desktop/img-3-dt.webp 1x, 
+							./images/section-sliders/desktop/img-3-dt_2x.webp 2x "
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+							srcset="./images/section-sliders/desktop/img-3-dt.jpg 1x,
+							 ./images/section-sliders/desktop/img-3-dt_2х.jpg 2x"
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/jpeg"
+						  />
+		  
+						   <!-- Картинка для таблет та мобайл-->
+						   <source
+						  srcset="./images/section-sliders/tab/img-3-tab.webp 1x, 
+						  ./images/section-sliders/tab/img-3-tab_2х.webp 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+						  srcset="./images/section-sliders/tab/img-3-tab.jpeg 1x,
+						   ./images/section-sliders/tab/img-3-tab_2х.jpeg 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/jpeg"
+						  />
+		
+						   <img
+							src="./images/section-sliders/desktop/img-3-dt.jpg"
+							alt="image"
+						  />
+						</picture> 
+					</div>
+
+					<!-- Картинка #10 -->
+					<div class="rooms__slider-item">
+						<picture>
+							 <!-- Слайд для десктопу  -->
+						  <source
+							srcset="./images/section-sliders/desktop/img-10-dt.webp 1x, 
+							./images/section-sliders/desktop/img-10-dt_2x.webp 2x "
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+							srcset="
+							./images/section-sliders/desktop/img-10-dt.jpg 1x,
+							 ./images/section-sliders/desktop/img-10-dt_2х.jpg 2x"
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/jpeg"
+						  />
+		  
+						   <!-- Картинка для таблет та мобайл  -->
+						  <source
+						  srcset="./images/section-sliders/tab/img-10-tab.webp 1x,
+						   ./images/section-sliders/tab/img-10-tab_2х.webp 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+						  srcset="./images/section-sliders/tab/img-10-tab.jpeg 1x,
+						   ./images/section-sliders/tab/img-10-tab_2х.jpeg 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/jpeg"
+						  />
+		  
+						  <img
+							src="./images/section-sliders/desktop/img-10-dt.jpg"
+							alt="image"
+						  />
+						</picture> 
+					</div>
+				</div>
+
+				<!-- Класс-обгортка для стрілок слайдеру -->
+			    <div class="rooms__slider-arrow"></div>
+			</div>
+
+			  <!-- Кнопки Детальніше та Переглянути ціни -->
 			<ul class="rooms__list-btn list">
-			  <li class="rooms__item-btn">
-				<a class="link link-btn" href="./room-for-three.html">Детальніше</a>
-			  </li>
-			  <li class="rooms__item-btn">
-				<button class="btn dark-btn">Переглянути ціни</button>
-			  </li>
-			</ul>
-		  </div>
+				<li class="rooms__item-btn">
+				  <a class="link link-btn" href="./room-for-three.html">Детальніше</a>
+				</li>
+				<li class="rooms__item-btn">
+				  <button class="btn dark-btn">Переглянути ціни</button>
+				</li>
+			  </ul>
+		  </div>	
 		</div>
 	  </li>
 
 	  <!-- Двомісна кімната -->
 	  <li class="rooms__item ">
-		<div class="container">
+		<div class="container rooms__container">
 		  <div class="rooms__wrap-top">
 			<div class="rooms__desc-wrap">
 			  <p class="rooms__subtitle subtitle">Amet minim mollit non</p>
@@ -999,252 +804,294 @@
 			</picture> 
 		  </div>
 		  <div class="rooms__wrap-bottom">
-				  <div class="rooms__slider-wrap">
-				  <!-- <div class="rooms__slider">
+			<!-- обгортка для слайдера -->
+			<div class="rooms__slider-wrap">
+				<!-- СЛАЙДЕР -->
+				<div class="rooms__slider-two">
+					<!-- Картинка #23 -->
 					<div class="rooms__slider-item">
-					  <picture>
+						<picture>
+							<!-- Десктоп -->
 						<source
-						  srcset="
-							./images/slider-mini/slider-desktop/img-1-desc.webp    1x,
-							./images/slider-mini/slider-desktop/img-1-desc@2x.webp 2x
-						  "
-						  sizes="(width: 254px)"
-						  media="(min-width: 1280px)"
-						  type="image/webp"
-						/>
-		
-						<source
-						  srcset="
-							./images/slider-mini/slider-desktop/img-1-desc.jpg    1x,
-							./images/slider-mini/slider-desktop/img-1-desc@2х.jpg 2x
-						  "
-						  sizes="(width: 254px)"
-						  media="(min-width: 1280px)"
-						  type="image/jpeg"
-						/>
-		
-						<source
-						srcset="./images/slider-mini/slider-tablet/img-1-tabl.webp 1x,
-						./images/slider-mini/slider-tablet/img-1-tabl.webp 2x"
-						  sizes="(width: 194px)"
-						  media="(min-width: 1024px)"
-						  type="image/webp"
-						/>
-		
-						<source
-						srcset="
-						  ./images/slider-mini/slider-tablet/img-1-tabl.jpeg 1x,
-						  ./images/slider-mini/slider-tablet/img-1-tabl@2х.jpeg 2x
-						  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 1024px)"
-						  type="image/jpeg"
-						/>
-		
-						<source
-						  srcset="
-						  ./images/slider-mini/slider-tablet/img-1-tabl.jpeg     1x,
-						  ./images/slider-mini/slider-tablet/img-1-tabl@2х.jpeg 2x
-						  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 320px)"
-						  type="image/webp"
-						/>
-		
-						<img
-						  src="./images/slider-mini/slider-mob/img-1-mob.jpeg"
-						  alt="image"
-						/>
-					  </picture> 
-					</div>
-					 <div class="rooms__slider-item">
-					  <picture>
-						<source
-						  srcset="
-							./images/slider-mini/slider-desktop/img-2-desc.webp    1x,
-							./images/slider-mini/slider-desktop/img-2-desc@2x.webp 2x
-						  "
-						  sizes="(width: 254px)"
-						  media="(min-width: 1280px)"
-						  type="image/webp"
-						/>
-		
-						<source
-						  srcset="
-							./images/slider-mini/slider-desktop/img-2-desc.jpg    1x,
-							./images/slider-mini/slider-desktop/img-2-desc@2х.jpg 2x
-						  "
-						  sizes="(width: 254px)"
-						  media="(min-width: 1280px)"
-						  type="image/jpeg"
-						/>
-		
-						<source
-						srcset="
-						./images/slider-mini/slider-tablet/img-2-tabl.webp    1x,
-						./images/slider-mini/slider-tablet/img-2-tabl@2х.webp 2x
-					  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 1024px)"
-						  type="image/webp"
-						/>
-		
-						<source
-						srcset="./images/slider-mini/slider-tablet/img-1-tabl.jpeg 1x,
-						./images/slider-mini/slider-tablet/img-2-tabl@2х.jpg 2x
-					  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 1024px)"
-						  type="image/jpeg"
-						/>
-		
-						<source
-						srcset="
-						./images/slider-mini/slider-tablet/img-2-tabl.webp    1x,
-						./images/slider-mini/slider-tablet/img-2-tabl@2х.webp 2x
-					  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 320px)"
-						  type="image/webp"
-						/>
-		
-						<img
-						  src="./images/slider-mini/slider-mob/img-2-mob.jpeg"
-						  alt="image"
-						/>
-					  </picture>
-					 </div>  
-					<div class="rooms__slider-item">
-					  <picture>
-						<source
-						  srcset="
-							./images/slider-mini/slider-desktop/img-3-desc.webp    1x,
-							./images/slider-mini/slider-desktop/img-3-desc@2x.webp 2x
-						  "
-						  sizes="(width: 254px)"
-						  media="(min-width: 1280px)"
-						  type="image/webp"
-						/>
-		
-						<source
-						  srcset="
-							./images/slider-mini/slider-desktop/img-3-desc.jpg    1x,
-							./images/slider-mini/slider-desktop/img-3-desc@2х.jpg 2x
-						  "
-						  sizes="(width: 254px)"
-						  media="(min-width: 1280px)"
-						  type="image/jpeg"
-						/>
-		
-						<source
-						  srcset="
-							./images/slider-mini/slider-tablet/img-3-tabl.webp    1x,
-							./images/slider-mini/slider-tablet/img-3-tabl@2х.webp 2x
-						  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 1024px)"
-						  type="image/webp"
-						/>
-		
-						<source
-						srcset="./images/slider-mini/slider-tablet/img-3-tabl.webp    1x,
-						./images/slider-mini/slider-tablet/img-3-tabl@2х.webp 2x
-					  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 1024px)"
-						  type="image/jpeg"
-						/>
-		
-						<source
-						srcset="
-						./images/slider-mini/slider-tablet/img-3-tabl.webp    1x,
-						./images/slider-mini/slider-tablet/img-3-tabl@2х.webp 2x
-					  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 320px)"
-						  type="image/webp"
-						/>
-		
-						<img
-						  src="./images/slider-mini/slider-desktop/img-1-desc.jpg"
-						  alt="image"
-						/>
-					  </picture>
-					</div>
-					
-					<div class="rooms__slider-item">
-					  <picture>
-						<source
-						  srcset="
-							./images/slider-mini/slider-desktop/img-4-desc.webp    1x,
-							./images/slider-mini/slider-desktop/img-4-desc@2x.webp 2x
-						  "
-						  sizes="(width: 254px)"
-						  media="(min-width: 1280px)"
-						  type="image/webp"
-						/>
-		
-						<source
-						  srcset="
-							./images/slider-mini/slider-desktop/img-4-desc.jpg    1x,
-							./images/slider-mini/slider-desktop/img-4-desc@2х.jpg 2x
-						  "
-						  sizes="(width: 254px)"
-						  media="(min-width: 1280px)"
-						  type="image/jpeg"
-						/>
-		
-						<source
-						srcset="
-						./images/slider-mini/slider-tablet/img-4-tabl.webp    1x,
-						./images/slider-mini/slider-tablet/img-4-tabl@2х.webp 2x
-					  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 1024px)"
-						  type="image/webp"
-						/>
-		
-						<source
-						srcset="./images/slider-mini/slider-tablet/img-4-tabl.jpeg  1x,
-						./images/slider-mini/slider-tablet/img-4-tabl.jpeg 2x
-					  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 1024px)"
-						  type="image/jpeg"
-						/>
-		
-						<source
-						srcset="
-						./images/slider-mini/slider-tablet/img-4-tabl.webp    1x,
-						./images/slider-mini/slider-tablet/img-4-tabl@2х.webp 2x
-					  "
-						  sizes="(width: 194px)"
-						  media="(min-width: 320px)"
-						  type="image/webp"
-						/>
-		
-						<img
-						  src="./images/slider-mini/slider-mob/img-4-mob.jpeg"
-						  alt="image"
-						/>
-					  </picture> 
-					</div> 
-				  </div>
-				 
+						srcset="./images/section-sliders/desktop/img-23-dt.webp 1x,
+						 ./images/section-sliders/desktop/img-23-dt_2x.webp 2x"
+						sizes="(width: 254px)"
+						media="(min-width: 1280px)"
+						type="image/webp"
+					  />
 
-				 <div class="rooms__slider-arrow"></div>
-				</div> -->
+					  <source
+						  srcset="./images/section-sliders/desktop/img-23-dt.jpg 1x,
+						  ./images/section-sliders/desktop/img-23-dt_2x.jpg 1x"
+						  sizes="(width: 254px)"
+						  media="(min-width: 1280px)"
+						  type="image/jpeg"
+						/>
 
-			
+						<!-- Картинка для таблет і мобайл -->
+						<source
+						srcset="./images/section-sliders/tab/img-23-tab.webp 1x,
+						 ./images/section-sliders/tab/img-23-tab_2х.webp 2x "
+						  sizes="(width: 194px)"
+						  media="(min-width: 414px)"
+						  type="image/webp"
+						/>
+						<source
+						srcset="./images/section-sliders/tab/img-23-tab.jpg 1x,
+						 ./images/section-sliders/tab/img-23-tab_2х.jpg 2x "
+						  sizes="(width: 194px)"
+						  media="(min-width: 414px)"
+						  type="image/jpeg"
+						/>
+
+                      <!-- Картинка по дефолту -->
+					  <img
+						  src="./images/section-sliders/desktop/img-23-dt.jpg"
+						  alt="image"
+						/>
+						</picture>
+					</div>
+
+					<!-- Картинка #24-->
+					<div class="rooms__slider-item">
+						<picture>
+							<!-- Слайд для десктопу  -->
+						<source
+							srcset="./images/section-sliders/desktop/img-24-dt.webp 1x, 
+							./images/section-sliders/desktop/img-24-dt_2x.webp 2x "
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/webp"
+						  />
+
+						<source
+						srcset="
+						./images/section-sliders/desktop/img-24-dt.jpg 1x, 
+						./images/section-sliders/desktop/img-24-dt_2x.jpg 2x
+						"
+						sizes="(width: 254px)"
+						media="(min-width: 1280px)"
+						type="image/jpeg"
+					  />
+
+					    <!-- Картинка для таблет та мобайл -->
+					  <source
+					  srcset="./images/section-sliders/tab/img-24-tab.webp 1x, 
+					  ./images/section-sliders/tab/img-24-tab_2х.webp 2x"
+						sizes="(width: 194px)"
+						media="(min-width: 414px)"
+						type="image/webp"
+					  />
+					   
+					  <source
+					  srcset="./images/section-sliders/tab/img-24-tab.jpg 1x,
+					   ./images/section-sliders/tab/img-24-tab_2х.jpg 2x"
+						sizes="(width: 194px)"
+						media="(min-width: 414px)"
+						type="image/jpeg"
+					  />
+
+						  <!-- Картинка по дефолту -->
+						  <img
+						src="./images/section-sliders/desktop/img-24-dt.jpg"
+						alt="image"
+					  />
+						</picture>
+					</div>
+
+					<!-- Картинка #1-->
+				    <div class="rooms__slider-item">
+						<picture>
+							<!-- Слайд для десктопу  -->
+						  <source
+							srcset="./images/section-sliders/desktop/img-1-dt.webp 1x, 
+							./images/section-sliders/desktop/img-1-dt_2x.webp 2x "
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+							srcset="./images/section-sliders/desktop/img-1-dt.jpg 1x,
+							./images/section-sliders/desktop/img-1-dt_2х.jpg 2x"
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/jpeg"
+						  />
+		  
+						  <!-- Картинка для таблет та мобайл-->
+						  <source
+						  srcset="./images/section-sliders/tab/img-1-tab.webp 1x, 
+						  ./images/section-sliders/tab/img-1-tab_2х.webp 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+						  srcset="./images/section-sliders/tab/img-1-tab.jpeg 1x,
+						   ./images/section-sliders/tab/img-1-tab_2х.jpeg 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/jpeg"
+						  />
+		  
+						  <img
+							src="./images/section-sliders/desktop/img-1-dt.jpg"
+							alt="image"
+						  />
+						</picture> 
+					</div>
+
+					<!-- Картинка #2 -->
+					<div class="rooms__slider-item">
+						<picture>
+							<!-- Слайд для десктопу  -->
+						   <source
+							srcset="./images/section-sliders/desktop/img-2-dt.webp 1x, 
+							./images/section-sliders/desktop/img-2-dt_2x.webp 2x "
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+							srcset="
+							./images/section-sliders/desktop/img-2-dt.jpg 1x, 
+							./images/section-sliders/desktop/img-2-dt_2х.jpg 2x"
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/jpeg"
+						  />
+		   
+						   <!-- Картинка для таблет та мобайл  -->
+						 <source
+						  srcset="./images/section-sliders/tab/img-2-tab.webp 1x, 
+						  ./images/section-sliders/tab/img-2-tab_2х.webp 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+						  srcset="./images/section-sliders/tab/img-2-tab.jpeg 1x,
+						  ./images/section-sliders/tab/img-2-tab_2х.jpeg 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/jpeg"
+						  />
+		  
+						  <img
+							src="./images/section-sliders/desktop/img-2-dt.jpg"
+							alt="image"
+						  />
+						</picture> 
+					</div>
+
+					<!-- Картинка #3 -->
+				    <div class="rooms__slider-item">
+						<picture>
+							 <!-- Слайд для десктопу  -->
+						   <source
+							srcset="./images/section-sliders/desktop/img-3-dt.webp 1x, 
+							./images/section-sliders/desktop/img-3-dt_2x.webp 2x "
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+							srcset="./images/section-sliders/desktop/img-3-dt.jpg 1x,
+							 ./images/section-sliders/desktop/img-3-dt_2х.jpg 2x"
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/jpeg"
+						  />
+		  
+						   <!-- Картинка для таблет та мобайл-->
+						   <source
+						  srcset="./images/section-sliders/tab/img-3-tab.webp 1x, 
+						  ./images/section-sliders/tab/img-3-tab_2х.webp 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+						  srcset="./images/section-sliders/tab/img-3-tab.jpeg 1x,
+						   ./images/section-sliders/tab/img-3-tab_2х.jpeg 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/jpeg"
+						  />
+		
+						   <img
+							src="./images/section-sliders/desktop/img-3-dt.jpg"
+							alt="image"
+						  />
+						</picture> 
+					</div>
+
+					<!-- Картинка #10 -->
+					<div class="rooms__slider-item">
+						<picture>
+							 <!-- Слайд для десктопу  -->
+						  <source
+							srcset="./images/section-sliders/desktop/img-10-dt.webp 1x, 
+							./images/section-sliders/desktop/img-10-dt_2x.webp 2x "
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+							srcset="
+							./images/section-sliders/desktop/img-10-dt.jpg 1x,
+							 ./images/section-sliders/desktop/img-10-dt_2х.jpg 2x"
+							sizes="(width: 254px)"
+							media="(min-width: 1280px)"
+							type="image/jpeg"
+						  />
+		  
+						   <!-- Картинка для таблет та мобайл  -->
+						  <source
+						  srcset="./images/section-sliders/tab/img-10-tab.webp 1x,
+						   ./images/section-sliders/tab/img-10-tab_2х.webp 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/webp"
+						  />
+		  
+						  <source
+						  srcset="./images/section-sliders/tab/img-10-tab.jpeg 1x,
+						   ./images/section-sliders/tab/img-10-tab_2х.jpeg 2x"
+							sizes="(width: 194px)"
+							media="(min-width: 414px)"
+							type="image/jpeg"
+						  />
+		  
+						  <img
+							src="./images/section-sliders/desktop/img-10-dt.jpg"
+							alt="image"
+						  />
+						</picture> 
+					</div>
+				</div>
+
+				<!-- Класс-обгортка для стрілок слайдеру -->
+			    <div class="rooms__slider-arrow-two"></div>
+			</div>
+
+			  <!-- Кнопки Детальніше та Переглянути ціни -->
 			<ul class="rooms__list-btn list">
-			  <li class="rooms__item-btn">
-				<a class="link link-btn" href="./room-for-two.html">Детальніше</a>
-			  </li>
-			  <li class="rooms__item-btn">
-				<button class="btn dark-btn">Переглянути ціни</button>
-			  </li>
-			</ul>
-		  </div>
+				<li class="rooms__item-btn">
+				  <a class="link link-btn" href="./room-for-three.html">Детальніше</a>
+				</li>
+				<li class="rooms__item-btn">
+				  <button class="btn dark-btn">Переглянути ціни</button>
+				</li>
+			  </ul>
+		  </div>	
 		</div>
 	  </li>
 
