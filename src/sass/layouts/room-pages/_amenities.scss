@@ -91,7 +91,7 @@
   &:focus {
     color: #f3c653;
     .amenities__icon {
-      fill: #f3c653;
+      fill: #ffffff;
     }
   }
   @include tablet {
@@ -104,6 +104,6 @@
 
 .amenities__icon {
   margin-left: 13px;
-  fill: #ffffff;
+  fill: #f3c653;
   transition: fill 250ms;
 }
