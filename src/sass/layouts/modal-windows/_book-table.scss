@@ -1,30 +1,27 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition-property: opacity;
+    @extend %transition;
+}
 
-// .backdrop {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     background-color: rgba(0, 0, 0, 0.2);
-//     transition-property: opacity;
-//     @extend %transition;
-// }
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
 
-// .is-hidden {
-//     opacity: 0;
-//     pointer-events: none;
-// }
-
-.modal-table {
-    padding: 15px;
+.modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    // transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     background-color: $background-main-gray;
     border-radius: 2px;
-    z-index: 999;
-
+    z-index: 3;
 
     @media screen and (max-width:413px) {
         width: 95%;
@@ -72,7 +69,6 @@
     text-align: center;
     margin-bottom: 20px;
     margin-top: 60px;
-
     text-transform: uppercase;
 
     @include tablet {

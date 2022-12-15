@@ -87,28 +87,12 @@
   @include font(16px, 1.25, 500, 0.02em);
   font-family: $montserrat-font;
   font-style: normal;
-  color: #c79002;
+  color: $color-text-tips;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  transition: color 250ms;
-  &:hover,
-  &:focus {
-    color: #f3c653;
-    .amenities__icon {
-      display: none;
-    }
-  }
-  @include tablet {
-    @include font(20px, 1.25, 500, 0.02em);
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
 }
 
 .amenities__icon {
   margin-left: 13px;
-  fill: #f3c653;
-  transition: fill 250ms;
 }
