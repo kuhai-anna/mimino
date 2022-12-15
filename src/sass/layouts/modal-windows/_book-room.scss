@@ -1,0 +1,216 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition-property: opacity;
+        @extend %transition;
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-room {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $background-main-gray;
+    border-radius: 2px;
+    z-index: 3;
+
+    @media screen and (max-width:413px) {
+        width: 95%;
+        max-width: 414px;
+        height: 95%;
+        max-height: 780px;
+        overflow: scroll;
+    }
+
+        @include mobile {
+        width: 414px;
+        height: 780px;
+    }
+
+        @include tablet {
+        width: 712px;
+        height: 638px;
+    }
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    border: none;
+    margin-top: 16px;
+    margin-right: 16px;
+    background-image: url(../img/icon-x.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.modal-title {
+    font-family: $times-font;
+    font-style: normal;
+    
+    @include font(24px, 1.16, 700, 0.05em);
+    color: $color-modal-title;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 60px;
+    text-transform: uppercase;
+
+    @include tablet {
+        @include font(40px, 1.15, 700, 0.05em);
+    }
+}
+
+.form-list {
+    padding: 15px;
+
+    @include tablet {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+        margin-top: -28px;
+        margin-left: -16px;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+}
+
+.form-list-item {
+    @include tablet {
+        margin-top: 28px;
+        margin-left: 16px;
+    }
+}
+
+.form-list-item:not(:first-child) {
+    margin-top: 20px;
+
+    @include tablet {
+        margin-top: 28px;
+    }
+}
+
+.input-wrap {
+    @include tablet {
+        margin-bottom: 8px;
+    }
+}
+
+.form-list-item input {
+    height: 54px;
+    width: 100%;
+    padding-left: 12px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #C79002;
+    border-radius: 2px;
+    font-family: $times-font;
+    font-style: normal;
+    @include font(20px, 1.15, 700, 0.05em);
+    color: $color-modal-text;
+
+    @media screen and (max-width:413px) {
+        width: 95%;
+        max-width: 384px;
+        height: 95%;
+        max-height: 54px;
+    }
+        @include mobile {
+        width: 384px;
+        height: 54px;
+    }
+        @include tablet {
+        width: 288px;
+        height: 64px;
+        @include font(24px, 1.16, null, null);
+        
+    }
+}
+
+.form-list-item label {
+    padding-top: 8px;
+    padding-left: 27px;
+    font-family: $montserrat-font;
+    font-style: normal;
+    @include font(14px, 1.21, 500, 0.02em);
+    color: $color-modal-tips;
+    
+    @include tablet {
+        @include font(16px, 1.25, null, null);
+    }
+}
+
+.select {
+    position: relative;
+
+    @include tablet {
+        margin-bottom: 8px;
+    }
+}
+
+.select::after {
+    content: "";
+    display: block;
+    background-image: url(../img/arrow.svg);
+    position: absolute;
+    top: 50%;
+    left: 345px;
+    margin-top: -5px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+
+    @include tablet {
+        left: 244px;
+    }
+}
+
+.select select {
+    display: block;
+    width: 100%;
+    padding: 16px 15px 16px 12px;
+    background: none;
+    background-color: transparent;
+    border: 1px solid #C79002;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: $times-font;
+    font-style: normal;
+    @include font(20px, 1.15, 700, 0.05em);
+    color: $color-modal-text;
+
+    @media screen and (max-width:413px) {
+        width: 95%;
+        max-width: 384px;
+        height: 95%;
+        max-height: 54px;
+
+    }
+        @include mobile {
+        width: 384px;
+        height: 54px;
+    }
+        @include tablet {
+        width: 288px;
+        height: 64px;
+        font-size: 24px;
+        line-height: 1.16;
+    }
+}
