@@ -59,4 +59,5 @@ $(document).ready(function () {
     rows: 1,
     appendArrows: $('.slider-left__arrows'),
   });
+
 });
