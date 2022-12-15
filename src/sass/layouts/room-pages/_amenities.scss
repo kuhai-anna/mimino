@@ -91,7 +91,7 @@
   &:focus {
     color: #f3c653;
     .amenities__icon {
-      fill: #ffffff;
+      display: none;
     }
   }
   @include tablet {
