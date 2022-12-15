@@ -6,7 +6,7 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.2);
     transition-property: opacity;
-        @extend %transition;
+    @extend %transition;
 }
 
 .is-hidden {
@@ -22,7 +22,7 @@
     background-color: $background-main-gray;
     border-radius: 2px;
     z-index: 3;
-    
+
     @media screen and (max-width:413px) {
         width: 95%;
         max-width: 414px;
@@ -31,12 +31,12 @@
         overflow: scroll;
     }
 
-        @include mobile {
+    @include mobile {
         width: 414px;
         height: 780px;
     }
 
-        @include tablet {
+    @include tablet {
         width: 712px;
         height: 638px;
     }
@@ -61,7 +61,7 @@
 .modal-title {
     font-family: $times-font;
     font-style: normal;
-    
+
     @include font(24px, 1.16, 700, 0.05em);
     color: $color-modal-title;
     text-align: center;
@@ -130,15 +130,17 @@
         height: 95%;
         max-height: 54px;
     }
-        @include mobile {
+
+    @include mobile {
         width: 384px;
         height: 54px;
     }
-        @include tablet {
+
+    @include tablet {
         width: 288px;
         height: 64px;
         @include font(24px, 1.16, null, null);
-        
+
     }
 }
 
@@ -149,7 +151,7 @@
     font-style: normal;
     @include font(14px, 1.21, 500, 0.02em);
     color: $color-modal-tips;
-    
+
     @include tablet {
         @include font(16px, 1.25, null, null);
     }
@@ -203,11 +205,13 @@
         max-height: 54px;
 
     }
-        @include mobile {
+
+    @include mobile {
         width: 384px;
         height: 54px;
     }
-        @include tablet {
+
+    @include tablet {
         width: 288px;
         height: 64px;
         font-size: 24px;
