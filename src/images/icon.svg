@@ -23,7 +23,7 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M27.429 3.429l-24 24M3.429 3.429l24 24"></path>
 </symbol>
 <symbol id="icon-back" viewBox="0 0 55 32">
-<path fill="#c79002" style="fill: var(--color1, #c79002)" d="M38.558 1.577l-2.423 2.423 10.286 10.286h-44.706v3.429h44.704l-10.286 10.286 2.425 2.423 14.423-14.423-14.421-14.423z"></path>
+<path d="M38.558 1.577l-2.423 2.423 10.286 10.286h-44.706v3.429h44.704l-10.286 10.286 2.425 2.423 14.423-14.423-14.421-14.423z"></path>
 </symbol>
 </defs>
 </svg>
