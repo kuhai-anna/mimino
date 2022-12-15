@@ -1,25 +1,35 @@
 // Наступний рядок це стандартний рядок для підключення JQuery
 $(document).ready(function () {
-  $('.slider-right').slick({
+  $('.slider').slick({
     arrows: true,
     dots: false,
     adaptiveHeight: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 1000,
+    speed: 300,
     infinite: true,
-
+    // Налаштування автопрокрутки
+    autoplay: false,
+    autoplaySpeed: 1000,
+    pauseOnFocus: true,
+    pauseOnHover: true,
+    pauseOnDotsHover: true,
+    // Налаштування Свопа на ДЕСКТОПІ
+    draggable: true,
+    // Налаштування Свопа на ПЛАНШЕТІ та ТЕЛЕФОНІ
+    swipe: true,
     // Величина прокрутки слайда, для того, щоб він спрацював
-    touchThreshold: 20,
-    // перелистування слайдів при постійному швидкому клацанні на кнопці
-    waitForAnimate: true,
+    touchThreshold: 5,
+    // перелистування слайдів при постійному швидкому клацанні на кнопці.
+    waitForAnimate: false,
     // Величина слайду відповідає ширині картинки у ньому
     variableWidth: true,
     //Параметр кількості рядків в ствобці (по 2-3 фото) в одому слайді.
     rows: 1,
+    // Кількість слайдів в області бачення
 
     //* Перекинути стрілки та крапки в потрібний нам div.arrows-wrap
-    appendArrows: $('.slider-right__arrows'),
+    appendArrows: $('.slider__arrows'),
   });
   $('.slider-left').slick({
     arrows: true,
@@ -27,17 +37,30 @@ $(document).ready(function () {
     adaptiveHeight: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 1000,
+    speed: 300,
     infinite: true,
-
+    // Налаштування автопрокрутки
+    autoplay: false,
+    autoplaySpeed: 1000,
+    pauseOnFocus: true,
+    pauseOnHover: true,
+    pauseOnDotsHover: true,
+    // Налаштування Свопа на ДЕСКТОПІ
+    draggable: true,
+    // Налаштування Свопа на ПЛАНШЕТІ та ТЕЛЕФОНІ
+    swipe: true,
     // Величина прокрутки слайда, для того, щоб він спрацював
-    touchThreshold: 20,
+    touchThreshold: 5,
     // перелистування слайдів при постійному швидкому клацанні на кнопці.
-    waitForAnimate: true,
+    waitForAnimate: false,
     // Величина слайду відповідає ширині картинки у ньому
     variableWidth: true,
     //Параметр кількості рядків в ствобці (по 2-3 фото) в одому слайді.
     rows: 1,
     appendArrows: $('.slider-left__arrows'),
   });
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of a91f0ed (Merge pull request #48 from kuhai-anna/petrenko)
 });

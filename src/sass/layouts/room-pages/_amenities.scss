@@ -1,18 +1,13 @@
 .amenities {
   padding-top: 32px;
   padding-bottom: 32px;
-  background: $background-main-light;
   @include tablet {
-    max-width: 930px;
     padding-top: 48px;
-    padding-bottom: 48px;
-    margin: 0 auto;
+    padding-bottom: 40px;
   }
   @include desktop {
-    max-width: 1110px;
     padding-top: 48px;
     padding-bottom: 48px;
-    margin: 0 auto;
   }
 }
 

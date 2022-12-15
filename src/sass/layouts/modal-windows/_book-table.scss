@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .backdrop {
     position: fixed;
     top: 0;
@@ -13,6 +14,18 @@
     opacity: 0;
     pointer-events: none;
 }
+=======
+// .backdrop {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-color: rgba(0, 0, 0, 0.2);
+//     transition-property: opacity;
+//     @extend %transition;
+// }
+>>>>>>> parent of a91f0ed (Merge pull request #48 from kuhai-anna/petrenko)
 
 .modal {
     position: absolute;
@@ -21,7 +34,11 @@
     transform: translate(-50%, -50%);
     background-color: $background-main-gray;
     border-radius: 2px;
+<<<<<<< HEAD
     z-index: 3;
+=======
+    z-index: 999;
+>>>>>>> parent of a91f0ed (Merge pull request #48 from kuhai-anna/petrenko)
 
     @media screen and (max-width:413px) {
         width: 95%;
@@ -90,12 +107,12 @@
 }
 
 .form-list {
-    padding: 20px 15px 0 15px;
+    padding: 20px 0 0;
 }
 
 .form-list-item {
     @include tablet {
-        margin-top: 28px;
+        margin-top: 20px;
         margin-left: 16px;
     }
 
@@ -105,7 +122,7 @@
     margin-top: 20px;
 
     @include tablet {
-        margin-top: 28px;
+        margin-top: 20px;
     }
 }
 
@@ -133,7 +150,7 @@
     @media screen and (max-width:413px) {
         width: 95%;
         max-width: 384px;
-        height: 95%;
+        height: 54px;
         max-height: 54px;
     }
 
@@ -214,7 +231,7 @@
     @media screen and (max-width:413px) {
         width: 95%;
         max-width: 384px;
-        height: 95%;
+        height: 54px;
         max-height: 54px;
         padding: 0 12px;
 
@@ -234,6 +251,9 @@
 }
 .modal-form button{
     margin-top: 40px;
+    @media screen and (max-width:413px){
+        width: 95%;
+    }
 
 }
 

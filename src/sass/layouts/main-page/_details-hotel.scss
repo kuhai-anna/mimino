@@ -1,44 +1,13 @@
-.background {
-  max-width: 1280px;
-  max-height: 735px;
-  padding-top: 24px;
-  padding-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
-
-  background-color: rgba(0, 0, 0, 0.65);
-
-  @media screen and( min-width:1024px) {
-    // max-width: 1024px;
-    max-height: 620px;
-    padding-top: 48px;
-    padding-bottom: 47px;
-
-    background-color: rgba(0, 0, 0, 0.65);
-  }
-  @media screen and (min-width: 1280px) {
-    // max-width: 1280px;
-    max-height: 620px;
-    padding-top: 48px;
-    padding-bottom: 47px;
-
-    background-color: rgba(0, 0, 0, 0.65);
-  }
-}
-
 .details-hotel {
-  // max-width: 1280px;
   max-height: 735px;
   padding-top: 24px;
   padding-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(../images/main-page/bg/bg-main-3-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 414px 735px;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -55,7 +24,7 @@
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/main-page/bg/bg-main-3-tab.jpg);
-    background-size: cover;
+    background-size: 1024px 620px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -74,7 +43,7 @@
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/main-page/bg/bg-main-3-dt.jpg);
-    background-size: cover;
+    background-size: 1280px 620px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -187,16 +156,8 @@
   left: 0;
   font-size: 0;
 
-  background: url('../images/icons/arrow-left-nohover.svg') 0 0 no-repeat;
+  background: url('../images/icons/arrow-left.svg') 0 0 no-repeat;
   border: none;
-
-  transform: background;
-  @extend %transition;
-
-  &:hover,
-  &:focus {
-    background: url('../images/icons/arrow-left.svg') 0 0 no-repeat;
-  }
 }
 
 .slider-left + .slider-left__arrows .slick-next {
@@ -208,16 +169,8 @@
   right: 0;
   font-size: 0;
 
-  background: url('../images/icons/arrow-right-nohover.svg') 0 0 no-repeat;
+  background: url('../images/icons/arrow-right.svg') 0 0 no-repeat;
   border: none;
-
-  transform: background;
-  @extend %transition;
-
-  &:hover,
-  &:focus {
-    background: url('../images/icons/arrow-right.svg') 0 0 no-repeat;
-  }
 }
 .details-hotel .interactiv-wrap {
   @media screen and (min-width: 1024px) {
