@@ -51,7 +51,7 @@
     border: none;
     margin-top: 16px;
     margin-right: 16px;
-    background-image: url(../img/icon-x.svg);
+    background-image: url(../images/icon-x.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
@@ -166,7 +166,7 @@
 .select::after {
     content: "";
     display: block;
-    background-image: url(../img/arrow.svg);
+    background-image: url(../images/arrow.svg);
     position: absolute;
     top: 50%;
     left: 345px;
