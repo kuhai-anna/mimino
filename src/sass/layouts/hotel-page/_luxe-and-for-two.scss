@@ -226,7 +226,8 @@
 	& .slick-list {
 		width: 404px;
 		position: relative;
-		left: -135px;
+		// left: -135px;
+		left: 120px;
 	
 	
 		@media screen and (min-width: 1024px)
@@ -244,11 +245,11 @@
 
   }
   
-  .rooms__item:nth-child(2n) .rooms__slider .slick-list {
-    outline: 1px solid red;
-	left: 120px;
+//   .rooms__item:nth-child(2n) .rooms__slider .slick-list {
+//     outline: 1px solid red;
+// 	left: 120px;
 	
-  }
+//   }
   .rooms__slider-item {
 	margin-right: 16px;
 	@media screen and (min-width: 1024px) {
@@ -262,22 +263,29 @@
 	height: 32px;
 	margin-bottom: 20px;
 
-	@media screen and (min-width: 1024px){
-		// стрілки максимально праворуч
-		margin-left: auto;
-	}
-		
-	}
-    
-	.rooms__item:nth-child(2n) .rooms__slider-arrow {
-		margin-left: auto;
+	margin-left: auto;
 
 		@include tablet {
 			margin-left: 0;
 			margin-right: auto;
 		}
 
+	// @media screen and (min-width: 1024px){
+	// 	// стрілки максимально праворуч
+	// 	margin-left: auto;
+	// }
+		
 	}
+    
+	// .rooms__item:nth-child(2n) .rooms__slider-arrow {
+	// 	margin-left: auto;
+
+	// 	@include tablet {
+	// 		margin-left: 0;
+	// 		margin-right: auto;
+	// 	}
+
+	// }
   
   //Задаємо розташування стрілок відносно обгортки div .rooms__slider-arrow 
   .rooms__slider-arrow .slick-prev {

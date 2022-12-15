@@ -1,5 +1,4 @@
-// Класи слайдерів на сторінці Hotel section Hotel-rooms
-$('.rooms__slider').slick({
+$('.rooms__slider-luxe').slick({
 	// кількість слайдів для відображення -2
 	slidesToShow: 2,
 	// скролл по 1 слайду
@@ -7,7 +6,6 @@ $('.rooms__slider').slick({
 	// прибирає відстань між слайдами
 	variableWidth: true,
 	// прив'язує контейнер зі стрілочками до слайдеру
-	appendArrows: $('.rooms__slider-arrow'),
+	appendArrows: $('rooms__slider-luxe-arrow'),
 
 });
-
