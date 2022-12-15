@@ -18,11 +18,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
     background-color: $background-main-gray;
     border-radius: 2px;
     z-index: 3;
-
+    
     @media screen and (max-width:413px) {
         width: 95%;
         max-width: 414px;

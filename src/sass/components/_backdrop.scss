@@ -19,5 +19,9 @@
 		opacity: 0;
 		pointer-events: none;
 		visibility: hidden;
+		
+		& .modal {
+				transform: scale(0.1) rotateX(90deg);
+			}
 	}
 }

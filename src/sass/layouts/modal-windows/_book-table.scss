@@ -14,36 +14,36 @@
 //     pointer-events: none;
 // }
 
-// .modal {
-//     padding: 15px;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     background-color: $background-main-gray;
-//     border-radius: 2px;
-//     z-index: 999;
+.modal-table {
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    // transform: translate(-50%, -50%);
+    background-color: $background-main-gray;
+    border-radius: 2px;
+    z-index: 999;
 
-//     @media screen and (max-width:413px) {
-//         width: 95%;
-//         max-width: 414px;
-//         height: 95%;
-//         max-height: 668px;
-//         overflow: scroll;
-//     }
+    @media screen and (max-width:413px) {
+        width: 95%;
+        max-width: 414px;
+        height: 95%;
+        max-height: 668px;
+        overflow: scroll;
+    }
 
-//     @include mobile {
-//         width: 414px;
-//         height: 668px;
-//     }
+    @include mobile {
+        width: 414px;
+        height: 668px;
+    }
 
-//     @include tablet {
-//         width: 712px;
-//         height: 522px;
+    @include tablet {
+        width: 712px;
+        height: 522px;
 
 
-//     }
-// }
+    }
+}
 
 .close {
     position: absolute;
@@ -70,6 +70,7 @@
     text-align: center;
     margin-bottom: 20px;
     margin-top: 60px;
+
     text-transform: uppercase;
 
     @include tablet {
