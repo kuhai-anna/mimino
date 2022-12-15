@@ -200,7 +200,7 @@
   .rooms__wrap-bottom {
 	min-width: 0;
 	@include tablet {
-		// min-width: 0;
+		
 	  display: flex;
 	  align-items: center;
 	  justify-content: space-between;
@@ -268,7 +268,16 @@
 	}
 		
 	}
+    
+	.rooms__item:nth-child(2n) .rooms__slider-arrow {
+		margin-left: auto;
 
+		@include tablet {
+			margin-left: 0;
+			margin-right: auto;
+		}
+
+	}
   
   //Задаємо розташування стрілок відносно обгортки div .rooms__slider-arrow 
   .rooms__slider-arrow .slick-prev {
@@ -291,7 +300,7 @@
   .rooms__slider-arrow {
 	//задається для позиціонування стрілки відносно цієї обгортки
 	position: relative;
-	// z-index: 1000;
+	
 	
   }
  
