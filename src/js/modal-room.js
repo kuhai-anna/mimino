@@ -1,12 +1,17 @@
+
+
 (() => {
+    let openModalBtn = document.querySelectorAll("[data-modal-open-room]")
+    
+    
 const refs = {
-    openModalBtn: document.querySelector("[data-modal-open-room]"),
     closeModalBtn: document.querySelector("[data-modal-close-room]"),
     modal: document.querySelector("[data-modal-room]"),
     body: document.querySelector("[data-body]") 
-};
-
-refs.openModalBtn.addEventListener("click", toggleModal);
+    };
+        openModalBtn.forEach(element => {
+        element.addEventListener("click", toggleModal);
+    });
 refs.closeModalBtn.addEventListener("click", toggleModal);
 
 function toggleModal() {
