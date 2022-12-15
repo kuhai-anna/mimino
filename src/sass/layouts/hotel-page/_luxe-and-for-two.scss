@@ -219,17 +219,16 @@
 
 //   ----------------Слайдер----------------------
 
-.rooms__slider {
+.rooms__slider,
+.rooms__slider-luxe,
+.rooms__slider-two {
 	min-width: 0;
 	margin-bottom: 20px;
 
 	& .slick-list {
 		width: 404px;
 		position: relative;
-		// left: -135px;
-		left: 120px;
-	
-	
+		
 		@media screen and (min-width: 1024px)
 		{  
 			position: static;
@@ -242,14 +241,17 @@
 		}
 	  }
 
-
   }
   
-//   .rooms__item:nth-child(2n) .rooms__slider .slick-list {
-//     outline: 1px solid red;
-// 	left: 120px;
-	
-//   }
+  .rooms__slider .slick-list {
+	left: 120px;
+  }
+
+  .rooms__slider-luxe .slick-list,
+  .rooms__slider-two .slick-list {
+	left: -135px;
+  }
+
   .rooms__slider-item {
 	margin-right: 16px;
 	@media screen and (min-width: 1024px) {
@@ -258,37 +260,35 @@
   }
 
   //   Обгортка для стрілок слайдера
-  .rooms__slider-arrow {
+  .rooms__slider-arrow,
+  .rooms__slider-luxe-arrow,
+  .rooms__slider-arrow-two {
 	width: 96px;
 	height: 32px;
 	margin-bottom: 20px;
 
-	margin-left: auto;
-
+	}
+	.rooms__slider-arrow {
+		margin-left: auto;
 		@include tablet {
 			margin-left: 0;
 			margin-right: auto;
+		}	
+	}
+    .rooms__slider-luxe-arrow,
+	.rooms__slider-arrow-two
+	 {
+		margin-right: auto;
+		@include tablet {
+			margin-right: 0;
+			margin-left: auto;
 		}
-
-	// @media screen and (min-width: 1024px){
-	// 	// стрілки максимально праворуч
-	// 	margin-left: auto;
-	// }
-		
 	}
     
-	// .rooms__item:nth-child(2n) .rooms__slider-arrow {
-	// 	margin-left: auto;
-
-	// 	@include tablet {
-	// 		margin-left: 0;
-	// 		margin-right: auto;
-	// 	}
-
-	// }
-  
   //Задаємо розташування стрілок відносно обгортки div .rooms__slider-arrow 
-  .rooms__slider-arrow .slick-prev {
+  .rooms__slider-arrow .slick-prev,
+  .rooms__slider-luxe-arrow .slick-prev,
+  .rooms__slider-arrow-two .slick-prev {
 	left: 0;
 	width: 32px;
 	height: 32px;
@@ -296,7 +296,10 @@
   }
 
   // Стилізую стілки слайдера
-  .rooms__slider-arrow .slick-next {
+  .rooms__slider-arrow .slick-next,
+  .rooms__slider-luxe-arrow .slick-next,
+  .rooms__slider-arrow-two .slick-next
+   {
 
 	right: 0;
 	width: 32px;
@@ -305,7 +308,9 @@
 
   }
 
-  .rooms__slider-arrow {
+  .rooms__slider-arrow,
+  .rooms__slider-luxe-arrow,
+  .rooms__slider-arrow-two {
 	//задається для позиціонування стрілки відносно цієї обгортки
 	position: relative;
 	
@@ -314,7 +319,12 @@
  
 // Прибираю стиль кнопок слайдера за замовчуванням
   .rooms__slider-arrow .slick-prev::before,
-  .rooms__slider-arrow .slick-next::before
+  .rooms__slider-arrow .slick-next::before,
+  .rooms__slider-luxe-arrow .slick-prev::before,
+  .rooms__slider-luxe-arrow .slick-next::before,
+  .rooms__slider-arrow-two .slick-next::before,
+  .rooms__slider-arrow-two .slick-prev::before
+
    {
       content: unset;
   }
