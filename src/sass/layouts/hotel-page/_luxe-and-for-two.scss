@@ -255,4 +255,59 @@
 		margin-right: 40px;
 	}
   }
+
+  //   Обгортка для стрілок слайдера
+  .rooms__slider-arrow {
+	width: 96px;
+	height: 32px;
+	margin-bottom: 20px;
+
+	@media screen and (min-width: 1024px){
+		// стрілки максимально праворуч
+		margin-left: auto;
+	}
+		
+	}
+
+  
+  //Задаємо розташування стрілок відносно обгортки div .rooms__slider-arrow 
+  .rooms__slider-arrow .slick-prev {
+	left: 0;
+	width: 32px;
+	height: 32px;
+	background: url('../images/hotel-page/rooms-arrow-left.svg') 0 0 no-repeat;
+  }
+
+  // Стилізую стілки слайдера
+  .rooms__slider-arrow .slick-next {
+
+	right: 0;
+	width: 32px;
+	height: 32px;
+	background: url('../images/hotel-page/rooms-arrow-right.svg') 0 0 no-repeat;
+
+  }
+
+  .rooms__slider-arrow {
+	//задається для позиціонування стрілки відносно цієї обгортки
+	position: relative;
+	// z-index: 1000;
+	
+  }
+ 
+// Прибираю стиль кнопок слайдера за замовчуванням
+  .rooms__slider-arrow .slick-prev::before,
+  .rooms__slider-arrow .slick-next::before
+   {
+      content: unset;
+  }
+  .rooms__slider-wrap {
+	@media screen and (max-width: 1023px) {
+	  margin-bottom: 20px;
+	}
+	@media screen and (min-width: $desktop) {
+	  margin-bottom: 40px;
+	}
+  }
+  
   
