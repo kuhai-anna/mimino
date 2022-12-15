@@ -36,12 +36,12 @@
 
     @include mobile {
         width: 414px;
-        height: 668px;
+        max-height: 780px;
     }
 
     @include tablet {
         width: 712px;
-        height: 522px;
+        max-height: 638px;
     }
 }
 
