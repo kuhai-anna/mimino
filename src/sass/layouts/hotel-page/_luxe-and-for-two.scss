@@ -1,3 +1,9 @@
+
+// Приховую частину слайдера, коли при mobile виходить за межі контейнеру
+.rooms__container {
+	overflow-x: hidden;
+}
+
 .rooms__item {
 	padding-top: 32px;
 	padding-bottom: 32px;
