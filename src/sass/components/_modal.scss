@@ -1,4 +1,50 @@
 // Вносить один з членів команди
 // Загальні стилі для модалки: фон, ширина, pudding
+
+// .backdrop {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-color: rgba(0, 0, 0, 0.2);
+//     transition-property: opacity;
+//     @extend %transition;
+// }
+
+// .is-hidden {
+//     opacity: 0;
+//     pointer-events: none;
+// }
+.modal {
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $background-main-gray;
+    border-radius: 2px;
+    z-index: 999;
+
+    @media screen and (max-width:413px) {
+        width: 95%;
+        max-width: 414px;
+        height: 95%;
+        max-height: 668px;
+        overflow: scroll;
+    }
+
+    @include mobile {
+        width: 414px;
+        max-height: 780px;
+    }
+
+    @include tablet {
+        width: 712px;
+        max-height: 638px;
+    }
+}
+
+
 // Загальні стилі для кнопки закриття модалки: розміри та позиціонування
 // Загальні стилі для input-ів: розміри, колір, бордер

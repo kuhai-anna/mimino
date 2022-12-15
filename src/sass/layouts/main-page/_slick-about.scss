@@ -1,0 +1,128 @@
+.slick-about {
+  //   outline: 1px solid green;
+  position: relative;
+  min-width: 0;
+  display: flex;
+
+  /* Слайдер */
+  &.slick-slider {
+    height: 245px;
+    @media screen and (max-width: 413px) {
+      width: 300px;
+    }
+    @include mobile {
+      width: 329px;
+    }
+    @include tablet {
+      width: 428px;
+      height: 194px;
+    }
+    @include desktop {
+      width: 530px;
+      height: 245px;
+    }
+    // overflow: hidden;
+  }
+  /* Лента слайдов */
+  & .slick-track {
+    display: flex;
+    gap: 10px;
+    @include mobile {
+      gap: 24px;
+    }
+    @include tablet {
+      gap: 40px;
+    }
+    @include desktop {
+      gap: 65px;
+    }
+  }
+
+  /* Ограничивающая оболочка */
+  .slick-list {
+    // width: 528px;
+    overflow: hidden;
+  }
+  /* Стрелка */
+  & .slick-arrow {
+    position: absolute;
+    top: 100%;
+    font-size: 0;
+    width: 30px;
+    height: 17px;
+    border: 0;
+  }
+  & .slick-arrow.slick-prev {
+    background: url('../images/icons/slick_arrow-left.svg') 0 0 / 100% no-repeat;
+    &:hover {
+      background: url('../images/icons/arrow-left.svg') 0 0 / 100% no-repeat;
+    }
+    &:focus {
+      background: url('../images/icons/arrow-left.svg') 0 0 / 100% no-repeat;
+    }
+    left: 235px;
+    top: 273px;
+    @include tablet {
+      left: 324px;
+      top: 234px;
+    }
+    @include desktop {
+      left: 436px;
+      top: 298px;
+    }
+  }
+  /* Стрелка вправо */
+  & .slick-arrow.slick-next {
+    background: url('../images/icons/slick_arrow-right.svg') 0 0 / 100%
+      no-repeat;
+    &:hover {
+      background: url('../images/icons/arrow-right.svg') 0 0 / 100% no-repeat;
+    }
+    &:focus {
+      background: url('../images/icons/arrow-right.svg') 0 0 / 100% no-repeat;
+    }
+    left: 299px;
+    top: 273px;
+    @include tablet {
+      left: 388px;
+      top: 234px;
+    }
+    @include desktop {
+      left: 500px;
+      top: 298px;
+    }
+  }
+}
+.slick-blok {
+  position: absolute;
+  @include mobile {
+    left: 84px;
+    top: 874px;
+  }
+  @include tablet {
+    left: 536px;
+    top: 828px;
+  }
+  @include desktop {
+    left: 639px;
+    top: 783px;
+  }
+}
+.slick-blok-reverse {
+  position: absolute;
+  @include mobile {
+    left: 0;
+    top: 874px;
+  }
+  @include tablet {
+    top: 828px;
+  }
+  @include desktop {
+    top: 783px;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}

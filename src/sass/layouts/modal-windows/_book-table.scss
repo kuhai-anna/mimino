@@ -1,48 +1,49 @@
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition-property: opacity;
-    @extend %transition;
-}
+// .backdrop {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-color: rgba(0, 0, 0, 0.2);
+//     transition-property: opacity;
+//     @extend %transition;
+// }
 
-.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-}
+// .is-hidden {
+//     opacity: 0;
+//     pointer-events: none;
+// }
 
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: $background-main-gray;
-    border-radius: 2px;
-    z-index: 3;
+// .modal {
+//     padding: 15px;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     background-color: $background-main-gray;
+//     border-radius: 2px;
+//     z-index: 999;
 
-    @media screen and (max-width:413px) {
-        width: 95%;
-        max-width: 414px;
-        height: 95%;
-        max-height: 668px;
-        overflow: scroll;
-    }
+//     @media screen and (max-width:413px) {
+//         width: 95%;
+//         max-width: 414px;
+//         height: 95%;
+//         max-height: 668px;
+//         overflow: scroll;
+//     }
 
-    @include mobile {
-        width: 414px;
-        height: 668px;
-    }
+//     @include mobile {
+//         width: 414px;
+//         height: 668px;
+//     }
 
-    @include tablet {
-        width: 712px;
-        height: 522px;
+//     @include tablet {
+//         width: 712px;
+//         height: 522px;
 
 
-    }
-}
+//     }
+// }
 
 .close {
     position: absolute;
@@ -90,12 +91,12 @@
 }
 
 .form-list {
-    padding: 20px 15px 0 15px;
+    padding: 20px 0 0;
 }
 
 .form-list-item {
     @include tablet {
-        margin-top: 28px;
+        margin-top: 20px;
         margin-left: 16px;
     }
 
@@ -105,7 +106,7 @@
     margin-top: 20px;
 
     @include tablet {
-        margin-top: 28px;
+        margin-top: 20px;
     }
 }
 
@@ -133,7 +134,7 @@
     @media screen and (max-width:413px) {
         width: 95%;
         max-width: 384px;
-        height: 95%;
+        height: 54px;
         max-height: 54px;
     }
 
@@ -214,7 +215,7 @@
     @media screen and (max-width:413px) {
         width: 95%;
         max-width: 384px;
-        height: 95%;
+        height: 54px;
         max-height: 54px;
         padding: 0 12px;
 
@@ -234,6 +235,9 @@
 }
 .modal-form button{
     margin-top: 40px;
+    @media screen and (max-width:413px){
+        width: 95%;
+    }
 
 }
 
