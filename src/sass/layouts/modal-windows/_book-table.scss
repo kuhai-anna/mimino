@@ -1,3 +1,4 @@
+
 // .backdrop {
 //     position: fixed;
 //     top: 0;
@@ -23,6 +24,7 @@
     background-color: $background-main-gray;
     border-radius: 2px;
     z-index: 999;
+
 
     @media screen and (max-width:413px) {
         width: 95%;
@@ -92,12 +94,12 @@
 }
 
 .form-list {
-    padding: 20px 0 0;
+    padding: 20px 15px 0 15px;
 }
 
 .form-list-item {
     @include tablet {
-        margin-top: 20px;
+        margin-top: 28px;
         margin-left: 16px;
     }
 
@@ -107,7 +109,7 @@
     margin-top: 20px;
 
     @include tablet {
-        margin-top: 20px;
+        margin-top: 28px;
     }
 }
 
@@ -135,7 +137,7 @@
     @media screen and (max-width:413px) {
         width: 95%;
         max-width: 384px;
-        height: 54px;
+        height: 95%;
         max-height: 54px;
     }
 
@@ -216,7 +218,7 @@
     @media screen and (max-width:413px) {
         width: 95%;
         max-width: 384px;
-        height: 54px;
+        height: 95%;
         max-height: 54px;
         padding: 0 12px;
 
@@ -236,9 +238,6 @@
 }
 .modal-form button{
     margin-top: 40px;
-    @media screen and (max-width:413px){
-        width: 95%;
-    }
 
 }
 
