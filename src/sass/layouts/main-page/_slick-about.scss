@@ -126,3 +126,11 @@
 // .slick-next:before {
 //   display: none;
 // }
+
+.slick-about{
+  & .slick-prev:before,
+    & .slick-next:before {
+      display: none;
+    }
+
+}
