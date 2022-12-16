@@ -16,7 +16,7 @@
   max-width: 100%;
 }
 
-.room .slick-prev:before {
+.hero-slider .slick-prev:before {
   background-image: url(/src/images/arrow-left.svg);
   background-position: center;
 
@@ -34,10 +34,10 @@
 }
 
 .slick-prev {
-  z-index: 999;
+  z-index: 5;
 }
 
-.slick-next:before {
+.hero-slider .slick-next:before {
   background-image: url(/src/images/arrow-right.svg);
   background-position: center;
   @media screen and (min-width: 414px) {
@@ -53,8 +53,8 @@
   }
 }
 
-.room .slick-prev:before,
-.slick-next:before {
+.hero-slider .slick-prev:before,
+.hero-slider .slick-next:before {
   content: '';
   width: 40px;
   height: 40px;
