@@ -1,243 +1,102 @@
-// * {
-//     margin: 0;
-//     padding: 0;
-// }
-
-// ul {
-//     margin: 0;
-//     padding: 0;
-//     list-style: none;
-// }
-
-// a {
-//     text-decoration: none;
-//     display: inline-block;
-//     margin: 0;
-//     padding: 0;
-// }
-
-.modal-room {
-    outline: 1px solid $color-modal-tips;
-    width: 414px;
-    height: 572px;
-    background: $background-main-light;
-    padding: 60px 15px;
-    position: relative;
-
-    @media screen and (min-width: 1024px) {
-        width: 712px;
-        height: 489px;
-        padding: 60px;
-    }
-
-    @include tablet {
-        width: 712px;
-        height: 522px;
-    }
+.price-room-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.price-room-modal .select-form-wrap {
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.close-modal-room {
-    display: flex;
-    position: absolute;
-    cursor: pointer;
-    top: 16px;
-    right: 16px;
-    border: none;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    background-image: url(../images/icon-x.svg);
-    /* background: #D9D9D9; */
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+.price-room-modal {
+  // display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
+  width: 414px;
+  height: 572px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #f0ecd6;
+
+  @media screen and (min-width: 1024px) {
+    width: 712px;
+    height: 489px;
+  }
+}
+.price-room-modal__container {
+  width: 414px;
+  height: 572px;
+  padding: 60px 15px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 60px 60px;
+    width: 712px;
+    height: 489px;
+  }
 }
 
+.price-room-modal__title {
+  margin-top: 0;
+  margin-bottom: 40px;
 
+  text-align: center;
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 
-.price-title-room {
-    margin-bottom: 40px;
-    text-align: center;
-    color: $color-modal-title;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
+  color: #000000;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 40px;
     line-height: 1.15;
-
-    @media screen and (min-width: 1024px) {
-        font-size: 32px;
-    }
-
-
+  }
 }
 
-.room {
-    margin-bottom: 28px;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 0.05em;
-    color: $color-modal-text;
-}
+// .price-room-table .select-form-wrap {
+//   margin-bottom: 40px;
+// }
 
-.category {
-    margin-bottom: 20px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.02em;
-    color: $color-modal-tips;
+.price-room__input {
+  width: 384px;
+  height: 54px;
+  padding: 14px 12px;
 
-}
+  font-family: 'Times New Roman';
 
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
 
+  color: #808080;
+  background-color: #f0ecd6;
+  border: 1px solid #c79002;
+  border-radius: 2px;
+  outline: 0px solid #c79002;
 
-.modal-room {
+  transform: outline, border;
+  transition-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-
-
-    @media screen and (min-width: 1024px) {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-
-}
-
-.modal-input:not(:last-child) {
-    margin-bottom: 20px;
-
-    @media screen and (min-width: 1024px) {
-        margin-bottom: 0;
-    }
-}
-
-.modal-input {
-
-    display: flex;
-    flex-direction: column;
-    width: 384px;
-
-
-    @media screen and (min-width: 1024px) {
-        width: 288px;
-    }
-
-}
-
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 0.05em;
-    color: $color-modal-text;
-
-}
-
-.label-modal {
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.02em;
-    color: $color-modal-tips;
-    margin-left: 30px;
-}
-
-.modal-input.arrow {
-    position: relative;
-}
-
-.modal-input.arrow::after {
-    @media screen and (min-width: 1024px) {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        content: '';
-        display: inline-block;
-        width: 24px;
-        height: 24px;
-        /* // тут потрібно прописати шлях до свгшки
-        background: white; */
-        pointer-events: none;
-    }
-
-}
-
-.nights-value {
-    height: 54px;
-    margin-bottom: 8px;
-    padding: 0 15px;
-    background: $background-main-light;
-    border: 1px solid $accent-color;
-    border-radius: 2px;
-}
-
-
-
-
-.monet-input {
-
-    height: 54px;
-    margin-bottom: 8px;
-    padding: 0 15px;
-    /* border: 1px solid #C79002; */
-    background: $background-main-light;
-    border: 1px solid $accent-color;
-    border-radius: 2px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 0.05em;
-    color: $color-modal-text;
-
-    @media screen and (min-width: 1024px) {
-        height: 60px;
-        padding: 0 12px;
-    }
-}
-
-.monet-input:hover,
-.monet-input:focus {
-    border: 1px solid $color-modal-tips;
-    outline: transparent;
-}
-
-
-
-.submit-button-box {
-    text-align: center;
-}
-
-
-
-.submit {
-    display: inline-block;
-    padding: 18px 0;
-    width: 384px;
+  @media screen and (min-width: 1024px) {
+    width: 286px;
     height: 64px;
-
-    @media screen and (min-width: 1024px) {
-        width: 592px;
-    }
-
-
+  }
+}
+.price-room__input:focus,
+.price-room__input:hover {
+  outline: 2px solid #c79002;
 }
 
+.price-room__input:focus + .select-icon,
+.price-room__input:hover + .select-icon {
+  fill: #c79002;
+}

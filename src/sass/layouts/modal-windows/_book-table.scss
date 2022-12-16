@@ -1,254 +1,107 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition-property: opacity;
-    @extend %transition;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition-property: opacity;
+  @extend %transition;
 }
 
 .is-hidden {
-    opacity: 0;
-    pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
 }
-// .backdrop {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     background-color: rgba(0, 0, 0, 0.2);
-//     transition-property: opacity;
-//     @extend %transition;
-// }
+.book-table-modal {
+  // display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: $background-main-gray;
-    border-radius: 2px;
-    z-index: 999;
+  width: 414px;
+  height: 668px;
 
-    @media screen and (max-width:413px) {
-        width: 95%;
-        max-width: 414px;
-        height: 95%;
-        max-height: 668px;
-        overflow: scroll;
-    }
+  margin-left: auto;
+  margin-right: auto;
 
-    @include mobile {
-        width: 414px;
-        height: 668px;
-    }
+  background-color: #f0ecd6;
 
-    @include tablet {
-        width: 712px;
-        height: 522px;
+  @media screen and (min-width: 1024px) {
+    width: 712px;
+    height: 522px;
+  }
+}
+.book-table-modal__container {
+  width: 414px;
+  height: 668px;
+  padding: 60px 15px;
 
-
-    }
+  @media screen and (min-width: 1024px) {
+    padding: 60px 60px;
+    width: 712px;
+    height: 638px;
+  }
 }
 
-.close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 32px;
-    height: 32px;
-    border: none;
-    margin-top: 16px;
-    margin-right: 16px;
-    background-image: url(../images/icon-x.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
+.book-table-modal__title {
+  margin-top: 0;
+  margin-bottom: 40px;
 
-    cursor: pointer;
+  text-align: center;
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 40px;
+    line-height: 1.15;
+  }
 }
 
-.modal-title {
-    font-family: $times-font;
-    font-style: normal;
-    @include font(24px, 1.16, 700, 0.05em);
-    color: $color-modal-title;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 60px;
-    text-transform: uppercase;
-
-    @include tablet {
-        @include font(40px, 1.15, 700, 0.05em);
-    }
+.form-book-table .select-form-wrap {
+  margin-bottom: 40px;
 }
 
-.modal-form {
-    @include tablet {
-        display: flex;
-        margin: 0;
-        padding: 0;
-        flex-wrap: wrap;
-        margin-top: -28px;
-        margin-left: -16px;
-        margin-bottom: 40px;
-        justify-content: center;
-    }
+.form-book-table__input {
+  width: 384px;
+  height: 54px;
+  padding: 14px 12px;
+
+  font-family: 'Times New Roman';
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: #808080;
+  background-color: #f0ecd6;
+  border: 1px solid #c79002;
+  border-radius: 2px;
+  outline: 0px solid #c79002;
+
+  transform: outline, border;
+  transition-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1024px) {
+    width: 286px;
+    height: 64px;
+  }
+}
+.form-book-table__input:focus,
+.form-book-table__input:hover {
+  outline: 2px solid #c79002;
 }
 
-.form-list {
-    padding: 20px 0 0;
+.form-book-table__input:focus + .select-icon,
+.form-book-table__input:hover + .select-icon {
+  fill: #c79002;
 }
-
-.form-list-item {
-    @include tablet {
-        margin-top: 20px;
-        margin-left: 16px;
-    }
-
-}
-
-.form-list-item:not(:first-child) {
-    margin-top: 20px;
-
-    @include tablet {
-        margin-top: 20px;
-    }
-}
-
-.input-wrap {
-    @include tablet {
-        margin-bottom: 8px;
-    }
-}
-
-.form-list-item input {
-    height: 54px;
-    width: 100%;
-    padding-left: 12px;
-    outline: none;
-    cursor: pointer;
-    background-color: transparent;
-
-    border: 1px solid #C79002;
-    border-radius: 2px;
-    font-family: $times-font;
-    font-style: normal;
-    @include font(20px, 1.15, 700, 0.05em);
-    color: $color-modal-text;
-
-    @media screen and (max-width:413px) {
-        width: 95%;
-        max-width: 384px;
-        height: 54px;
-        max-height: 54px;
-    }
-
-    @include mobile {
-        width: 384px;
-        height: 54px;
-    }
-
-    @include tablet {
-        width: 288px;
-        height: 64px;
-        @include font(24px, 1.16, null, null);
-
-    }
-}
-
-.form-list-item label {
-    padding-top: 8px;
-    padding-left: 27px;
-    font-family: $montserrat-font;
-    font-style: normal;
-    @include font(14px, 1.21, 500, 0.02em);
-    color: $color-modal-tips;
-
-
-    @include tablet {
-        @include font(16px, 1.25, null, null);
-
-    }
-}
-
-.select {
-    position: relative;
-
-    @include tablet {
-        margin-bottom: 8px;
-    }
-}
-
-.select::after {
-    content: "";
-    display: block;
-    background-image: url(../images/arrow.svg);
-    position: absolute;
-    top: 50%;
-    left: 345px;
-    margin-top: -5px;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-
-    @media screen and (max-width:413px) {
-        left: 80%;
-    }
-
-    @include tablet {
-        left: 244px;
-    }
-}
-
-
-.select select {
-    display: block;
-    width: 100%;
-    padding: 16px 15px 16px 12px;
-    background: none;
-    background-color: transparent;
-    border: 1px solid #C79002;
-    border-radius: 2px;
-    -webkit-appearance: none;
-    appearance: none;
-    font-family: $times-font;
-    font-style: normal;
-    @include font(20px, 1.15, 700, 0.05em);
-    color: $color-modal-text;
-
-    @media screen and (max-width:413px) {
-        width: 95%;
-        max-width: 384px;
-        height: 54px;
-        max-height: 54px;
-        padding: 0 12px;
-
-    }
-
-    @include mobile {
-        width: 384px;
-        height: 54px;
-    }
-
-    @include tablet {
-        width: 288px;
-        height: 64px;
-        font-size: 24px;
-        line-height: 1.16;
-    }
-}
-.modal-form button{
-    margin-top: 40px;
-    @media screen and (max-width:413px){
-        width: 95%;
-    }
-
-}
-
-
-

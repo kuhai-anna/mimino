@@ -1,5 +1,5 @@
 .backdrop {
-    position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -9,10 +9,10 @@
   @extend %transition;
 }
 
-// .is-hidden {
-//   opacity: 0;
-//   pointer-events: none;
-// }
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 .book-room-modal {
   // display: block;
   position: absolute;
@@ -45,11 +45,6 @@
   }
 }
 
-// .form-book-room {
-//   display: flex;
-//   flex-wrap: wrap;
-//   gap: 20px;
-// }
 .form-book-room__title {
   margin-top: 0;
   margin-bottom: 40px;
@@ -82,9 +77,6 @@
   }
 }
 .select-form-wrap {
-  // display: flex;
-  // flex-wrap: wrap;
-  // gap: 20px;
   margin-bottom: 20px;
   @media screen and (min-width: 1024px) {
     justify-content: end;
@@ -92,9 +84,6 @@
 }
 .select-date-wrap {
   margin-bottom: 40px;
-  // display: flex;
-  // flex-wrap: wrap;
-  // gap: 20px;
 }
 .form-field {
   position: relative;
@@ -150,25 +139,6 @@
   line-height: 1.25;
 }
 
-// .btn-wrap {
-//   width: 100%;
-//   height: 100%;
-// }
-// .form-button {
-//   width: 100%;
-//   height: 64px;
-//   // margin-top: 28px;
-
-//   font-family: 'Montserrat';
-//   font-weight: 500;
-//   font-size: 20px;
-//   line-height: 1.2;
-//   color: #ffffff;
-//   background-color: #000000;
-
-//   border: 1px solid #f3c653;
-//   border-radius: 2px;
-// }
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
