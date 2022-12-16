@@ -1,13 +1,18 @@
 .amenities {
   padding-top: 32px;
   padding-bottom: 32px;
+  background: $background-main-light;
   @include tablet {
-    padding-top: 48px;
-    padding-bottom: 40px;
-  }
-  @include desktop {
+    max-width: 930px;
     padding-top: 48px;
     padding-bottom: 48px;
+    margin: 0 auto;
+  }
+  @include desktop {
+    max-width: 1110px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin: 0 auto;
   }
 }
 
@@ -81,11 +86,16 @@
 .amenities__link {
   @include font(16px, 1.25, 500, 0.02em);
   font-family: $montserrat-font;
-  font-style: normal;
   color: $color-text-tips;
   margin-top: 20px;
   margin-left: auto;
-  margin-right: auto;
+  &:hover,
+  &:focus {
+    color: #f3c653;
+    .amenities__icon {
+      display: none;
+    }
+  }
 }
 
 .amenities__icon {
