@@ -59,8 +59,5 @@ $(document).ready(function () {
     rows: 1,
     appendArrows: $('.slider-left__arrows'),
   });
-<<<<<<< HEAD
-=======
 
->>>>>>> parent of a91f0ed (Merge pull request #48 from kuhai-anna/petrenko)
 });
