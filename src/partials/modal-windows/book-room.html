@@ -1,60 +1,91 @@
-<<<<<<< HEAD
-<div></div>
-=======
 <div class="backdrop is-hidden" data-modal-room>
-    <div class=" modal modal-room">
-      <button class="close" type="button" data-modal-close-room>
-        <!-- <svg class="btn__icon" aria-label="Закрити вікно" width="11" height="11">
-          <use href="./images/symbol-defs.svg#icon-cross"></use>
-        </svg> -->
-      </button>
-      <h2 class="modal-title">Забронювати номер</p>
-      <form class="modal-form">
-        <ul class="list form-list">
-          <li class="form-list-item">
-            <input class="input-form" type="text" name="name" id="name" placeholder="Ваше ім’я">
-            <label class="form-label" for="user-name">На кого забронювати номер?</label>
-          </li>
-          <li class="form-list-item">
-            <div class="input-wrap">
-              <input class="input-form" type="tel" name="tel" id="tel" placeholder="+38 (___) ___-__-__"
-          pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" title="+38 (___) ___-__-__">
-            </div>
-            <label class="form-label" for="user-phone">Номер телефону</label>
-          </li>
-        </ul>
-        <ul class="list form-list">
-          <li class="form-list-item">
-            <div class="select">
-              <select id="category" name="category">
-                <option value="Двомісний люкс" selected>Двомісний люкс</option>
-                <option value="Трьохмісний люкс">Трьохмісний люкс</option>
-              /select>
-            </div>
-            <label class="form-label" for="category">Категорія номеру</label>
-          </li>
-          <li class="form-list-item">
-            <div class="select">
-              <select id="data" name="data-arrive">
-                option value="Сьогодні" selected>Сьогодні</option>
-                <option value="Завтра">Завтра</option>
-              </select>
-            </div>
-            <label class="form-label" for="data">Дата заїзду</label>
-          </li>
-          <li class="form-list-item">
-            <div class="select">
-              <select id="data" name="data-exit">
-                <option value="Сьогодні" selected>Сьогодні</option>
-                <option value="Завтра">Завтра</option>
-              </select>
-            </div>
-            <label class="form-label" for="data">Дата виїзду</label>
-          </li>
-        </ul>
+  <div class="book-room-modal">
+    <button class="btn-close" type="button" data-modal-close-room></button>
+    <div class="book-room-modal__container">
+      <h2 class="form-book-room__title">Забронювати номер</h2>
 
-        <button class="big-btn submit" type="submit">Оформити бронювання</button>
+      <form class="form-book-room">
+        <div class="user-form-wrap">
+          <div class="form-field" role="group">
+            <input
+              name="user-name"
+              id="user-name"
+              class="form-room__input"
+              type="text"
+              pattern="([a-zA-Zа-яА-Я]+)"
+              placeholder="Ваше ім'я"
+              required=""
+            />
+            <label class="form__label" for="user-name"
+              >На кого забронювати номер?</label
+            >
+          </div>
+
+          <div class="form-field" role="group">
+            <input
+              name="user-phone"
+              id="user-phone"
+              class="form-room__input"
+              type="tel"
+              pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+              title="+38 (___) ___-__-__"
+              placeholder="+38 (___) ___-__-__"
+              required=""
+            />
+            <label class="form__label" for="user-phone">Номер телефону</label>
+          </div>
+        </div>
+
+        <div class="select-form-wrap">
+          <div class="form-field" role="group">
+            <select
+              class="form-room__input"
+              name="category-room"
+              id="category-room"
+            >
+              <option value="Двомісний люкс" selected="">Двомісний люкс</option>
+              <option value="Тримісний номер">Тримісний номер</option>
+              <option value="Двохмісний номер">Двохмісний номер</option>
+            </select>
+            <svg class="select-icon" width="20" height="12">
+              <use href="./images/icon.svg#icon-arrow-down"></use>
+            </svg>
+            <label class="form__label form__label--select" for="category-room">
+              Категорія номеру
+            </label>
+          </div>
+        </div>
+
+        <div class="select-date-wrap">
+          <div class="form-field" role="group">
+            <select class="form-room__input" name="date-in" id="date-in">
+              <option value="today" selected="">Сьогодні</option>
+              <option value="tomorrow">Завтра</option>
+            </select>
+            <svg class="select-icon" width="20" height="12">
+              <use href="./images/icon.svg#icon-arrow-down"></use>
+            </svg>
+            <label class="form__label form__label--date" for="date-in">
+              Дата заїзду
+            </label>
+          </div>
+
+          <div class="form-field" role="group">
+            <select class="form-room__input" name="date-for" id="date-for">
+              <option value="today" selected="">Сьогодні</option>
+              <option value="tomorrow">Завтра</option>
+            </select>
+            <svg class="select-icon" width="20" height="12">
+              <use href="./images/icon.svg#icon-arrow-down"></use>
+            </svg>
+            <label class="form__label form__label--date" for="date-for">
+              Дата виїзду
+            </label>
+          </div>
+        </div>
+
+        <button class="big-btn" type="submit">Оформити бронювання</button>
       </form>
     </div>
+  </div>
 </div>
->>>>>>> parent of a91f0ed (Merge pull request #48 from kuhai-anna/petrenko)
