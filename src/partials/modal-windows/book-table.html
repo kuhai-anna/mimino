@@ -8,22 +8,22 @@
         <div class="user-form-wrap">
           <div class="form-field" role="group">
             <input
-              name="user-name"
-              id="user-name"
+              name="name-user"
+              id="name-user"
               class="form-book-table__input"
               type="text"
               pattern="([a-zA-Zа-яА-Я]+)"
               placeholder="Ваше ім'я"
               required=""
             />
-            <label class="form__label" for="user-name"
+            <label class="form__label" for="name-user"
               >На кого забронювати столик?</label
             >
           </div>
 
           <div class="form-field" role="group">
             <input
-              name="user-phone"
+              name="user-tel"
               id="user-phone"
               class="form-book-table__input"
               type="tel"
@@ -31,7 +31,7 @@
               placeholder="+38 (___) ___-__-__"
               required=""
             />
-            <label class="form__label" for="user-phone">Номер телефону</label>
+            <label class="form__label" for="user-tel">Номер телефону</label>
           </div>
         </div>
 
@@ -55,14 +55,14 @@
             </label>
           </div>
           <div class="form-field" role="group">
-            <select class="form-book-table__input" name="date-in" id="date-in">
+            <select class="form-book-table__input" name="date" id="date">
               <option value="today" selected="">Сьогодні</option>
               <option value="tomorrow">Завтра</option>
             </select>
             <svg class="select-icon" width="20" height="12">
               <use href="./images/icon.svg#icon-arrow-down"></use>
             </svg>
-            <label class="form__label form__label--date" for="date-in">
+            <label class="form__label form__label--date" for="date">
               На яку дату бронювати?
             </label>
           </div>
