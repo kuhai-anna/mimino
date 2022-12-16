@@ -16,7 +16,7 @@
   max-width: 100%;
 }
 
-.slick-prev:before {
+.room .slick-prev:before {
   background-image: url(/src/images/arrow-left.svg);
   background-position: center;
 
@@ -53,7 +53,7 @@
   }
 }
 
-.slick-prev:before,
+.room .slick-prev:before,
 .slick-next:before {
   content: '';
   width: 40px;
