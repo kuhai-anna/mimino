@@ -89,6 +89,9 @@
   color: $color-text-tips;
   margin-top: 20px;
   margin-left: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
   &:hover,
   &:focus {
     color: #f3c653;
@@ -98,9 +101,6 @@
   }
   @include tablet {
     @include font(20px, 1.25, 500, 0.02em);
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: baseline;
   }
 }
 
