@@ -5,6 +5,7 @@
 .about-section {
   @media screen and (max-width: 413px) {
     height: 1320px;
+    min-width: 330px;
   }
   height: 1191px;
   padding-top: 16px;
@@ -33,21 +34,16 @@
 
     &--reverse {
       margin-bottom: 16px;
-
-      @media screen and (max-width: 413px) {
-        text-align: start;
-      }
-      @include mobile {
-        margin-left: 257px;
-      }
+      text-align: right;
+      margin-right: -13px;
 
       @include tablet {
         margin-bottom: 24px;
-        margin-left: 726px;
+        // margin-left: 726px;
       }
-      @include desktop {
-        margin-left: 908px;
-      }
+      // @include desktop {
+      //   margin-left: 908px;
+      // }
     }
   }
 
@@ -58,12 +54,7 @@
     }
     &--reverse {
       margin-bottom: 6px;
-      @media screen and (max-width: 413px) {
-        text-align: start;
-      }
-      @include mobile {
-        text-align: right;
-      }
+      text-align: right;
 
       @include tablet {
         margin-bottom: 4px;

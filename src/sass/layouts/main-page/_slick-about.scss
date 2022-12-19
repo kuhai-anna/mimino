@@ -39,7 +39,7 @@
   }
 
   /* Ограничивающая оболочка */
-  .slick-list {
+  & .slick-list {
     // width: 528px;
     overflow: hidden;
   }
@@ -60,7 +60,7 @@
     &:focus {
       background: url('../images/icons/arrow-left.svg') 0 0 / 100% no-repeat;
     }
-    left: 235px;
+    left: 204px;
     top: 273px;
     @include tablet {
       left: 324px;
@@ -81,7 +81,7 @@
     &:focus {
       background: url('../images/icons/arrow-right.svg') 0 0 / 100% no-repeat;
     }
-    left: 299px;
+    left: 268px;
     top: 273px;
     @include tablet {
       left: 388px;
@@ -120,17 +120,17 @@
   @include desktop {
     top: 783px;
   }
+  @media screen and (max-width: 1023px) {
+    & .slick-track {
+      margin-left: -165px;
+    }
+  }
 }
 
-// .slick-prev:before,
-// .slick-next:before {
-//   display: none;
-// }
-
-.slick-about{
+// прибрати стрілки слайдера
+.slick-about {
   & .slick-prev:before,
-    & .slick-next:before {
-      display: none;
-    }
-
+  & .slick-next:before {
+    display: none;
+  }
 }
