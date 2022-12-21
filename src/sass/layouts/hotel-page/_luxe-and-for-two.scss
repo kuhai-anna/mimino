@@ -29,7 +29,7 @@
   }
 
 //   MIMIHO
-  .hotel-rooms__hotel-logo {
+  .hotel-rooms__logo {
 
 	color: $color-logo-dark;
 	margin-bottom: 32px;
@@ -246,12 +246,23 @@
   }
 
   .hotel-rooms__slider .slick-list {
-	left: 120px;
+	left: 0;
+
+	@include mobile {
+		left: 120px;
+	}
+	
   }
 
   .hotel-rooms__slider-luxe .slick-list,
   .hotel-rooms__slider-two .slick-list {
+	
+	left: -115px;
+
+	@include mobile {
 	left: -135px;
+	}
+	
   }
 
   .hotel-rooms__slider-item {
