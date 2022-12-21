@@ -1,4 +1,4 @@
-$('.rooms__slider-two').slick({
+$('.hotel-rooms__slider-two').slick({
 	// кількість слайдів для відображення -2
 	slidesToShow: 2,
 	// скролл по 1 слайду
@@ -6,6 +6,6 @@ $('.rooms__slider-two').slick({
 	// прибирає відстань між слайдами
 	variableWidth: true,
 	// прив'язує контейнер зі стрілочками до слайдеру
-	appendArrows: $('.rooms__slider-arrow-two'),
+	appendArrows: $('.hotel-rooms__slider-arrow-two'),
 
 });
