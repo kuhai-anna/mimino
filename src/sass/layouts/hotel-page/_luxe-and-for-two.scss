@@ -1,7 +1,7 @@
 // Приховую частину слайдера, коли при mobile виходить за межі контейнеру
 .hotel-rooms__container {
 	position: relative;
-	
+
 	@media screen and (max-width: 1023px) {
 		overflow: hidden;
 	}
@@ -177,7 +177,7 @@
   }
 
 //   обгортка для нижньої частини кімнати (слайдер + кнопки "Детальніше", "Переглянути ціни")
-  .hotel-rooms__wrap-bottom {
+  .hotel-rooms__wrap {
 	min-width: 0;
 	@include tablet {
 		
