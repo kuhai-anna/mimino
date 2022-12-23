@@ -1,5 +1,7 @@
 // Приховую частину слайдера, коли при mobile виходить за межі контейнеру
 .hotel-rooms__container {
+	position: relative;
+	
 	@media screen and (max-width: 1023px) {
 		overflow: hidden;
 	}
@@ -45,11 +47,13 @@
 	//   Трьохмісна кімната - дзеркальне розташування Лого праворуч
 	  .hotel-rooms__item:nth-child(2n) & {
 		text-align: right;
-		@include mobile {
-			margin-left: 258px;	
-			}
-	  } 
+		margin-right: -10px;
+
+		@include tablet {
+		margin-right: -20px;
+		}
   }
+}
 
 // Amet minim mollit non  
    .hotel-rooms__subtitle {
@@ -59,10 +63,8 @@
 		margin-bottom: 4px;
 	  }
 
-
 	.hotel-rooms__item:nth-child(2n) & {	
-	  text-align: end;
-
+	  text-align: right;
 	}
   }
 
@@ -97,6 +99,7 @@
 	text-transform: lowercase;
   }
 
+//   Опис кімнати
   .hotel-rooms__desc {
 	display: block;
 	max-width: 242px;
@@ -110,87 +113,66 @@
 	@include tablet {
 		font-size: 16px;
 		max-width: 439px;
-		}
-  
-
-		.hotel-rooms__item:nth-child(2n) & {
-			//   опис кімнати для Трьохмісного номера
-			@include mobile {
-				margin-left: 83px;
-		
-			}
-			 
-			  @include tablet {
-			  margin-right: auto;
-			  }
-			  
-			}
-  }
-
-//   обгортка для тестового контенту блоку кімнати, для позиціонування
-  .hotel-rooms__desc-wrap {
-	@media screen and (max-width: 1023px) {
-	  margin-bottom: 32px;
-	}
-
-	@include tablet {
-		margin-right: 26px;
+		margin-bottom: 176px;
 		}
 
 	@include desktop {
-		margin-right: 48px;
-		  }	
+		margin-bottom: 188px;
+	}	
+  
 
-
-	// в кожній другій кімнаті секціі текстовий контент - праворуч
 	.hotel-rooms__item:nth-child(2n) & {
+	 //   опис кімнати для Трьохмісного номера
+	 @media screen and (max-width: 413px) {
+		margin-left: auto;
+	 }
+	 
+	@include mobile {
+	margin-left: 83px;	
+	}
+			 
 	 @include tablet {
-	margin-right: 0;
-	margin-left: 45px;
-	 }	
-	  
+	margin-left: 543px;
+	}
+	
+	@include desktop {
+		margin-left: auto;
+	}
 	}
   }
 
 //   Картинки кімнат
   .hotel-rooms__img {
 	margin-left: auto;
+	margin-bottom: 32px;
 
-	// background-color: #dadada;
 	box-shadow: 2px 2px 60px 2px $color-shadow;
 	border-radius: 2px;
-
-	// картинка виступає вверх за межі блоку кімнати
+	
 	@include tablet {
-		position: relative;
-		// padding-top: 62px - блоку секції + 32px картинка вверх 
-	    top: -94px;
-		}
-		@include desktop {
-			// padding-top: 72px - блоку секції + 32px картинка вверх 
-			top: -104px;
-			}	
+	position: absolute;
+	top: -94px;
+	left: 512px;
+	}
 
+	@include desktop {
+		top: -104px;
+		left: 640px;
+	}
 
 	// у кожної другої кімнати секції картинка зліва
 	.hotel-rooms__item:nth-child(2n) & {
-	  @media screen and (max-width: 1023px) {
 		margin-left: 0;
-	  }
-	}
-  }
 
-//   flexbox для текстового контенту і картинки 
-  .hotel-rooms__wrap-top {
-	margin-bottom: 32px;
-
-	@include tablet {
-		display: flex;
-		}
-
-	// у другої кімнати реверсне розташування картинки і текстового контенту
-	.hotel-rooms__item:nth-child(2n) & {
-	  flex-direction: row-reverse;
+		@include tablet {
+			position: absolute;
+			top: -94px;
+			left: 112px;
+			}
+		@include desktop {
+			top: -104px;
+			left: 180px;
+		} 
 	}
   }
 
