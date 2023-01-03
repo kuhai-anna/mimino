@@ -1,4 +1,5 @@
 new Swiper(".hotel-rooms__slider", {
+	// Стрілки
 	navigation: {
 		nextEl: '.swiper-btn__next',
 		prevEl: '.swiper-btn__prev'
@@ -20,5 +21,35 @@ new Swiper(".hotel-rooms__slider", {
 		1024: {
 		  spaceBetween: 40
 		},
-	  }
+	},
+	// Чутливість свайпу
+	touchRatio: 1,
+
+	// Курсор при свайпі
+	grabCursor: true,
+
+	// Переключення при кліку на слайд
+	slideToClickedSlide: true,
+
+	// Керування слайдером з клавіатури
+	keyboard: {
+		// увімкнути
+		enabled: true,
+
+		// увімкнути лише коли слайдер в межах вьюпорта
+		onlyInViewport: true,
+
+		// увімкнути керування клавішами pageUp, pageDown
+		pageUpDown: true,
+
+		// швидкість прокрутки слайдера
+		// speed: 2000,
+
+		// керування слайдером колесом миші
+		// mousewheel: {
+		// 	// чутливість колеса миші
+		// 	sensitivity: 1,
+		// },
+	}
+
 });
