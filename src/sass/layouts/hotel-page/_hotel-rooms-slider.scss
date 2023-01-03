@@ -1,0 +1,40 @@
+
+//   ----------------Слайдер swiper в секції hotel-rooms на сторінці hotel-page----------------------
+.hotel-rooms__slider.swiper {
+	margin: 0;
+}
+
+// Стрілки слайдера
+.swiper-btn__prev,
+.swiper-btn__next {
+	width: 32px;
+	height: 32px;
+	bottom: 0;
+	// margin-right: auto;	
+}
+// При ховері стрілка змінює колір на жовтий
+.swiper-btn__prev:hover .icon-arrow,
+.swiper-btn__next:hover .icon-arrow {
+	fill: $accent-color;
+}
+
+// Позиціонування стрілок слайдера
+.swiper-btn__list {
+	display: flex;
+	gap: 32px;
+	width: 96px;
+	margin-bottom: 20px;
+	margin-left: auto;
+}
+
+// Контейнер для слайдів
+.hotel-rooms__slider .swiper-wrapper {
+	margin-bottom: 20px;
+
+	@include tablet {
+		width: 428px;
+	}
+	@include desktop {
+		width: 548px;
+	}
+}
