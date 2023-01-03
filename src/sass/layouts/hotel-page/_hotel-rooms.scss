@@ -203,136 +203,136 @@
 }
 
 //   ----------------Слайдер----------------------
-.hotel-rooms__slider,
-.hotel-rooms__slider-luxe,
-.hotel-rooms__slider-two {
-	min-width: 0;
-	margin-bottom: 20px;
+// .hotel-rooms__slider,
+// .hotel-rooms__slider-luxe,
+// .hotel-rooms__slider-two {
+// 	min-width: 0;
+// 	margin-bottom: 20px;
 
-	& .slick-list {
-		width: 404px;
-		position: relative;
+// 	& .slick-list {
+// 		width: 404px;
+// 		position: relative;
 		
-		@media screen and (min-width: 1024px)
-		{  
-			position: static;
-			width: 428px;
-		}
+// 		@media screen and (min-width: 1024px)
+// 		{  
+// 			position: static;
+// 			width: 428px;
+// 		}
 	
-		@media screen and (min-width: 1280px)
-		{
-			width: 548px;
-		}
-	  }
+// 		@media screen and (min-width: 1280px)
+// 		{
+// 			width: 548px;
+// 		}
+// 	  }
 
-  }
+//   }
 
-  .hotel-rooms__slider .slick-list {
-	left: 0;
+//   .hotel-rooms__slider .slick-list {
+// 	left: 0;
 
-	@include mobile {
-		left: 120px;
-	}
+// 	@include mobile {
+// 		left: 120px;
+// 	}
 	
-  }
+//   }
 
-  .hotel-rooms__slider-luxe .slick-list,
-  .hotel-rooms__slider-two .slick-list {
+//   .hotel-rooms__slider-luxe .slick-list,
+//   .hotel-rooms__slider-two .slick-list {
 	
-	left: -115px;
+// 	left: -115px;
 
-	@include mobile {
-	left: -135px;
-	}
+// 	@include mobile {
+// 	left: -135px;
+// 	}
 	
-  }
+//   }
 
-  .hotel-rooms__slider-item {
-	margin-right: 16px;
-	@media screen and (min-width: 1024px) {
-		margin-right: 40px;
-	}
-  }
+//   .hotel-rooms__slider-item {
+// 	margin-right: 16px;
+// 	@media screen and (min-width: 1024px) {
+// 		margin-right: 40px;
+// 	}
+//   }
 
-  //   Обгортка для стрілок слайдера
-  .hotel-rooms__slider-arrow,
-  .hotel-rooms__slider-luxe-arrow,
-  .hotel-rooms__slider-arrow-two {
-	width: 96px;
-	height: 32px;
-	margin-bottom: 20px;
+//   //   Обгортка для стрілок слайдера
+//   .hotel-rooms__slider-arrow,
+//   .hotel-rooms__slider-luxe-arrow,
+//   .hotel-rooms__slider-arrow-two {
+// 	width: 96px;
+// 	height: 32px;
+// 	margin-bottom: 20px;
 
-	}
+// 	}
 
-	.hotel-rooms__slider-arrow {
-		margin-left: auto;
-		@include tablet {
-			margin-left: 0;
-			margin-right: auto;
-		}	
-	}
+	// .hotel-rooms__slider-arrow {
+	// 	margin-left: auto;
+	// 	@include tablet {
+	// 		margin-left: 0;
+	// 		margin-right: auto;
+	// 	}	
+	// }
 
-	.hotel-rooms__slider-luxe-arrow,
-	.hotel-rooms__slider-arrow-two
-	 {
-		margin-right: auto;
-		@include tablet {
-			margin-right: 0;
-			margin-left: auto;
-		}
-	}
+	// .hotel-rooms__slider-luxe-arrow,
+	// .hotel-rooms__slider-arrow-two
+	//  {
+	// 	margin-right: auto;
+	// 	@include tablet {
+	// 		margin-right: 0;
+	// 		margin-left: auto;
+	// 	}
+	// }
 
 	 //Задаємо розташування стрілок відносно обгортки div .rooms__slider-arrow 
-	 .hotel-rooms__slider-arrow .slick-prev,
-	 .hotel-rooms__slider-luxe-arrow .slick-prev,
-	 .hotel-rooms__slider-arrow-two .slick-prev {
-	   left: 0;
-	   width: 32px;
-	   height: 32px;
-	   background: url('../images/hotel-page/rooms-arrow-left.svg') 0 0 no-repeat;
+	//  .hotel-rooms__slider-arrow .slick-prev,
+	//  .hotel-rooms__slider-luxe-arrow .slick-prev,
+	//  .hotel-rooms__slider-arrow-two .slick-prev {
+	//    left: 0;
+	//    width: 32px;
+	//    height: 32px;
+	//    background: url('../images/hotel-page/rooms-arrow-left.svg') 0 0 no-repeat;
    
-	 }
+	//  }
 
 	 // Стилізую стілки слайдера
-	 .hotel-rooms__slider-arrow .slick-next,
-	 .hotel-rooms__slider-luxe-arrow .slick-next,
-	 .hotel-rooms__slider-arrow-two .slick-next
-	  {
+	//  .hotel-rooms__slider-arrow .slick-next,
+	//  .hotel-rooms__slider-luxe-arrow .slick-next,
+	//  .hotel-rooms__slider-arrow-two .slick-next
+	//   {
    
-	   right: 0;
-	   width: 32px;
-	   height: 32px;
-	   background: url('../images/hotel-page/rooms-arrow-right.svg') 0 0 no-repeat;
+	//    right: 0;
+	//    width: 32px;
+	//    height: 32px;
+	//    background: url('../images/hotel-page/rooms-arrow-right.svg') 0 0 no-repeat;
    
-	 }
+	//  }
 
-	 .hotel-rooms__slider-arrow,
-  .hotel-rooms__slider-luxe-arrow,
-  .hotel-rooms__slider-arrow-two {
-	//задається для позиціонування стрілки відносно цієї обгортки
-	position: relative;
+// 	 .hotel-rooms__slider-arrow,
+//   .hotel-rooms__slider-luxe-arrow,
+//   .hotel-rooms__slider-arrow-two {
+// 	//задається для позиціонування стрілки відносно цієї обгортки
+// 	position: relative;
 	
 	
-  }
+//   }
  // Прибираю стиль кнопок слайдера за замовчуванням
- .hotel-rooms__slider-arrow .slick-prev::before,
- .hotel-rooms__slider-arrow .slick-next::before,
- .hotel-rooms__slider-luxe-arrow .slick-prev::before,
- .hotel-rooms__slider-luxe-arrow .slick-next::before,
- .hotel-rooms__slider-arrow-two .slick-next::before,
- .hotel-rooms__slider-arrow-two .slick-prev::before
+//  .hotel-rooms__slider-arrow .slick-prev::before,
+//  .hotel-rooms__slider-arrow .slick-next::before,
+//  .hotel-rooms__slider-luxe-arrow .slick-prev::before,
+//  .hotel-rooms__slider-luxe-arrow .slick-next::before,
+//  .hotel-rooms__slider-arrow-two .slick-next::before,
+//  .hotel-rooms__slider-arrow-two .slick-prev::before
 
-  {
-	 content: unset;
- }
+//   {
+// 	 content: unset;
+//  }
 
- .hotel-rooms__slider-wrap {
-	@media screen and (max-width: 1023px) {
-	  margin-bottom: 20px;
-	}
-	@media screen and (min-width: $desktop) {
-	  margin-bottom: 40px;
-	}
-  }
+//  .hotel-rooms__slider-wrap {
+// 	@media screen and (max-width: 1023px) {
+// 	  margin-bottom: 20px;
+// 	}
+// 	@media screen and (min-width: $desktop) {
+// 	  margin-bottom: 40px;
+// 	}
+//   }
 
   

@@ -15,18 +15,8 @@
     <meta name="msapplication-TileColor" content="#000000" />
     <meta name="theme-color" content="#000000" />
 
-
-
-
-
-
-
-
-
-
-    
      <!-- Підключення стилів слайдера 2 посилання-->
- <link
+ <!-- <link
  rel="stylesheet"
  type="text/css"
  href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
@@ -35,7 +25,10 @@
  rel="stylesheet"
  type="text/css"
  href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-/>
+/> -->
+
+    <!-- Підключення стилів swiper слайдера -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
@@ -46,12 +39,8 @@
     <main>
       <!-- Hero -->
       <include src="./partials/hotel-page/hero.html"></include>
-      <!-- 1 room luxe for 2 adult -->
+      <!-- Section hotel-rooms-->
       <include src="./partials/hotel-page/hotel-rooms.html"></include>
-      <!-- 1 room for 3 adult -->
-      <!-- <include src="./partials/hotel-page/for-three.html"></include>-->
-      <!-- 1 room for 2 adult -->
-      <!-- <include src="./partials/hotel-page/for-two.html"></include> -->
     </main>
     <!-- Footer -->
     <include src="./partials/footer.html"></include>
@@ -67,43 +56,32 @@
 <script src="./js/modal-room.js" type="module"></script>
 <script src="./js/modal-price-lux.js" type="module"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Підключення бібліотек -->
     <!-- Підключаю JQuery (бібліотека слайду) -->
-    <script
+    <!-- <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
     ></script>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
+    ></script> -->
     <!-- Підключаємо СЛАЙДЕР SLICK -->
-    <script
+    <!-- <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+    ></script> -->
 <!-- Підключаємо НАШ JS з НАЛАШТУВАННЯМ СЛАЙДЕРА -->
 <!-- Слайдер кімнати люкс -->
-<script src="./js/room-luxe-slider.js" type="module"></script>
+<!-- <script src="./js/room-luxe-slider.js" type="module"></script> -->
 <!-- Слайдер трьохмісної кімнати -->
-<script src="./js/room-for-three-slider.js" type="module"></script>
+<!-- <script src="./js/room-for-three-slider.js" type="module"></script> -->
 <!-- Слайдер двомісної кімнати -->
-<script src="./js/room-for-two-slider.js" type="module"></script>
+<!-- <script src="./js/room-for-two-slider.js" type="module"></script> -->
+
+<!-- Підключення бібліотеки swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<!-- Підключеня файлу зі swiper-слайдером в секції hotel-rooms -->
+<script src="./js/hotel-rooms-slider.js" type="module"></script>
   </body>
 </html>
