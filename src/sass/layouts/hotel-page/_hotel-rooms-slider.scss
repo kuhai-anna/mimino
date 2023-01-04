@@ -1,9 +1,10 @@
 
 //   ----------------Слайдер swiper в секції hotel-rooms на сторінці hotel-page----------------------
 .hotel-rooms__slider.swiper {
-	margin: 0;
 	// ширина слайдера
 	width: 404px;
+	margin: 0;
+	margin-bottom: 20px; 
 
 	@media screen and (max-width: 1024px) {
 		left: -135px;
@@ -18,6 +19,12 @@
 		width: 548px;
 	}
 }
+
+// .hotel-rooms__item:nth-child(2n) .hotel-rooms__slider.swiper {
+// 	@media screen and (max-width: 1024px) {
+// 		right: 135px;
+// 	}
+// }
 
 // Стрілки слайдера
 .swiper-btn__prev,
@@ -39,7 +46,6 @@
 	display: flex;
 	gap: 32px;
 	width: 96px;
-	margin-bottom: 20px;
 
 	@media screen and (max-width: 1023px){
 		left: 135px;
@@ -50,6 +56,12 @@
 	}
 
 }
+
+// Для кожної другої номеру в секції (Двомісний номер)
+// міняємо розташування стрілок слайдера
+.hotel-rooms__item:nth-child(2n) .swiper-btn__list {
+	margin: 0;
+  }
 
 // Контейнер для слайдів
 .hotel-rooms__slider .swiper-wrapper {
