@@ -24,7 +24,10 @@ new Swiper(".hotel-rooms__slider", {
 		// when window width is >= 1024px
 		1024: {
 			// відстань між слайдами
-			spaceBetween: 40
+			spaceBetween: 40,
+
+			// Кількість слайдів для одночасного гортання
+			slidesPerGroup: 2,
 		},
 	},
 
