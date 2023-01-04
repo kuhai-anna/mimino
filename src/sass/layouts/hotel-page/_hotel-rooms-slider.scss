@@ -2,6 +2,21 @@
 //   ----------------Слайдер swiper в секції hotel-rooms на сторінці hotel-page----------------------
 .hotel-rooms__slider.swiper {
 	margin: 0;
+	// ширина слайдера
+	width: 404px;
+
+	@media screen and (max-width: 1024px) {
+		left: -135px;
+	}
+
+	@include tablet {
+		// ширина слайдера
+		width: 428px;
+	}
+	@include desktop {
+		// ширина слайдера
+		width: 548px;
+	}
 }
 
 // Стрілки слайдера
@@ -10,9 +25,9 @@
 	width: 32px;
 	height: 32px;
 	bottom: 0;
-	// margin-right: auto;	
+	
 }
-// При ховері стрілка змінює колір на жовтий
+// При ховері стрілка змінює колір на акцентний #f3c653;
 .swiper-btn__prev:hover .icon-arrow,
 .swiper-btn__next:hover .icon-arrow {
 	fill: $accent-color;
@@ -20,21 +35,23 @@
 
 // Позиціонування стрілок слайдера
 .swiper-btn__list {
+	position: relative;
 	display: flex;
 	gap: 32px;
 	width: 96px;
 	margin-bottom: 20px;
-	margin-left: auto;
+
+	@media screen and (max-width: 1023px){
+		left: 135px;
+	}
+
+	@include tablet {
+		margin-left: auto;
+	}
+
 }
 
 // Контейнер для слайдів
 .hotel-rooms__slider .swiper-wrapper {
 	margin-bottom: 20px;
-
-	@include tablet {
-		width: 428px;
-	}
-	@include desktop {
-		width: 548px;
-	}
 }

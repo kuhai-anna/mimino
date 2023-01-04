@@ -1,27 +1,33 @@
 new Swiper(".hotel-rooms__slider", {
+
+	// швидкість готання слайдів
+	speed: 800,
+
 	// Стрілки
 	navigation: {
 		nextEl: '.swiper-btn__next',
 		prevEl: '.swiper-btn__prev'
 	},
+
 	// Цикл слайдеру без кінця, по колу
 	loop: true,
+
 	// Кількість слайдів для одночасного показу
 	slidesPerView: 2,
-	// Відстань між слайдами
-	// spaceBetween: 40,
 
+	// відстань між слайдами
+	spaceBetween: 16,
+
+	// адаптив 
 	breakpoints: {
-		// when window width is >= 320px
-		320: {
-		  spaceBetween: 16
-		},
 
 		// when window width is >= 1024px
 		1024: {
-		  spaceBetween: 40
+			// відстань між слайдами
+			spaceBetween: 40
 		},
 	},
+
 	// Чутливість свайпу
 	touchRatio: 1,
 
@@ -42,14 +48,6 @@ new Swiper(".hotel-rooms__slider", {
 		// увімкнути керування клавішами pageUp, pageDown
 		pageUpDown: true,
 
-		// швидкість прокрутки слайдера
-		// speed: 2000,
-
-		// керування слайдером колесом миші
-		// mousewheel: {
-		// 	// чутливість колеса миші
-		// 	sensitivity: 1,
-		// },
 	}
 
 });
