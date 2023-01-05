@@ -12,9 +12,7 @@ new Swiper(".hotel-rooms__slider", {
 	// Цикл слайдеру без кінця, по колу
 	loop: true,
 
-	// Кількість слайдів для одночасного показу
-	slidesPerView: 2,
-
+    slidesPerView: 2,
 	// відстань між слайдами
 	spaceBetween: 16,
 
@@ -22,7 +20,7 @@ new Swiper(".hotel-rooms__slider", {
 	breakpoints: {
 
 		// when window width is >= 1024px
-		1024: {
+		1024: { 
 			// відстань між слайдами
 			spaceBetween: 40,
 
@@ -51,6 +49,6 @@ new Swiper(".hotel-rooms__slider", {
 		// увімкнути керування клавішами pageUp, pageDown
 		pageUpDown: true,
 
-	}
+	},
 
 });
