@@ -1,0 +1,2 @@
+!function(){var e=document.querySelectorAll("[data-modal-open-table]"),o={closeModalBtn:document.querySelector("[data-modal-close-table]"),modal:document.querySelector("[data-modal-table]"),body:document.querySelector("[data-body]")};function t(){o.modal.classList.toggle("is-hidden"),o.body.classList.toggle("no-scroll")}e.forEach((function(e){e.addEventListener("click",t)})),o.closeModalBtn.addEventListener("click",t)}();
+//# sourceMappingURL=index.4ca154b1.js.map

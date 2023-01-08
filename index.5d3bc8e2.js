@@ -1,0 +1,2 @@
+!function(){var o=document.querySelectorAll("[data-modal-open-room]"),e={closeModalBtn:document.querySelector("[data-modal-close-room]"),modal:document.querySelector("[data-modal-room]"),body:document.querySelector("[data-body]")};function t(){e.modal.classList.toggle("is-hidden"),e.body.classList.toggle("no-scroll")}o.forEach((function(o){o.addEventListener("click",t)})),e.closeModalBtn.addEventListener("click",t)}();
+//# sourceMappingURL=index.5d3bc8e2.js.map

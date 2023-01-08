@@ -1,0 +1,2 @@
+(()=>{let e=document.querySelectorAll("[data-modal-open-price-lux]");const o={closeModalBtn:document.querySelector("[data-modal-close-price-lux]"),modal:document.querySelector("[data-modal-price-lux]"),body:document.querySelector("[data-body]")};function l(){o.modal.classList.toggle("is-hidden"),o.body.classList.toggle("no-scroll")}e.forEach((e=>{e.addEventListener("click",l)})),o.closeModalBtn.addEventListener("click",l)})();
+//# sourceMappingURL=room-luxe.02df8d4e.js.map

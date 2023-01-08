@@ -1,0 +1,2 @@
+!function(){var e=document.querySelectorAll("[data-modal-open-price-lux]"),o={closeModalBtn:document.querySelector("[data-modal-close-price-lux]"),modal:document.querySelector("[data-modal-price-lux]"),body:document.querySelector("[data-body]")};function l(){o.modal.classList.toggle("is-hidden"),o.body.classList.toggle("no-scroll")}e.forEach((function(e){e.addEventListener("click",l)})),o.closeModalBtn.addEventListener("click",l)}();
+//# sourceMappingURL=room-luxe.9c44dc96.js.map
