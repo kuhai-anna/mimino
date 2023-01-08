@@ -1,0 +1,89 @@
+
+//   ----------------Слайдер swiper в секції hotel-rooms на сторінці hotel-page----------------------
+.hotel-rooms__slider {
+	&.swiper {
+		// ширина слайдера
+	width: 290px;
+	margin-bottom: 20px; 
+
+	@media screen and (min-width: $mobile) and (max-width: 1023px) {
+		width: 404px;
+		left: -135px;	
+	}
+
+	@include tablet {
+		// ширина слайдера
+		width: 428px;
+		margin: 0;
+	}
+	@include desktop {
+		// ширина слайдера
+		width: 548px;
+	}
+	}	
+}
+
+.hotel-rooms__item:nth-child(2n) {
+	.swiper {
+		@media screen and (min-width: $mobile) and (max-width: 1023px)  {
+			left: 120px;
+		}
+	}	
+}
+
+// Стрілки слайдера
+.swiper-btn__prev,
+.swiper-btn__next {
+	width: 32px;
+	height: 32px;
+	bottom: 0;	
+}
+
+// При ховері стрілка змінює колір на акцентний #f3c653;
+.swiper-btn__prev:hover .icon-arrow,
+.swiper-btn__next:hover .icon-arrow {
+	fill: $accent-color;
+}
+
+// Позиціонування стрілок слайдера
+.swiper-btn__list {
+	position: relative;
+	display: flex;
+	gap: 32px;
+	width: 96px;
+	
+	// від 320px до mobile стрілки по центру
+	@media screen and (max-width: 413px){
+		margin: 0 auto;
+	}
+
+	@media screen and (min-width: $mobile) and (max-width: 1023px){
+		left: 135px;
+	}
+
+	@include tablet {
+		margin-left: auto;
+	}
+
+}
+
+// Для кожної другої номеру в секції (Двомісний номер)
+// міняємо розташування стрілок слайдера
+.hotel-rooms__item:nth-child(2n) {
+	.swiper-btn__list {
+		margin: 0 auto;
+
+	@media screen and(min-width: $mobile) and (max-width: 1023px) {
+		left: 15px;
+	}
+
+	@include tablet {
+		margin: 0;
+	}
+	}
+  }
+
+// Контейнер для слайдів
+.hotel-rooms__slider .swiper-wrapper {
+	margin-bottom: 20px;
+}
