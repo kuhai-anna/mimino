@@ -1,7 +1,6 @@
 // Вносить один з членів команди
 // Загальні стилі для контейнера
 
-// Замінений на цей
 .container {
   min-width: 320px;
   padding: 0 15px;
@@ -20,39 +19,3 @@
     padding: 0 85px;
   }
 }
-
-// Старий варіант
-
-// .container {
-//   min-width: 320px;
-//   padding: 0 15px;
-//   margin-left: auto;
-//   margin-right: auto;
-
-//   @include mobile {
-//     max-width: 414px;
-//   }
-//   @include tablet {
-//     max-width: 960px;
-//   }
-//   @include desktop {
-//     max-width: 1140px;
-//   }
-// } 
-
-// .container {
-//   max-width: 414px;
-//   margin: 0 auto;
-//   padding: 0 15px;
-//   @media screen and (min-width: $tablet) {
-//     max-width: 1024px;
-
-//     padding: 0 47px;
-//   }
-
-//   @media screen and (min-width: $desktop) {
-//     max-width: 1280px;
-
-//     padding: 0 85px;
-//   }
-// }
