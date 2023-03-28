@@ -1,81 +1,88 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Двомісний номер люкс</title>
+    <!-- Підключення фавіконки -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="images/favicon/safari-pinned-tab.svg"
+      color="#f3c653"
+    />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+    <!-- css js -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Двомісний номер люкс</title>
-  <!-- Підключення шрифтів -->
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
 
-  <!-- Підключення фавіконки -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="images/favicon/site.webmanifest" />
-  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#f3c653" />
-  <meta name="msapplication-TileColor" content="#000000" />
-  <meta name="theme-color" content="#000000" />
+  <body data-body>
+    <!-- Header -->
+    <include src="./partials/header.html"></include>
+    <main>
+      <!-- Hero -->
+      <include src="./partials/room-pages/hero-luxe.html"></include>
+      <!-- Amenities -->
+      <include src="./partials/room-pages/amenities.html"></include>
+    </main>
+    <!-- Footer -->
+    <include src="./partials/footer.html"></include>
 
-
-
-
-
-
-
-
-
-
-  <!-- css js -->
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
-
-
-  <link rel="stylesheet" href="./sass/index.scss" />
-  <script type="module" src="./index.js"></script>
-</head>
-
-<body data-body>
-  <!-- Header -->
-  <include src="./partials/header.html"></include>
-  <main>
-    <!-- Hero -->
-    <include src="./partials/room-pages/hero-luxe.html"></include>
-    <!-- Amenities -->
-    <include src="./partials/room-pages/amenities.html"></include>
-  </main>
-  <!-- Footer -->
-  <include src="./partials/footer.html"></include>
-
-  <!-- Modal windows -->
-  <!-- Бронювання номера -->
-  <include src="./partials/modal-windows/book-room.html"></include>
-  <!-- Ціни на номер -->
-  <include src="./partials/modal-windows/room-price.html"></include>
-  <!-- Підключення бібліотек -->
-  <!-- slick jquery -->
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <!-- slick js -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <!-- base js -->
-  <script type="modul" src="./js/slick.js"></script>
-<script src="./js/modal-room.js" type="module"></script>
-<script src="./js/modal-price-lux.js" type="module"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-
+    <!-- Modal windows -->
+    <!-- Бронювання номера -->
+    <include src="./partials/modal-windows/book-room.html"></include>
+    <!-- Ціни на номер -->
+    <include src="./partials/modal-windows/room-price.html"></include>
+    <!-- Підключення бібліотек -->
+    <!-- slick jquery -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- slick js -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- base js -->
+    <script type="modul" src="./js/slick.js"></script>
+    <script src="./js/modal-room.js" type="module"></script>
+    <script src="./js/modal-price-lux.js" type="module"></script>
+  </body>
 </html>
