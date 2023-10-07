@@ -12,12 +12,13 @@
   border: 2px solid $border-light-color;
   border-radius: 25px;
 
-  transition-property: background-color;
+  transition-property: background-color, border-color;
   @extend %transition;
 
   &:hover,
   &:focus {
     background-color: $backrground-hover-light;
+    border-color: $accent-color;
   }
 }
 
@@ -42,10 +43,11 @@
   display: block;
   max-width: 236px;
   height: 48px;
-  padding: 13px 63px;
+  padding: 12px;
 
   font-style: normal;
   @include font(16px, 1.25, 700, 0.02em);
+  text-align: center;
 
   color: $accent-color;
   background-color: $backrground-btn-dark;
@@ -62,27 +64,29 @@
   }
 }
 
-// Посилання у вигляді прозорої кнопки з написом "Переглянути меню" (використовувати клас link-btn разом з класом link)
+// Посилання у вигляді прозорої кнопки з написом "Переглянути меню" (використовувати клас link-light-btn разом з класом link)
 .link-light-btn {
   display: block;
-  max-width: 238px;
+  max-width: 236px;
   height: 48px;
-  padding: 14px 65px;
+  padding: 12px;
 
   font-style: normal;
   @include font(16px, 1.25, 700, 0.02em);
+  text-align: center;
 
   color: $accent-color;
   background-color: $backrground-btn-light;
   border: 2px solid $border-light-color;
   border-radius: 25px;
 
-  transition-property: background-color;
+  transition-property: background-color, border-color;
   @extend %transition;
 
   &:hover,
   &:focus {
     background-color: $backrground-hover-light;
+    border-color: $accent-color;
   }
 }
 
