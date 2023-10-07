@@ -41,7 +41,7 @@
 // Посилання у вигляді чорної кнопки з написом "Детальніше" (використовувати клас link-btn разом з класом link)
 .link-btn {
   display: block;
-  max-width: 236px;
+  min-width: 236px;
   height: 48px;
   padding: 12px;
 
@@ -67,7 +67,7 @@
 // Посилання у вигляді прозорої кнопки з написом "Переглянути меню" (використовувати клас link-light-btn разом з класом link)
 .link-light-btn {
   display: block;
-  max-width: 236px;
+  min-width: 232px;
   height: 48px;
   padding: 12px;
 
