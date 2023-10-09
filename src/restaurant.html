@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ресторан</title>
-    <!-- Підключення фавіконки -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -32,7 +31,6 @@
     <meta name="theme-color" content="#000000" />
 
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
   <body data-body>
     <!-- Header -->
@@ -49,11 +47,10 @@
     <include src="./partials/footer.html"></include>
 
     <!-- Modal windows -->
-    <!-- Бронювання столика -->
     <include src="./partials/modal-windows/book-table.html"></include>
-    <!-- Підключення бібліотек -->
 
-    <!-- Підключаю JQuery (бібліотека слайду) -->
+    <!-- JS Libraries -->
+    <!-- slick jquery -->
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -62,14 +59,14 @@
       type="text/javascript"
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
-    <!-- Підключаємо СЛАЙДЕР SLICK -->
+    <!-- slick js -->
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <!-- Підключаємо НАШ JS з НАЛАШТУВАННЯМ СЛАЙДЕРА -->
-    <script src="./js/slider-main-detailes.js" type="module"></script>
-    <script src="./js/slick-about.js" type="module"></script>
-    <script src="./js/modal-table.js" type="module"></script>
+    <!-- base js -->
+    <script type="module" src="./js/slider-main-detailes.js"></script>
+    <script type="module" src="./js/slick-about.js"></script>
+    <script type="module" src="./js/modal-table.js"></script>
   </body>
 </html>
