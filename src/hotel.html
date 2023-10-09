@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Готель</title>
-    <!-- Підключення фавіконки -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -30,14 +29,13 @@
     />
     <meta name="msapplication-TileColor" content="#000000" />
     <meta name="theme-color" content="#000000" />
-    <!-- Підключення стилів swiper слайдера -->
+    <!-- Styles for swiper -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
 
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
   <body data-body>
     <!-- Header -->
@@ -52,17 +50,15 @@
     <include src="./partials/footer.html"></include>
 
     <!-- Modal windows -->
-    <!-- Бронювання номера -->
     <include src="./partials/modal-windows/book-room.html"></include>
-    <!-- Ціни на номер -->
     <include src="./partials/modal-windows/room-price.html"></include>
 
-    <!-- Підключення бібліотек -->
-    <script src="./js/modal-room.js" type="module"></script>
-    <script src="./js/modal-price-lux.js" type="module"></script>
-    <!-- Підключення бібліотеки swiper -->
+    <!-- JS Libraries -->
+    <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- Підключеня файлу зі swiper-слайдером в секції hotel-rooms -->
-    <script src="./js/hotel-rooms-slider.js" type="module"></script>
+    <!-- base js -->
+    <script type="module" src="./js/hotel-rooms-slider.js"></script>
+    <script type="module" src="./js/modal-room.js"></script>
+    <script type="module" src="./js/modal-price-lux.js"></script>
   </body>
 </html>
