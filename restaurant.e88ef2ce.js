@@ -1,2 +1,0 @@
-(()=>{let e=document.querySelectorAll("[data-modal-open-table]");const o={closeModalBtn:document.querySelector("[data-modal-close-table]"),modal:document.querySelector("[data-modal-table]"),body:document.querySelector("[data-body]")};function l(){o.modal.classList.toggle("is-hidden"),o.body.classList.toggle("no-scroll")}e.forEach((e=>{e.addEventListener("click",l)})),o.closeModalBtn.addEventListener("click",l)})();
-//# sourceMappingURL=restaurant.e88ef2ce.js.map
