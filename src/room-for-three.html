@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Трьохмісний номер</title>
-    <!-- Підключення фавіконки -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -30,14 +29,12 @@
     />
     <meta name="msapplication-TileColor" content="#000000" />
     <meta name="theme-color" content="#000000" />
-    <!-- css js -->
-    <!-- Add the slick-theme.css if you want default styling -->
+    <!-- Styles for slick slider -->
     <link
       rel="stylesheet"
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <!-- Add the slick-theme.css if you want default styling -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -45,7 +42,6 @@
     />
 
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
 
   <body data-body>
@@ -61,11 +57,10 @@
     <include src="./partials/footer.html"></include>
 
     <!-- Modal windows -->
-    <!-- Бронювання номера -->
     <include src="./partials/modal-windows/book-room.html"></include>
-    <!-- Ціни на номер -->
     <include src="./partials/modal-windows/room-price.html"></include>
-    <!-- Підключення бібліотек -->
+
+    <!-- JS Libraries -->
     <!-- slick jquery -->
     <script
       type="text/javascript"
@@ -81,8 +76,8 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <!-- base js -->
-    <script type="modul" src="./js/slick.js"></script>
-    <script src="./js/modal-room.js" type="module"></script>
-    <script src="./js/modal-price-lux.js" type="module"></script>
+    <script type="module" src="./js/slick.js"></script>
+    <script type="module" src="./js/modal-room.js"></script>
+    <script type="module" src="./js/modal-price-lux.js"></script>
   </body>
 </html>
