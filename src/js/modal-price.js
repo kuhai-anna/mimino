@@ -18,12 +18,14 @@
   function onEscClick(e) {
     if (e.code === 'Escape') {
       refs.modal.classList.add('is-hidden');
+      refs.body.classList.remove('no-scroll');
     }
   }
 
   function onBackdropClick(e) {
     if (e.currentTarget === e.target) {
       refs.modal.classList.add('is-hidden');
+      refs.body.classList.remove('no-scroll');
     }
   }
 
