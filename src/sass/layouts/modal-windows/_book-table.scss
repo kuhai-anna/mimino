@@ -86,7 +86,7 @@
   border: 1px solid #c79002;
   border-radius: 2px;
   outline: 0px solid #c79002;
-  cursor: text;
+  cursor: pointer;
 
   transform: outline, border;
   transition-duration: 250ms;
@@ -105,4 +105,8 @@
 .form-book-table__input:focus + .select-icon,
 .form-book-table__input:hover + .select-icon {
   fill: #c79002;
+}
+
+.text-input {
+  cursor: text;
 }
