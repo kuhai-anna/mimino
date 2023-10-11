@@ -16,7 +16,8 @@
   transform: translate(-50%, -50%);
 
   width: 414px;
-  height: 572px;
+  max-height: 96%;
+  overflow-y: auto;
 
   margin-left: auto;
   margin-right: auto;
