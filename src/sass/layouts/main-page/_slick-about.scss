@@ -54,12 +54,15 @@
   }
   & .slick-arrow.slick-prev {
     background: url('../images/icons/slick_arrow-left.svg') 0 0 / 100% no-repeat;
-    &:hover {
-      background: url('../images/icons/arrow-left.svg') 0 0 / 100% no-repeat;
-    }
+
+    transition-property: background-image;
+    @extend %transition;
+
+    &:hover,
     &:focus {
       background: url('../images/icons/arrow-left.svg') 0 0 / 100% no-repeat;
     }
+
     left: 204px;
     top: 273px;
     @include tablet {
@@ -75,12 +78,14 @@
   & .slick-arrow.slick-next {
     background: url('../images/icons/slick_arrow-right.svg') 0 0 / 100%
       no-repeat;
-    &:hover {
-      background: url('../images/icons/arrow-right.svg') 0 0 / 100% no-repeat;
-    }
+    transition-property: background-image;
+    @extend %transition;
+
+    &:hover,
     &:focus {
       background: url('../images/icons/arrow-right.svg') 0 0 / 100% no-repeat;
     }
+
     left: 268px;
     top: 273px;
     @include tablet {
