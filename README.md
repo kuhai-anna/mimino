@@ -2,7 +2,7 @@
 
 ## Project Description
 
-A multi-page website for the ["Mimino"](https://kuhai-anna.github.io/mimino/index.html). company that helps users to plan and book
+A multi-page website for the ["Mimino"](https://kuhai-anna.github.io/mimino/index.html) company that helps users to plan and book
 visits to the restaurant-hotel complex, learn about services and amenities, and
 interact with the administration through online booking forms.
 
