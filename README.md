@@ -29,7 +29,7 @@ interact with the administration through online booking forms.
 
 ## Practical Tasks Completed
 
-#### Main page
+### Main page
 
 ##### Header
 
@@ -73,9 +73,9 @@ mobile and desktop versions).
 - Includes a list of contact phone numbers for feedback and the address with a
   Google map.
 
-  ##### Footer
+##### Footer
 
-  The Footer contains the logo, navigation, and a list of social media links.
+The Footer contains the logo, navigation, and a list of social media links.
 
 - The company's logo (name) was implemented as a link that returns the user to
   the main page.
@@ -83,7 +83,7 @@ mobile and desktop versions).
   corresponding page.
 - Social media links open external resources in a separate tab.
 
-#### Restaurant Page
+### Restaurant Page
 
 ##### Hero
 
@@ -107,7 +107,7 @@ mobile and desktop versions).
 - The restaurant menu content was implemented as a table. The "Book a Table"
   button opens a modal window.
 
-#### Hotel Page
+### Hotel Page
 
 ##### Hero
 
@@ -126,7 +126,7 @@ mobile and desktop versions).
   the corresponding Room Page.
 - The "View Prices" button opens a modal window.
 
-#### Room Page
+### Room Page
 
 ##### Hero
 
@@ -140,7 +140,7 @@ mobile and desktop versions).
 - The "Return to Room View" button was implemented as a link that leads the user
   to the Hotel Page.
 
-##### Modal windows
+### Modal windows
 
 Implemented as forms with minimal validation.
 
